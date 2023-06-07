@@ -16,13 +16,13 @@ struct HomeView: View {
                 
                 VStack(spacing: 21) {
                     HStack(spacing: 64) {
-                        HexagonView()
-                        HexagonView()
+                        HexagonView(challengeCategory: .vision)
+                        HexagonView(challengeCategory: .hearing)
                     }
                     ControlsHexagonView()
                     HStack(spacing: 64) {
-                        HexagonView()
-                        HexagonView()
+                        HexagonView(challengeCategory: .mobility)
+                        HexagonView(challengeCategory: .cognitive)
                     }
                 }
             }

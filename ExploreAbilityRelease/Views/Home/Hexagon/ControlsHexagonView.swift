@@ -33,14 +33,37 @@ struct ControlsHexagonView: View {
                         
                     }
                     
-                    Circle()
-                        .frame(width: 50, height: 50)
-                        .foregroundStyle(.white.opacity(0.1))
-                        .overlay {
-                            Image(systemName: "house")
-                                .font(.system(size: 25))
-                                .foregroundStyle(.yellow)
+                    if viewModel.zoomFocus == .home {
+                        Button {
+                            withAnimation(.bouncy) {
+                                viewModel.zoomFocus = .reset
+                            }
+                        } label: {
+                            Circle()
+                                .frame(width: 50, height: 50)
+                                .foregroundStyle(.white.opacity(0.1))
+                                .overlay {
+                                    Image(systemName: "xmark")
+                                        .font(.system(size: 25))
+                                        .foregroundStyle(.white.opacity(0.5))
+                                }
                         }
+                    } else {
+                        Button {
+                            withAnimation(.bouncy) {
+                                viewModel.zoomFocus = .home
+                            }
+                        } label: {
+                            Circle()
+                                .frame(width: 50, height: 50)
+                                .foregroundStyle(.white.opacity(0.1))
+                                .overlay {
+                                    Image(systemName: "house")
+                                        .font(.system(size: 25))
+                                        .foregroundStyle(.yellow)
+                                }
+                        }
+                    }
                     
                     HomeViewActionButton(systemName: "square.and.arrow.up", color: .yellow.opacity(0.8)) {
                         
