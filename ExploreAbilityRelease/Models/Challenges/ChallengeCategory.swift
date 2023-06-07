@@ -45,6 +45,15 @@ enum ChallengeCategory {
         }
     }
     
+    var challenges: [Challenge] {
+        switch self {
+        case .vision: Challenge.vision
+        case .mobility: Challenge.mobility
+        case .hearing: Challenge.hearing
+        case .cognitive: Challenge.cognitive
+        }
+    }
+    
     var labelPosition: CGPoint {
         switch self {
         case .vision: CGPoint(x: -65, y: -110)

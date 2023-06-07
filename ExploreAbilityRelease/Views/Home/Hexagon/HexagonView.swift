@@ -20,14 +20,14 @@ struct HexagonView: View {
         ZStack {
             HStack(spacing: 16) {
                 VStack(spacing: 21) {
-                    Circle()
-                        .frame(width: 50, height: 50)
-                    Circle()
-                        .frame(width: 50, height: 50)
+                    ChallengeButtonView(challenges: challengeCategory.challenges,
+                                        challengeIndex: 5)
+                    ChallengeButtonView(challenges: challengeCategory.challenges,
+                                        challengeIndex: 4)
                 }
                 VStack(spacing: 21) {
-                    Circle()
-                        .frame(width: 50, height: 50)
+                    ChallengeButtonView(challenges: challengeCategory.challenges,
+                                        challengeIndex: 0)
                     
                     if viewModel.zoomFocus == .init(from: challengeCategory) {
                         Button {
@@ -61,23 +61,27 @@ struct HexagonView: View {
                         }
                     }
                     
-                    Circle()
-                        .frame(width: 50, height: 50)
+                    ChallengeButtonView(challenges: challengeCategory.challenges,
+                                        challengeIndex: 3)
                 }
                 VStack(spacing: 21) {
-                    Circle()
-                        .frame(width: 50, height: 50)
-                    Circle()
-                        .frame(width: 50, height: 50)
+                    ChallengeButtonView(challenges: challengeCategory.challenges,
+                                        challengeIndex: 1)
+                    ChallengeButtonView(challenges: challengeCategory.challenges,
+                                        challengeIndex: 2)
                 }
             }
             .foregroundStyle(.white.opacity(0.1))
             .padding(32)
             .overlay {
-                Image("hex")
-                    .resizable()
-                    .scaledToFit()
-                    .opacity(0.1)
+                LinearGradient(colors: [challengeCategory.color, challengeCategory.color.opacity(0.5)],
+                               startPoint: .topLeading, endPoint: .bottomTrailing)
+                .mask {
+                    Image("hex")
+                        .resizable()
+                        .scaledToFit()
+                }
+                .allowsHitTesting(false)
             }
             .padding(-32)
             .onChange(of: viewModel.zoomFocus) { _ in
