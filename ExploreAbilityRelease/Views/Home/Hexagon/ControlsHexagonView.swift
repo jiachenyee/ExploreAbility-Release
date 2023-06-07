@@ -88,6 +88,7 @@ struct ControlsHexagonView: View {
                         }
                 }
             }
+            .imageScale(.large)
             
             .padding(32)
             .overlay {
