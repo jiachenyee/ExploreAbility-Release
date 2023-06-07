@@ -16,22 +16,25 @@ struct ControlsHexagonView: View {
         ZStack {
             HStack(spacing: 16) {
                 VStack(spacing: 21) {
+                    HomeViewActionButton("gamecenter", color: .yellow.opacity(0.5)) {
+                        
+                    }
+                    
+                    HomeViewActionButton(systemName: "switch.2", color: .yellow.opacity(0.7)) {
+                        withAnimation(.bouncy) {
+                            viewModel.gameState = .settings
+                        }
+                    }
+                    .matchedGeometryEffect(id: "settings", in: viewModel.sharedNamespace)
+                }
+                
+                VStack(spacing: 21) {
                     HomeViewActionButton(systemName: "mug.fill", color: .yellow) {
                         withAnimation(.bouncy) {
                             viewModel.gameState = .store
                         }
                     }
                     .matchedGeometryEffect(id: "cafe.icon", in: viewModel.sharedNamespace)
-                    
-                    HomeViewActionButton(systemName: "heart.fill", color: .yellow.opacity(0.9)) {
-                        
-                    }
-                }
-                
-                VStack(spacing: 21) {
-                    HomeViewActionButton("gamecenter", color: .yellow.opacity(0.5)) {
-                        
-                    }
                     
                     if viewModel.zoomFocus == .home {
                         Button {
@@ -65,16 +68,16 @@ struct ControlsHexagonView: View {
                         }
                     }
                     
-                    HomeViewActionButton(systemName: "square.and.arrow.up", color: .yellow.opacity(0.8)) {
+                    HomeViewActionButton(systemName: "hand.raised.app.fill", color: .yellow.opacity(0.6)) {
                         
                     }
                 }
                 VStack(spacing: 21) {
-                    HomeViewActionButton(systemName: "hand.raised.app.fill", color: .yellow.opacity(0.6)) {
+                    HomeViewActionButton(systemName: "heart.fill", color: .yellow.opacity(0.9)) {
                         
                     }
                     
-                    HomeViewActionButton(systemName: "gear", color: .yellow.opacity(0.7)) {
+                    HomeViewActionButton(systemName: "square.and.arrow.up", color: .yellow.opacity(0.8)) {
                         
                     }
                 }

@@ -20,8 +20,12 @@ struct ContentView: View {
             switch viewModel.gameState {
             case .store:
                 CafeView()
+            case .settings:
+                SettingsView()
             case .home:
                 HomeView()
+            case .challenge(_):
+                EmptyView()
             }
         }
         .environmentObject(viewModel)

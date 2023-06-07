@@ -10,6 +10,8 @@ import SwiftUI
 
 struct ChallengeButtonView: View {
     
+    @EnvironmentObject var viewModel: ViewModel
+    
     var challenges: [Challenge]
     var challengeIndex: Int
     
@@ -19,7 +21,9 @@ struct ChallengeButtonView: View {
             
             HomeViewActionButton(image: challenge.image,
                                  color: challenge.color) {
-                
+                withAnimation {
+                    viewModel.gameState = .challenge(challenge)
+                }
             }
         } else {
             Circle()

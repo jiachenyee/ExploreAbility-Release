@@ -9,5 +9,7 @@ import Foundation
 
 enum GameState {
     case store
+    case settings
     case home
+    case challenge(Challenge)
 }
