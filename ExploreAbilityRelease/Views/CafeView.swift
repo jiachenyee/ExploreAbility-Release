@@ -15,6 +15,11 @@ struct CafeView: View {
     
     @State private var showByePrompt = false
     
+    init() {
+        UIPageControl.appearance().pageIndicatorTintColor = .systemYellow.withAlphaComponent(0.4)
+        UIPageControl.appearance().currentPageIndicatorTintColor = .systemYellow
+    }
+    
     var body: some View {
         GeometryReader { geometry in
             if showPrompt {
@@ -56,156 +61,30 @@ struct CafeView: View {
                     Text("Cafe")
                         .font(.title)
                         .fontWeight(.bold)
-                    Text("Treat the developers and get some free hints in return!")
+                    Text("Show your appreciation to the developers by giving them a treat! You'll receive some hints in return!")
                     
                     TabView {
-                        VStack {
-                            Spacer()
-                            Image(systemName: "carrot.fill")
-                                .font(.system(size: 96))
-                                .foregroundStyle(.orange)
-                                .padding(.trailing, 4)
-                            
-                            Spacer()
-                            
-                            VStack(alignment: .leading) {
-                                Text("1 Hint")
-                                    .padding(4)
-                                    .padding(.horizontal, 8)
-                                    .background(.yellow.opacity(0.5))
-                                    .font(.caption)
-                                    .clipShape(RoundedRectangle(cornerRadius: 8))
-                                
-                                Text("Vegetables")
-                                    .font(.title2)
-                                    .fontWeight(.bold)
-                                Text("What? No. I don't want your carrots. Keep those vegetables to yourself.\nIf you buy me a carrot, I'll give you one hint to get you to go away.")
-                                    .font(.body)
-                                
-                                Divider()
-                                    .padding(.vertical)
-                                HStack {
-                                    Text("$0.99")
-                                        .font(.title2)
-                                        .fontWeight(.bold)
-                                    Spacer()
-                                    
-                                    Button("Buy") {
-                                        
-                                    }
-                                    .tint(.yellow)
-                                    .buttonStyle(.borderedProminent)
-                                    
-                                }
-                            }
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                        }
-                        .padding()
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .background(.yellow.opacity(0.1))
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
-                        .padding(.bottom, 48)
+                        CafeProductView(hintCount: 1,
+                                        systemName: "carrot.fill",
+                                        tintColor: .orange,
+                                        name: "Vegetables",
+                                        description: "What? No. I don't want your carrots. Keep those vegetables to yourself.\nIf you buy me a carrot, I'll give you one hint to get you to go away.", price: "$0.99")
                         
-                        VStack {
-                            Spacer()
-                            Image(systemName: "mug.fill")
-                                .font(.system(size: 96))
-                                .foregroundStyle(.brown)
-                                .padding(.trailing, 4)
-                            
-                            Spacer()
-                            
-                            VStack(alignment: .leading) {
-                                Text("3 Hints")
-                                    .padding(4)
-                                    .padding(.horizontal, 8)
-                                    .background(.yellow.opacity(0.5))
-                                    .font(.caption)
-                                    .clipShape(RoundedRectangle(cornerRadius: 8))
-                                
-                                Text("Hot Chocolate")
-                                    .font(.title2)
-                                    .fontWeight(.bold)
-                                Text("Please give me a nice warm mug of hot chocolate. It's been awfully cold in the office lately.\nIn exchange, I'll give you 3 hints.")
-                                    .font(.body)
-                                
-                                Divider()
-                                    .padding(.vertical)
-                                HStack {
-                                    Text("$1.99")
-                                        .font(.title2)
-                                        .fontWeight(.bold)
-                                    Spacer()
-                                    
-                                    Button("Buy") {
-                                        
-                                    }
-                                    .tint(.yellow)
-                                    .buttonStyle(.borderedProminent)
-                                    
-                                }
-                            }
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                        }
-                        .padding()
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .background(.yellow.opacity(0.1))
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
-                        .padding(.bottom, 48)
+                        CafeProductView(hintCount: 3,
+                                        systemName: "mug.fill",
+                                        tintColor: .brown,
+                                        name: "Hot Chocolate",
+                                        description: "Please give me a nice warm mug of hot chocolate. It's been awfully cold in the office lately.\nIn exchange, I'll give you 3 hints.",
+                                        price: "$1.99")
                         
-                        VStack {
-                            Spacer()
-                            Image(systemName: "takeoutbag.and.cup.and.straw.fill")
-                                .font(.system(size: 96))
-                                .foregroundStyle(.red)
-                                .padding(.trailing, 4)
-                            
-                            Spacer()
-                            
-                            VStack(alignment: .leading) {
-                                Text("14 Hints")
-                                    .padding(4)
-                                    .padding(.horizontal, 8)
-                                    .background(.yellow.opacity(0.5))
-                                    .font(.caption)
-                                    .clipShape(RoundedRectangle(cornerRadius: 8))
-                                
-                                Text("Lunch")
-                                    .font(.title2)
-                                    .fontWeight(.bold)
-                                Text("If you're giving me free lunch, of course you can have every hint in this app. I'll do anything for free lunch.")
-                                    .font(.body)
-                                
-                                Divider()
-                                    .padding(.vertical)
-                                HStack {
-                                    Text("$7.99")
-                                        .font(.title2)
-                                        .fontWeight(.bold)
-                                    Spacer()
-                                    
-                                    Button("Buy") {
-                                        
-                                    }
-                                    .tint(.yellow)
-                                    .buttonStyle(.borderedProminent)
-                                    
-                                }
-                            }
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                        }
-                        .padding()
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .background(.yellow.opacity(0.1))
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
-                        .padding(.bottom, 48)
+                        CafeProductView(hintCount: 14,
+                                        systemName: "takeoutbag.and.cup.and.straw.fill",
+                                        tintColor: .red,
+                                        name: "Lunch",
+                                        description: "If you're giving me free lunch, of course you can have every hint in this app. I'll do anything for free lunch.", price: "$7.99")
                     }
                     .tabViewStyle(.page(indexDisplayMode: .always))
-                    .onAppear {
-                        UIPageControl.appearance().pageIndicatorTintColor = .systemYellow.withAlphaComponent(0.4)
-                        UIPageControl.appearance().currentPageIndicatorTintColor = .systemYellow
-                    }
-                    
+                    .padding(.horizontal, -16)
                 }
                 .padding(.top, 40)
                 .padding()
@@ -266,5 +145,68 @@ struct CafeView_Previews: PreviewProvider {
         CafeView()
             .preferredColorScheme(.dark)
             .fontDesign(.rounded)
+    }
+}
+
+struct CafeProductView: View {
+    
+    var hintCount: Int
+    var systemName: String
+    
+    var tintColor: Color
+    
+    var name: String
+    var description: String
+    
+    var price: String
+    
+    var body: some View {
+        VStack {
+            Spacer()
+            Image(systemName: systemName)
+                .font(.system(size: 96))
+                .foregroundStyle(tintColor)
+                .padding(.trailing, 4)
+            
+            Spacer()
+            
+            VStack(alignment: .leading) {
+                Text("^[\(hintCount) Hint](inflect: true)")
+                    .padding(4)
+                    .padding(.horizontal, 8)
+                    .background(.yellow.opacity(0.5))
+                    .font(.caption)
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                
+                Text(name)
+                    .font(.title2)
+                    .fontWeight(.bold)
+                Text(description)
+                    .font(.body)
+                
+                Divider()
+                    .padding(.vertical)
+                HStack {
+                    Text(price)
+                        .font(.title2)
+                        .fontWeight(.bold)
+                    Spacer()
+                    
+                    Button("Buy") {
+                        
+                    }
+                    .tint(.yellow)
+                    .buttonStyle(.borderedProminent)
+                    
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+        }
+        .padding()
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(.yellow.opacity(0.1))
+        .clipShape(RoundedRectangle(cornerRadius: 8))
+        .padding(.bottom, 48)
+        .padding(.horizontal)
     }
 }

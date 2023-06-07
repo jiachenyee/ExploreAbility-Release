@@ -16,42 +16,22 @@ struct ControlsHexagonView: View {
         ZStack {
             HStack(spacing: 16) {
                 VStack(spacing: 21) {
-                    Button {
+                    HomeViewActionButton(systemName: "mug.fill", color: .yellow) {
                         withAnimation(.bouncy) {
                             viewModel.gameState = .store
                         }
-                    } label: {
-                        Circle()
-                            .frame(width: 50, height: 50)
-                            .foregroundStyle(.yellow)
-                            .overlay {
-                                Image(systemName: "mug.fill")
-                                    .foregroundStyle(.black)
-                            }
                     }
                     .matchedGeometryEffect(id: "cafe.icon", in: viewModel.sharedNamespace)
                     
-                    Circle()
-                        .frame(width: 50, height: 50)
-                        .foregroundStyle(.yellow.opacity(0.9))
-                        .overlay {
-                            Image(systemName: "heart.fill")
-                                .foregroundStyle(.black)
-                        }
-                    
+                    HomeViewActionButton(systemName: "heart.fill", color: .yellow.opacity(0.9)) {
+                        
+                    }
                 }
                 
                 VStack(spacing: 21) {
-                    Circle()
-                        .frame(width: 50, height: 50)
-                        .foregroundStyle(.yellow.opacity(0.5))
-                        .overlay {
-                            Image("gamecenter")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 20)
-                                .foregroundStyle(.black)
-                        }
+                    HomeViewActionButton("gamecenter", color: .yellow.opacity(0.5)) {
+                        
+                    }
                     
                     Circle()
                         .frame(width: 50, height: 50)
@@ -62,30 +42,18 @@ struct ControlsHexagonView: View {
                                 .foregroundStyle(.yellow)
                         }
                     
-                    Circle()
-                        .frame(width: 50, height: 50)
-                        .foregroundStyle(.yellow.opacity(0.8))
-                        .overlay {
-                            Image(systemName: "square.and.arrow.up")
-                                .foregroundStyle(.black)
-                        }
-                    
+                    HomeViewActionButton(systemName: "square.and.arrow.up", color: .yellow.opacity(0.8)) {
+                        
+                    }
                 }
                 VStack(spacing: 21) {
-                    Circle()
-                        .frame(width: 50, height: 50)
-                        .foregroundStyle(.yellow.opacity(0.6))
-                        .overlay {
-                            Image(systemName: "hand.raised.app.fill")
-                                .foregroundStyle(.black)
-                        }
-                    Circle()
-                        .frame(width: 50, height: 50)
-                        .foregroundStyle(.yellow.opacity(0.7))
-                        .overlay {
-                            Image(systemName: "gear")
-                                .foregroundStyle(.black)
-                        }
+                    HomeViewActionButton(systemName: "hand.raised.app.fill", color: .yellow.opacity(0.6)) {
+                        
+                    }
+                    
+                    HomeViewActionButton(systemName: "gear", color: .yellow.opacity(0.7)) {
+                        
+                    }
                 }
             }
             .imageScale(.large)
