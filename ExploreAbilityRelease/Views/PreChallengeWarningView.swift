@@ -28,17 +28,16 @@ struct PreChallengeWarningView: View {
             
             Divider()
             
-            Text("Accomodations")
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .font(.headline)
-                .padding(.top)
-            
-            ForEach(warning.modifications, id: \.self) { modification in
-                Toggle(modification, isOn: .constant(false))
-                    .toggleStyle(.switch)
-                
-                Divider()
+            Form {
+                Section("Accomodations") {
+                    ForEach(warning.modifications, id: \.self) { modification in
+                        Toggle(modification, isOn: .constant(false))
+                            .toggleStyle(.switch)
+                    }
+                }
             }
+            .padding(.horizontal, -21)
+            .padding(.top)
             
             Spacer()
             
@@ -46,7 +45,7 @@ struct PreChallengeWarningView: View {
                 
             } label: {
                 Text("Start Challenge")
-                    .padding()
+                    .padding(8)
                     .frame(maxWidth: .infinity)
             }
             .buttonStyle(.borderedProminent)
@@ -55,7 +54,7 @@ struct PreChallengeWarningView: View {
                 
             } label: {
                 Text("Exit")
-                    .padding()
+                    .padding(8)
                     .frame(maxWidth: .infinity)
             }
         }

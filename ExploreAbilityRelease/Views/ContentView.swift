@@ -24,8 +24,8 @@ struct ContentView: View {
                 SettingsView()
             case .home:
                 HomeView()
-            case .challenge(_):
-                EmptyView()
+            case .challenge(let challenge):
+                ChallengeView(challenge: challenge)
             }
         }
         .environmentObject(viewModel)

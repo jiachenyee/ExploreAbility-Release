@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Challenge {
+struct Challenge: Equatable {
     var accessibilityFeature: String
     
     var hint: String
@@ -21,4 +21,8 @@ struct Challenge {
     var warning: PreChallengeWarning?
     
     var requirements: ChallengeRequirement?
+    
+    static func == (lhs: Challenge, rhs: Challenge) -> Bool {
+        lhs.accessibilityFeature == rhs.accessibilityFeature
+    }
 }

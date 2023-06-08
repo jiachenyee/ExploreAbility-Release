@@ -117,5 +117,6 @@ extension Challenge {
                                              image: Image(systemName: "exclamationmark.warninglight"),
                                              color: .pink.opacity(0.8),
                                              category: .cognitive,
+                                             warning: .flashingLight,
                                              requirements: .iOS17)
 }
