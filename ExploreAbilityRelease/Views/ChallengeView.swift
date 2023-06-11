@@ -11,45 +11,33 @@ import SwiftUI
 struct ChallengeView: View {
     
     var challenge: Challenge
-    
+    @EnvironmentObject var viewModel: ViewModel
+
     @StateObject var challengeViewModel: ChallengeViewModel = ChallengeViewModel()
     
     var body: some View {
-        switch challengeViewModel.state {
-        case .unknown:
-            ProgressView()
-                .onAppear {
-                    challengeViewModel.challenge = challenge
-                }
-        case .warning(let warning):
-            PreChallengeWarningView(warning: warning)
-        case .playingOff:
-            switch challengeViewModel.challenge! {
-            case .voiceOver: EmptyView()
-            case .dynamicType: EmptyView()
-            case .reduceMotion: EmptyView()
-            case .increaseContrast: EmptyView()
-            case .differentiateWithoutColour: EmptyView()
-            case .reduceTransparency: EmptyView()
-            case .captions: EmptyView()
-            case .monoAudio: EmptyView()
-            case .assistiveTouch: EmptyView()
-            case .shakeToUndo: EmptyView()
-            case .vibrationEnabled: EmptyView()
-            case .animatedImages: EmptyView()
-            case .guidedAccess: EmptyView()
-            case .dimFlashingLights: EmptyView()
-            default:
-                Text("Something went very wrong.")
+        Group {
+            switch challengeViewModel.state {
+            case .unknown:
+                ProgressView()
+                    .matchedGeometryEffect(id: challenge.accessibilityFeature, in: viewModel.sharedNamespace)
+                    .onAppear {
+                        withAnimation {
+                            challengeViewModel.challenge = challenge
+                        }
+                    }
+            case .warning(let warning):
+                PreChallengeWarningView(warning: warning)
+            case .playingOff, .playingOn:
+                ChallengePlayingView()
+            case .success:
+                EmptyView()
+            case .menu:
+                EmptyView()
+            case .conclusion:
+                EmptyView()
             }
-        case .playingOn:
-            EmptyView()
-        case .success:
-            EmptyView()
-        case .menu:
-            EmptyView()
-        case .conclusion:
-            EmptyView()
         }
+        .environmentObject(challengeViewModel)
     }
 }

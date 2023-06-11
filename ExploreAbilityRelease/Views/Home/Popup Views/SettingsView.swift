@@ -7,15 +7,22 @@
 
 import Foundation
 import SwiftUI
+import UtilMacros
 
 struct SettingsView: View {
+    
+    @AppStorage("eventMode") var eventMode = false
+    
     var body: some View {
         HomePopupView(id: "settings",
                       systemImage: "switch.2",
                       title: "Settings") {
-            Text("Hello")
-            Text("Hello")
-            Text("Hello")
+            
+            ScrollView {
+                Toggle(isOn: $eventMode) {
+                    Text("Event Mode")
+                }
+            }
         }
     }
 }
