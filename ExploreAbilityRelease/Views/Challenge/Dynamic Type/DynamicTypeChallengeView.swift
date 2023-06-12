@@ -21,6 +21,8 @@ struct DynamicTypeChallengeView: View {
     
     @State private var scale = 1.0
     
+    @State private var alignment = Alignment.trailing
+    
     var body: some View {
         switch challengeViewModel.state {
         case .playingOff:
@@ -77,9 +79,11 @@ struct DynamicTypeChallengeView: View {
                 .multilineTextAlignment(.center)
                 .font(.system(size: 24))
                 .foregroundStyle(.white)
-                ZStack(alignment: .trailing) {
+                ZStack(alignment: alignment) {
                     Capsule(style: .continuous)
                         .stroke(challengeViewModel.challenge.color.opacity(0.5), style: .init(lineWidth: 8))
+                        .matchedGeometryEffect(id: challengeViewModel.challenge.accessibilityFeature + ".frame", in: viewModel.sharedNamespace)
+                    
                     Circle()
                         .fill(challengeViewModel.challenge.color)
                         .frame(width: 48, height: 48)
@@ -104,8 +108,19 @@ struct DynamicTypeChallengeView: View {
             }
             .onChange(of: dynamicTypeSize) { newValue in
                 if initialSize == newValue {
-                    withAnimation {
-                        challengeViewModel.state = .success
+                    withAnimation(.bouncy) {
+                        alignment = .leading
+                    }
+                    Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { _ in
+                        withAnimation(.bouncy) {
+                            width = 48
+                        }
+                    }
+                    
+                    Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { _ in
+                        withAnimation(.spring(dampingFraction: 0.5)) {
+                            challengeViewModel.state = .conclusion
+                        }
                     }
                 }
             }

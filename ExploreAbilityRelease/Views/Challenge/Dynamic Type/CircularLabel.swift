@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class CircularLabel: UILabel {
     var angle: CGFloat = 1.6
