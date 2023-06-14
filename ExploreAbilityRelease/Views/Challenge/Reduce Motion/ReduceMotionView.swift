@@ -12,6 +12,13 @@ struct ReduceMotionView: View {
     @EnvironmentObject var viewModel: ViewModel
     @EnvironmentObject var challengeViewModel: ChallengeViewModel
     
+    @Environment(\.accessibilityReduceMotion) var reduceMotionEnabled
+    
+    @State private var initialReduceMotionEnabled = false
+    
+    @State private var width = 48.0
+    @State private var alignment = Alignment.trailing
+    
     var body: some View {
         switch challengeViewModel.state {
         case .playingOff:
@@ -41,64 +48,81 @@ struct ReduceMotionView: View {
                     RotatingCircleView(id: "10", distance: 56 * 11, rpm: 0.4)
                 }
             }
+            .onAppear {
+                initialReduceMotionEnabled = reduceMotionEnabled
+            }
+            .onChange(of: reduceMotionEnabled) { newValue in
+                guard initialReduceMotionEnabled != newValue else { return }
+                
+                withAnimation {
+                    challengeViewModel.state = .playingOn
+                }
+            }
         case .playingOn:
-//            VStack {
-//                Spacer()
-//                HStack {
-//                    Text("Set Text Size back to")
-//                    Text("\(initialSize.index)")
-//                        .fontWeight(.bold)
-//                        .foregroundStyle(challengeViewModel.challenge.color)
-//                }
-//                .multilineTextAlignment(.center)
-//                .font(.system(size: 24))
-//                .foregroundStyle(.white)
-//                ZStack(alignment: alignment) {
-//                    Capsule(style: .continuous)
-//                        .stroke(challengeViewModel.challenge.color.opacity(0.5), style: .init(lineWidth: 8))
-//                        .matchedGeometryEffect(id: challengeViewModel.challenge.accessibilityFeature + ".frame", in: viewModel.sharedNamespace)
-//                    
-//                    Circle()
-//                        .fill(challengeViewModel.challenge.color)
-//                        .frame(width: 48, height: 48)
-//                        .matchedGeometryEffect(id: challengeViewModel.challenge.accessibilityFeature, in: viewModel.sharedNamespace)
-//                        .padding(4)
-//                }
-//                .frame(width: width, height: 48 + 8)
-//                .padding(.vertical)
-//                Spacer()
-//                Text("Go to **Settings \(Image(systemName: "chevron.forward")) Accessibility \(Image(systemName: "chevron.forward")) Display & Text Size \(Image(systemName: "chevron.forward")) Larger Text** to reset text size.")
-//                    .multilineTextAlignment(.center)
-//            }
-//            .font(.system(size: 16))
-//            .foregroundStyle(.white)
-//            .padding()
-//            .onAppear {
-//                Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { _ in
-//                    withAnimation(.easeInOut(duration: 1)) {
-//                        width = 96
-//                    }
-//                }
-//            }
-//            .onChange(of: dynamicTypeSize) { newValue in
-//                if initialSize == newValue {
-//                    withAnimation(.bouncy) {
-//                        alignment = .leading
-//                    }
-//                    Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { _ in
-//                        withAnimation(.bouncy) {
-//                            width = 48
-//                        }
-//                    }
-//                    
-//                    Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { _ in
-//                        withAnimation(.spring(dampingFraction: 0.5)) {
-//                            challengeViewModel.state = .conclusion
-//                        }
-//                    }
-//                }
-//            }
-            EmptyView()
+            VStack {
+                Spacer()
+                HStack(spacing: 0) {
+                    Text("Turn Reduce Motion back ")
+                    Text("\(initialReduceMotionEnabled ? "On" : "Off")")
+                        .fontWeight(.bold)
+                        .foregroundStyle(challengeViewModel.challenge.color)
+                }
+                .multilineTextAlignment(.center)
+                .font(.system(size: 24))
+                .foregroundStyle(.white)
+                
+                ZStack(alignment: alignment) {
+                    Capsule(style: .continuous)
+                        .stroke(challengeViewModel.challenge.color.opacity(0.5), style: .init(lineWidth: 8))
+                        .matchedGeometryEffect(id: challengeViewModel.challenge.accessibilityFeature + ".frame", in: viewModel.sharedNamespace)
+                    
+                    ZStack {
+                        ForEach(1..<11) {
+                            Circle()
+                                .fill(challengeViewModel.challenge.color)
+                                .matchedGeometryEffect(id: String($0), in: viewModel.sharedNamespace)
+                        }
+                        Circle()
+                            .fill(challengeViewModel.challenge.color)
+                    }
+                    .frame(width: 48, height: 48)
+                    .matchedGeometryEffect(id: challengeViewModel.challenge.accessibilityFeature, in: viewModel.sharedNamespace)
+                    .padding(4)
+                }
+                .frame(width: width, height: 48 + 8)
+                .padding(.vertical)
+                Spacer()
+                Text("Go to **Settings \(Image(systemName: "chevron.forward")) Accessibility \(Image(systemName: "chevron.forward")) Motion \(Image(systemName: "chevron.forward"))** and toggle Reduce Motion.")
+                    .multilineTextAlignment(.center)
+            }
+            .font(.system(size: 16))
+            .foregroundStyle(.white)
+            .padding()
+            .onAppear {
+                Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { _ in
+                    withAnimation(.easeInOut(duration: 1)) {
+                        width = 96
+                    }
+                }
+            }
+            .onChange(of: reduceMotionEnabled) { newValue in
+                if initialReduceMotionEnabled == newValue {
+                    withAnimation(.bouncy) {
+                        alignment = .leading
+                    }
+                    Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { _ in
+                        withAnimation(.bouncy) {
+                            width = 48
+                        }
+                    }
+                    
+                    Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { _ in
+                        withAnimation(.spring(dampingFraction: 0.5)) {
+                            challengeViewModel.state = .conclusion
+                        }
+                    }
+                }
+            }
         default: EmptyView()
         }
     }
