@@ -38,6 +38,7 @@
 		329144212A36273400F5263D /* DynamicTypeChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329144202A36273400F5263D /* DynamicTypeChallengeView.swift */; };
 		329144232A364A9400F5263D /* ArcText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329144222A364A9400F5263D /* ArcText.swift */; };
 		329144252A364AF700F5263D /* CircularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329144242A364AF700F5263D /* CircularLabel.swift */; };
+		32C123FC2A3956FA00501A1E /* PlayingOffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C123FB2A3956FA00501A1E /* PlayingOffView.swift */; };
 		32C1C9392A2B8E8C00C1854F /* ExploreAbilityReleaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1C9382A2B8E8C00C1854F /* ExploreAbilityReleaseApp.swift */; };
 		32C1C93B2A2B8E8C00C1854F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1C93A2A2B8E8C00C1854F /* ContentView.swift */; };
 		32C1C93D2A2B8E8D00C1854F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32C1C93C2A2B8E8D00C1854F /* Assets.xcassets */; };
@@ -75,6 +76,7 @@
 		329144202A36273400F5263D /* DynamicTypeChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeChallengeView.swift; sourceTree = "<group>"; };
 		329144222A364A9400F5263D /* ArcText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcText.swift; sourceTree = "<group>"; };
 		329144242A364AF700F5263D /* CircularLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularLabel.swift; sourceTree = "<group>"; };
+		32C123FB2A3956FA00501A1E /* PlayingOffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingOffView.swift; sourceTree = "<group>"; };
 		32C1C9352A2B8E8C00C1854F /* ExploreAbilityRelease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExploreAbilityRelease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C1C9382A2B8E8C00C1854F /* ExploreAbilityReleaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreAbilityReleaseApp.swift; sourceTree = "<group>"; };
 		32C1C93A2A2B8E8C00C1854F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				327E69812A37ECE3004E0ED3 /* ChallengeConclusionView.swift */,
 				323DF2C52A36C27700CF20A5 /* ChallengeMenuView.swift */,
 				3291441E2A36265800F5263D /* ChallengePlayingView.swift */,
+				32C123FB2A3956FA00501A1E /* PlayingOffView.swift */,
 				32C123E02A3942C100501A1E /* Reduce Motion */,
 				329144262A364B0000F5263D /* Dynamic Type */,
 			);
@@ -337,6 +340,7 @@
 				32303CCC2A30A8200032BB50 /* HomeView.swift in Sources */,
 				32303CC42A30A68C0032BB50 /* ControlsHexagonView.swift in Sources */,
 				32303CE92A317F120032BB50 /* ChallengeState.swift in Sources */,
+				32C123FC2A3956FA00501A1E /* PlayingOffView.swift in Sources */,
 				32303CC82A30A7740032BB50 /* ViewModel.swift in Sources */,
 				329144212A36273400F5263D /* DynamicTypeChallengeView.swift in Sources */,
 				32303CEB2A3181050032BB50 /* ChallengeViewModel.swift in Sources */,

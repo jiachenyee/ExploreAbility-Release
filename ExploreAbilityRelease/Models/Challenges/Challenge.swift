@@ -22,6 +22,12 @@ struct Challenge: Equatable {
     
     var requirements: ChallengeRequirement?
     
+    var disableInstructions: String?
+    
+    var userFacingDisableInstructions: String? {
+        disableInstructions?.replacingOccurrences(of: ">", with: "\(Image(systemName: "chevron.right"))")
+    }
+    
     static func == (lhs: Challenge, rhs: Challenge) -> Bool {
         lhs.accessibilityFeature == rhs.accessibilityFeature
     }

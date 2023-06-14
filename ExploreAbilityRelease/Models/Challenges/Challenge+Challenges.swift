@@ -23,21 +23,24 @@ extension Challenge {
                                      postChallengeMessage: "<#T##String#>",
                                      image: Image(systemName: "waveform.and.person.filled"),
                                      color: .teal,
-                                     category: .vision)
+                                     category: .vision,
+                                     disableInstructions: "<#AttributedString#>")
     
     static let dynamicType = Challenge(accessibilityFeature: "Dynamic Type",
                                        hint: "<#T##String#>",
                                        postChallengeMessage: "<#T##String#>",
                                        image: Image(systemName: "textformat.size"),
                                        color: .teal.opacity(0.9),
-                                       category: .vision)
+                                       category: .vision,
+                                       disableInstructions: "<#AttributedString#>")
     
     static let reduceMotion = Challenge(accessibilityFeature: "Reduce Motion",
                                         hint: "<#T##String#>",
                                         postChallengeMessage: "<#T##String#>",
                                         image: Image(systemName: "cursorarrow.motionlines"),
                                         color: .teal.opacity(0.8),
-                                        category: .vision)
+                                        category: .vision,
+                                        disableInstructions: "Settings > Accessibility > Motion > Reduce Motion")
     
     static let increaseContrast = Challenge(accessibilityFeature: "Increase Contrast",
                                             hint: "<#T##String#>",
