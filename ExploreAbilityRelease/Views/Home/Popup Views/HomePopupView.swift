@@ -98,9 +98,13 @@ struct HomePopupView<Content: View>: View {
                             }
                         }
                         
+                        if dragPosition.height / geometry.size.height > 0.3 && !showByePrompt {
+                            UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                        }
                         withAnimation {
                             showByePrompt = dragPosition.height / geometry.size.height > 0.3
                         }
+                        
                     }
                     .onEnded { value in
                         if value.translation.height / geometry.size.height > 0.3 {

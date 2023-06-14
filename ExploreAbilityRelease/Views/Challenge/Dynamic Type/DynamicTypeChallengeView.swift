@@ -32,12 +32,18 @@ struct DynamicTypeChallengeView: View {
                     .frame(width: 64 + dynamicTypeSize.offset, height: 64 + dynamicTypeSize.offset)
                     .scaleEffect(scale)
                 
-                Circle()
-                    .stroke(challengeViewModel.challenge.color, lineWidth: borderWidth)
-                    .matchedGeometryEffect(id: challengeViewModel.challenge.accessibilityFeature, in: viewModel.sharedNamespace)
-                    .padding(borderWidth / 2)
-                    .frame(width: 48, height: 48)
-                    .animation(.bouncy, value: dynamicTypeSize)
+                Button {
+                    withAnimation {
+                        challengeViewModel.state = .menu
+                    }
+                } label: {
+                    Circle()
+                        .stroke(challengeViewModel.challenge.color, lineWidth: borderWidth)
+                        .matchedGeometryEffect(id: challengeViewModel.challenge.accessibilityFeature, in: viewModel.sharedNamespace)
+                        .padding(borderWidth / 2)
+                }
+                .frame(width: 48, height: 48)
+                .animation(.bouncy, value: dynamicTypeSize)
 
             }
             .onAppear {
@@ -53,16 +59,20 @@ struct DynamicTypeChallengeView: View {
                         withAnimation(.easeIn(duration: 0.2)) {
                             scale = 1.1
                         }
+                        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                        
                         Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { _ in
                             withAnimation(.easeIn(duration: 0.8)) {
                                 scale = 0.1
                             }
+                            UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
                         }
                         
                         Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { _ in
                             withAnimation(.spring(dampingFraction: 0.5)) {
                                 challengeViewModel.state = .playingOn
                             }
+                            UIImpactFeedbackGenerator(style: .medium).impactOccurred()
                         }
                     }
                 }
@@ -70,15 +80,16 @@ struct DynamicTypeChallengeView: View {
         case .playingOn:
             VStack {
                 Spacer()
-                HStack {
-                    Text("Set Text Size back to")
-                    Text("\(initialSize.index)")
+                HStack(spacing: 0) {
+                    Text("Set Text Size back to ")
+                    Text("\(initialSize.index + 1)")
                         .fontWeight(.bold)
                         .foregroundStyle(challengeViewModel.challenge.color)
                 }
                 .multilineTextAlignment(.center)
                 .font(.system(size: 24))
                 .foregroundStyle(.white)
+                
                 ZStack(alignment: alignment) {
                     Capsule(style: .continuous)
                         .stroke(challengeViewModel.challenge.color.opacity(0.5), style: .init(lineWidth: 8))
@@ -104,6 +115,12 @@ struct DynamicTypeChallengeView: View {
                     withAnimation(.easeInOut(duration: 1)) {
                         width = 96
                     }
+                    
+                    UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                    
+                    Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { _ in
+                        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                    }
                 }
             }
             .onChange(of: dynamicTypeSize) { newValue in
@@ -111,15 +128,27 @@ struct DynamicTypeChallengeView: View {
                     withAnimation(.bouncy) {
                         alignment = .leading
                     }
+                    
                     Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { _ in
                         withAnimation(.bouncy) {
                             width = 48
                         }
+                        
+                        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
                     }
                     
                     Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { _ in
                         withAnimation(.spring(dampingFraction: 0.5)) {
                             challengeViewModel.state = .conclusion
+                        }
+                        
+                        UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
+                        
+                        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { _ in
+                            UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
+                            Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { _ in
+                                UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                            }
                         }
                     }
                 }

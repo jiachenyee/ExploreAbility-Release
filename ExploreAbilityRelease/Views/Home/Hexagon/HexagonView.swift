@@ -49,6 +49,10 @@ struct HexagonView: View {
                             withAnimation(.bouncy) {
                                 viewModel.zoomFocus = .init(from: challengeCategory)
                             }
+                            
+                            Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { _ in
+                                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                            }
                         } label: {
                             Circle()
                                 .frame(width: 50, height: 50)

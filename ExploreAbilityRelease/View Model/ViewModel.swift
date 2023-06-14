@@ -10,7 +10,13 @@ import SwiftUI
 
 class ViewModel: ObservableObject {
     @Published var gameState = GameState.home
-    @Published var zoomFocus: ZoomState?
+    @Published var zoomFocus: ZoomState? {
+        didSet {
+            if zoomFocus != nil {
+                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+            }
+        }
+    }
     
     var sharedNamespace: Namespace.ID!
     

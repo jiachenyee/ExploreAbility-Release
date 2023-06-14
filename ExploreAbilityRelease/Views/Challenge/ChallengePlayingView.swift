@@ -16,7 +16,7 @@ struct ChallengePlayingView: View {
         switch challengeViewModel.challenge! {
         case .voiceOver: EmptyView()
         case .dynamicType: DynamicTypeChallengeView()
-        case .reduceMotion: EmptyView()
+        case .reduceMotion: ReduceMotionView()
         case .increaseContrast: EmptyView()
         case .differentiateWithoutColour: EmptyView()
         case .reduceTransparency: EmptyView()

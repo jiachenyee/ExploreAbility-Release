@@ -15,13 +15,13 @@ struct ZoomableScrollView<Content: View>: UIViewRepresentable {
     
     @EnvironmentObject var viewModel: ViewModel
     
-    let width: CGFloat = 2000
+    let width: CGFloat = 1500
     
     func makeUIView(context: Context) -> UIScrollView {
         let scrollView = UIScrollView()
         scrollView.delegate = context.coordinator
-        scrollView.maximumZoomScale = 9
-        scrollView.minimumZoomScale = 0.5
+        scrollView.maximumZoomScale = 6
+        scrollView.minimumZoomScale = 1
         scrollView.bouncesZoom = true
         
         let hostView = UIHostingController(rootView: content)

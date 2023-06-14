@@ -17,13 +17,14 @@ struct ControlsHexagonView: View {
             HStack(spacing: 16) {
                 VStack(spacing: 21) {
                     HomeViewActionButton("gamecenter", color: .yellow.opacity(0.5)) {
-                        
+                        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
                     }
                     
                     HomeViewActionButton(systemName: "switch.2", color: .yellow.opacity(0.7)) {
                         withAnimation(.bouncy) {
                             viewModel.gameState = .settings
                         }
+                        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
                     }
                     .matchedGeometryEffect(id: "settings", in: viewModel.sharedNamespace)
                 }
@@ -33,6 +34,7 @@ struct ControlsHexagonView: View {
                         withAnimation(.bouncy) {
                             viewModel.gameState = .store
                         }
+                        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
                     }
                     .matchedGeometryEffect(id: "cafe.icon", in: viewModel.sharedNamespace)
                     
@@ -69,16 +71,16 @@ struct ControlsHexagonView: View {
                     }
                     
                     HomeViewActionButton(systemName: "hand.raised.app.fill", color: .yellow.opacity(0.6)) {
-                        
+                        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
                     }
                 }
                 VStack(spacing: 21) {
                     HomeViewActionButton(systemName: "heart.fill", color: .yellow.opacity(0.9)) {
-                        
+                        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
                     }
                     
                     HomeViewActionButton(systemName: "square.and.arrow.up", color: .yellow.opacity(0.8)) {
-                        
+                        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
                     }
                 }
             }
