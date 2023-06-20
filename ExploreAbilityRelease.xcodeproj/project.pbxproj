@@ -30,6 +30,7 @@
 		32303CE92A317F120032BB50 /* ChallengeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CE82A317F120032BB50 /* ChallengeState.swift */; };
 		32303CEB2A3181050032BB50 /* ChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CEA2A3181050032BB50 /* ChallengeViewModel.swift */; };
 		323DF2C62A36C27700CF20A5 /* ChallengeMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323DF2C52A36C27700CF20A5 /* ChallengeMenuView.swift */; };
+		3241316B2A3F772500FBA638 /* DynamicTypeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3241316A2A3F772500FBA638 /* DynamicTypeHelper.swift */; };
 		327E69822A37ECE3004E0ED3 /* ChallengeConclusionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E69812A37ECE3004E0ED3 /* ChallengeConclusionView.swift */; };
 		327E69842A384636004E0ED3 /* ReduceMotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E69832A384636004E0ED3 /* ReduceMotionView.swift */; };
 		327E69862A384982004E0ED3 /* RotatingCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E69852A384982004E0ED3 /* RotatingCircleView.swift */; };
@@ -38,6 +39,8 @@
 		329144212A36273400F5263D /* DynamicTypeChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329144202A36273400F5263D /* DynamicTypeChallengeView.swift */; };
 		329144232A364A9400F5263D /* ArcText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329144222A364A9400F5263D /* ArcText.swift */; };
 		329144252A364AF700F5263D /* CircularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329144242A364AF700F5263D /* CircularLabel.swift */; };
+		32A0A6592A42084900E97042 /* ChallengeConclusionResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0A6582A42084900E97042 /* ChallengeConclusionResourcesView.swift */; };
+		32A0A65D2A42090D00E97042 /* ChallengeConclusionDeveloperResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0A65C2A42090D00E97042 /* ChallengeConclusionDeveloperResourcesView.swift */; };
 		32C123FC2A3956FA00501A1E /* PlayingOffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C123FB2A3956FA00501A1E /* PlayingOffView.swift */; };
 		32C1C9392A2B8E8C00C1854F /* ExploreAbilityReleaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1C9382A2B8E8C00C1854F /* ExploreAbilityReleaseApp.swift */; };
 		32C1C93B2A2B8E8C00C1854F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1C93A2A2B8E8C00C1854F /* ContentView.swift */; };
@@ -69,6 +72,7 @@
 		32303CE82A317F120032BB50 /* ChallengeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeState.swift; sourceTree = "<group>"; };
 		32303CEA2A3181050032BB50 /* ChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewModel.swift; sourceTree = "<group>"; };
 		323DF2C52A36C27700CF20A5 /* ChallengeMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeMenuView.swift; sourceTree = "<group>"; };
+		3241316A2A3F772500FBA638 /* DynamicTypeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeHelper.swift; sourceTree = "<group>"; };
 		327E69812A37ECE3004E0ED3 /* ChallengeConclusionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeConclusionView.swift; sourceTree = "<group>"; };
 		327E69832A384636004E0ED3 /* ReduceMotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduceMotionView.swift; sourceTree = "<group>"; };
 		327E69852A384982004E0ED3 /* RotatingCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingCircleView.swift; sourceTree = "<group>"; };
@@ -76,6 +80,8 @@
 		329144202A36273400F5263D /* DynamicTypeChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeChallengeView.swift; sourceTree = "<group>"; };
 		329144222A364A9400F5263D /* ArcText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcText.swift; sourceTree = "<group>"; };
 		329144242A364AF700F5263D /* CircularLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularLabel.swift; sourceTree = "<group>"; };
+		32A0A6582A42084900E97042 /* ChallengeConclusionResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeConclusionResourcesView.swift; sourceTree = "<group>"; };
+		32A0A65C2A42090D00E97042 /* ChallengeConclusionDeveloperResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeConclusionDeveloperResourcesView.swift; sourceTree = "<group>"; };
 		32C123FB2A3956FA00501A1E /* PlayingOffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingOffView.swift; sourceTree = "<group>"; };
 		32C1C9352A2B8E8C00C1854F /* ExploreAbilityRelease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExploreAbilityRelease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C1C9382A2B8E8C00C1854F /* ExploreAbilityReleaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreAbilityReleaseApp.swift; sourceTree = "<group>"; };
@@ -183,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				329144202A36273400F5263D /* DynamicTypeChallengeView.swift */,
+				3241316A2A3F772500FBA638 /* DynamicTypeHelper.swift */,
 				329144222A364A9400F5263D /* ArcText.swift */,
 				329144242A364AF700F5263D /* CircularLabel.swift */,
 			);
@@ -194,14 +201,32 @@
 			children = (
 				32303CBF2A306C400032BB50 /* PreChallengeWarningView.swift */,
 				32303CE62A30E2570032BB50 /* ChallengeView.swift */,
-				327E69812A37ECE3004E0ED3 /* ChallengeConclusionView.swift */,
+				32A0A65B2A42086600E97042 /* Challenges */,
+				32A0A65A2A42085400E97042 /* Conclusion */,
 				323DF2C52A36C27700CF20A5 /* ChallengeMenuView.swift */,
-				3291441E2A36265800F5263D /* ChallengePlayingView.swift */,
 				32C123FB2A3956FA00501A1E /* PlayingOffView.swift */,
+			);
+			path = Challenge;
+			sourceTree = "<group>";
+		};
+		32A0A65A2A42085400E97042 /* Conclusion */ = {
+			isa = PBXGroup;
+			children = (
+				327E69812A37ECE3004E0ED3 /* ChallengeConclusionView.swift */,
+				32A0A65C2A42090D00E97042 /* ChallengeConclusionDeveloperResourcesView.swift */,
+				32A0A6582A42084900E97042 /* ChallengeConclusionResourcesView.swift */,
+			);
+			path = Conclusion;
+			sourceTree = "<group>";
+		};
+		32A0A65B2A42086600E97042 /* Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				3291441E2A36265800F5263D /* ChallengePlayingView.swift */,
 				32C123E02A3942C100501A1E /* Reduce Motion */,
 				329144262A364B0000F5263D /* Dynamic Type */,
 			);
-			path = Challenge;
+			path = Challenges;
 			sourceTree = "<group>";
 		};
 		32C123E02A3942C100501A1E /* Reduce Motion */ = {
@@ -351,8 +376,11 @@
 				32303CC22A307F940032BB50 /* CafeView.swift in Sources */,
 				32303CE72A30E2570032BB50 /* ChallengeView.swift in Sources */,
 				32303C9F2A30414C0032BB50 /* Challenge.swift in Sources */,
+				3241316B2A3F772500FBA638 /* DynamicTypeHelper.swift in Sources */,
+				32A0A65D2A42090D00E97042 /* ChallengeConclusionDeveloperResourcesView.swift in Sources */,
 				32303CBE2A306A1E0032BB50 /* ChallengeRequirement.swift in Sources */,
 				32303CE02A30DD670032BB50 /* CafeProductView.swift in Sources */,
+				32A0A6592A42084900E97042 /* ChallengeConclusionResourcesView.swift in Sources */,
 				32C1C93B2A2B8E8C00C1854F /* ContentView.swift in Sources */,
 				3291441F2A36265800F5263D /* ChallengePlayingView.swift in Sources */,
 				32303CDA2A30B9C60032BB50 /* ZoomState.swift in Sources */,

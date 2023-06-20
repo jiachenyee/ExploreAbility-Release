@@ -15,16 +15,6 @@ struct ChallengeConclusionView: View {
     
     var body: some View {
         VStack(spacing: -32) {
-            Button {
-                withAnimation(.bouncy) {
-                    viewModel.gameState = .home
-                }
-            } label: {
-                Image(systemName: "xmark.circle.fill")
-                    .font(.system(size: 24))
-            }
-            .frame(maxWidth: .infinity, alignment: .trailing)
-            .padding(.bottom, 48)
             ZStack {
                 RoundedRectangle(cornerRadius: 16)
                     .stroke(challengeViewModel.challenge.color.opacity(0.5), style: .init(lineWidth: 8))
@@ -35,13 +25,34 @@ struct ChallengeConclusionView: View {
                         .font(.title)
                         .fontWeight(.bold)
                         .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding([.top, .horizontal], 20)
                     ScrollView {
-                        Text(challengeViewModel.challenge.postChallengeMessage)
-                            .frame(maxWidth: .infinity, alignment: .leading)
+                        VStack(alignment: .leading) {
+                            Text(challengeViewModel.challenge.postChallengeMessage)
+                            
+                            Rectangle()
+                                .fill(.white)
+                                .frame(height: 1)
+                            
+                            ChallengeConclusionResourcesView(resources: challengeViewModel.challenge.resources)
+                            
+                            Rectangle()
+                                .fill(.white)
+                                .frame(height: 1)
+                            
+                            ChallengeConclusionDeveloperResourcesView(resources: challengeViewModel.challenge.developerResources, ghURL: challengeViewModel.challenge.gitHubURL)
+                            
+                            Rectangle()
+                                .fill(.white)
+                                .frame(height: 1)
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding([.horizontal, .bottom], 20)
+                        .padding(.bottom, 32)
                     }
                 }
+                .padding(4)
                 .multilineTextAlignment(.leading)
-                .padding(24)
             }
             
             ZStack {
