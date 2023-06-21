@@ -48,10 +48,7 @@ struct PlayingOffView: View {
             .padding(.vertical)
             Spacer()
             
-            if let disableInstructions = challengeViewModel.challenge.userFacingDisableInstructions {
-                Text("Go to **\(disableInstructions)** and toggle Reduce Motion.")
-                    .multilineTextAlignment(.center)
-            }
+            DisableInstructionsView(challenge: challengeViewModel.challenge)
         }
         .font(.system(size: 16))
         .foregroundStyle(.white)

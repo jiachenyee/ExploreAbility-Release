@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import UtilMacros
 
 struct Challenge: Equatable {
     var accessibilityFeature: String
@@ -22,17 +23,13 @@ struct Challenge: Equatable {
     
     var requirements: ChallengeRequirement?
     
-    var disableInstructions: String?
+    var disableInstructions: LocalizedStringKey?
     
     var resources: [ReferenceResource] = []
     
     var developerResources: [DeveloperReference] = []
     
     var gitHubURL: URL?
-    
-    var userFacingDisableInstructions: String? {
-        disableInstructions?.replacingOccurrences(of: ">", with: "\(Image(systemName: "chevron.right"))")
-    }
     
     static func == (lhs: Challenge, rhs: Challenge) -> Bool {
         lhs.accessibilityFeature == rhs.accessibilityFeature

@@ -78,6 +78,25 @@ struct ChallengeConclusionDeveloperResourcesView: View {
                             .animation(.bouncy, value: interfaceFramework)
                     }
                 }
+                
+                if let ghURL {
+                    Rectangle()
+                        .fill(.white)
+                        .frame(height: 1)
+                    
+                    Link(destination: ghURL) {
+                        HStack {
+                            Image(systemName: "hammer")
+                            VStack(alignment: .leading) {
+                                Text("See how this challenge was built")
+                                Text("View source code on GitHub")
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
+                            }
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        }
+                    }
+                }
             }
             .tint(.blue)
             .padding(.top, 4)

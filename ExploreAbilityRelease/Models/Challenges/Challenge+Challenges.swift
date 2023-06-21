@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import UtilMacros
 
 extension Challenge {
     static let vision = [voiceOver, dynamicType, reduceMotion, increaseContrast, differentiateWithoutColour, reduceTransparency]
@@ -35,48 +36,48 @@ extension Challenge {
                                        disableInstructions: "<#AttributedString#>",
                                        resources: [
                                         ReferenceResource(title: "Change the font size on your iPhone, iPad, and iPod touch",
-                                                          url: URL(string: "https://support.apple.com/HT202828")!),
+                                                          url: #url("https://support.apple.com/HT202828")),
                                         ReferenceResource(title: "Apps, settings and features that you can use from Control Center",
-                                                          url: URL(string: "https://support.apple.com/HT210981")!),
+                                                          url: #url("https://support.apple.com/HT210981")),
                                         ReferenceResource(title: "How to adjust text size on iPhone or iPad",
-                                                          url: URL(string: "https://youtu.be/_R0mpzMkSjI")!,
+                                                          url: #url("https://youtu.be/_R0mpzMkSjI"),
                                                           type: .video),
                                         ReferenceResource(title: "How to Customize Control Center",
-                                                          url: URL(string: "https://youtu.be/_x7qjGJ9kZg")!,
+                                                          url: #url("https://youtu.be/_x7qjGJ9kZg"),
                                                           type: .video),
                                         ReferenceResource(title: "How to add accessibility features to Control Center on iPhone, iPad, and iPod touch",
-                                                          url: URL(string: "https://youtu.be/nH7hbMEHi2M")!,
+                                                          url: #url("https://youtu.be/nH7hbMEHi2M"),
                                                           type: .video)
                                        ],
                                        developerResources: [
-                                        DeveloperReference(title: "Typography",
-                                                           url: URL(string: "https://developer.apple.com/design/human-interface-guidelines/typography")!,
-                                                           type: .hig),
                                         DeveloperReference(title: "Using Built-In Text Styles",
                                                            body: "Built-in text styles are just like text hierarchies in tools like Keynote or Pages. They allow you to define pieces of texts as a title, headline, subheadline, caption, and more. This ensures your app's typography looks and feels the same as other apps and the operating system.\n\nText styles provide additional context, such as text hierarchy, and support Dynamic Type without additional modifications.",
                                                            type: .title),
                                         DeveloperReference(title: "Applying Custom Fonts to Text",
-                                                           url: URL(string: "https://developer.apple.com/documentation/swiftui/applying-custom-fonts-to-text/")!,
+                                                           url: #url("https://developer.apple.com/documentation/swiftui/applying-custom-fonts-to-text/"),
                                                            relatedFrameworks: [.swiftUi],
                                                            type: .documentationArticle),
                                         DeveloperReference(title: "Retrieving UIFont with a text style",
                                                            codeSnippet: "UIFont.preferredFont(forTextStyle: .body)",
-                                                           url: URL(string: "https://developer.apple.com/documentation/uikit/uifont/1619030-preferredfont")!,
+                                                           url: #url("https://developer.apple.com/documentation/uikit/uifont/1619030-preferredfont"),
                                                            relatedFrameworks: [.uiKit]),
                                         DeveloperReference(title: "Retrieving Preferred Content Size",
                                                            codeSnippet: "UIApplication.shared.preferredContentSizeCategory",
-                                                           url: URL(string: "https://developer.apple.com/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory")!,
+                                                           url: #url("https://developer.apple.com/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory"),
                                                            relatedFrameworks: [.uiKit],
                                                            type: .codeSnippet),
                                         DeveloperReference(title: "Listening for Changes in Preferred Content Size",
                                                            codeSnippet: "UIApplication.shared.preferredContentSizeCategory",
-                                                           url: URL(string: "https://developer.apple.com/documentation/uikit/uicontentsizecategory/1622948-didchangenotification")!,
+                                                           url: #url("https://developer.apple.com/documentation/uikit/uicontentsizecategory/1622948-didchangenotification"),
                                                            relatedFrameworks: [.uiKit],
                                                            type: .codeSnippet),
                                         DeveloperReference(title: "Scaling Fonts Automatically",
-                                                           url: URL(string: "https://developer.apple.com/documentation/uikit/uifont/scaling_fonts_automatically")!,
+                                                           url: #url("https://developer.apple.com/documentation/uikit/uifont/scaling_fonts_automatically"),
                                                            relatedFrameworks: [.uiKit],
-                                                           type: .documentationArticle)
+                                                           type: .documentationArticle),
+                                        DeveloperReference(title: "Typography",
+                                                           url: #url("https://developer.apple.com/design/human-interface-guidelines/typography"),
+                                                           type: .hig)
                                        ])
     
     static let reduceMotion = Challenge(accessibilityFeature: "Reduce Motion",
@@ -85,7 +86,7 @@ extension Challenge {
                                         image: Image(systemName: "cursorarrow.motionlines"),
                                         color: .teal.opacity(0.8),
                                         category: .vision,
-                                        disableInstructions: "Settings > Accessibility > Motion > Reduce Motion")
+                                        disableInstructions: "Go to **Settings \(Image(systemName: "chevron.right")) Accessibility \(Image(systemName: "chevron.right")) Motion \(Image(systemName: "chevron.right")) Reduce Motion** and toggle Reduce Motion.")
     
     static let increaseContrast = Challenge(accessibilityFeature: "Increase Contrast",
                                             hint: "<#T##String#>",
