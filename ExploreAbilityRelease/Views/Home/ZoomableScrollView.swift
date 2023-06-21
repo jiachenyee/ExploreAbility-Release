@@ -36,7 +36,7 @@ struct ZoomableScrollView<Content: View>: UIViewRepresentable {
             hostView.view.leadingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.leadingAnchor),
             hostView.view.trailingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.trailingAnchor),
             hostView.view.topAnchor.constraint(equalTo: scrollView.contentLayoutGuide.topAnchor),
-            hostView.view.bottomAnchor.constraint(equalTo: scrollView.contentLayoutGuide.bottomAnchor),
+            hostView.view.bottomAnchor.constraint(equalTo: scrollView.contentLayoutGuide.bottomAnchor)
             
         ])
         

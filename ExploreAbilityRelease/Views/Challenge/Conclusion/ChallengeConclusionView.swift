@@ -18,22 +18,20 @@ struct ChallengeConclusionView: View {
                                          challenge: challengeViewModel.challenge) {
             Text(challengeViewModel.challenge.postChallengeMessage)
             
-            Rectangle()
-                .fill(.white)
-                .frame(height: 1)
+            Separator()
             
-            ChallengeConclusionResourcesView(resources: challengeViewModel.challenge.resources)
+            ResourcesView(resources: challengeViewModel.challenge.resources)
             
-            Rectangle()
-                .fill(.white)
-                .frame(height: 1)
+            Separator()
             
-            ChallengeConclusionDeveloperResourcesView(resources: challengeViewModel.challenge.developerResources,
-                                                      ghURL: challengeViewModel.challenge.gitHubURL)
+            DeveloperResourcesView(resources: challengeViewModel.challenge.developerResources,
+                                   ghURL: challengeViewModel.challenge.gitHubURL)
             
-            Rectangle()
-                .fill(.white)
-                .frame(height: 1)
+            Separator()
+        } onDismiss: {
+            withAnimation {
+                viewModel.gameState = .home
+            }
         }
     }
 }

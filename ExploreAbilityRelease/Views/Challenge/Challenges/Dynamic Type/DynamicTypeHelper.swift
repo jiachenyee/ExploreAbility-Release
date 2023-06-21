@@ -68,7 +68,7 @@ extension DynamicTypeSize {
                     "Smaller…",
                     "Even smaller",
                     "Smaller!",
-                    "Way too big.",
+                    "Way too big."
                 ]
                 
                 return messages[index]

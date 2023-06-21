@@ -1,0 +1,11 @@
+disabled_rules:
+- trailing_whitespace
+- switch_case_alignment
+- line_length
+- force_cast
+
+identifier_name:
+  excluded:
+    - x
+    - y
+    - id

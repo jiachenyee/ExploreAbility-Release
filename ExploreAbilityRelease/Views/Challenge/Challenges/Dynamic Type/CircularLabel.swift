@@ -23,16 +23,16 @@ class CircularLabel: UILabel {
         context.translateBy(x: size.width / 2, y: size.height / 2)
         
         let radius = getRadiusForLabel()
-        let l = string.count
-        let attributes = [NSAttributedString.Key.font : self.font!]
+        let length = string.count
+        let attributes = [NSAttributedString.Key.font: self.font!]
         
         let characters: [String] = string.map { String($0) }
         var arcs: [CGFloat] = []
         var totalArc: CGFloat = 0
         
-        for i in 0 ..< l {
-            arcs += [chordToArc(characters[i].size(withAttributes: attributes).width, radius: radius)]
-            totalArc += arcs[i]
+        for charIndex in 0 ..< length {
+            arcs += [chordToArc(characters[charIndex].size(withAttributes: attributes).width, radius: radius)]
+            totalArc += arcs[charIndex]
         }
         
         let direction: CGFloat = clockwise ? -1 : 1
@@ -40,10 +40,14 @@ class CircularLabel: UILabel {
         
         var thetaI = angle - direction * totalArc / 2
         
-        for i in 0 ..< l {
-            thetaI += direction * arcs[i] / 2
-            centre(text: characters[i], context: context, radius: radius, angle: thetaI, slantAngle: thetaI + slantCorrection)
-            thetaI += direction * arcs[i] / 2
+        for charIndex in 0 ..< length {
+            thetaI += direction * arcs[charIndex] / 2
+            centre(text: characters[charIndex],
+                   context: context,
+                   radius: radius,
+                   angle: thetaI,
+                   slantAngle: thetaI + slantCorrection)
+            thetaI += direction * arcs[charIndex] / 2
         }
     }
     
@@ -51,16 +55,16 @@ class CircularLabel: UILabel {
         return 2 * asin(chord / (2 * radius))
     }
     
-    func centre(text str: String, context: CGContext, radius r:CGFloat, angle theta: CGFloat, slantAngle: CGFloat) {
+    func centre(text str: String, context: CGContext, radius: CGFloat, angle theta: CGFloat, slantAngle: CGFloat) {
         
-        let attributes : [NSAttributedString.Key : Any] = [
+        let attributes: [NSAttributedString.Key: Any] = [
             NSAttributedString.Key.foregroundColor: textColor!,
             NSAttributedString.Key.font: font!
         ]
         
         context.saveGState()
         
-        context.translateBy(x: r * cos(theta), y: -(r * sin(theta)))
+        context.translateBy(x: radius * cos(theta), y: -(radius * sin(theta)))
         
         context.rotate(by: -slantAngle)
         

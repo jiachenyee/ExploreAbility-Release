@@ -16,6 +16,8 @@ struct ChallengeConclusionContainerView<Content: View>: View {
     @ViewBuilder
     var content: (() -> Content)
     
+    var onDismiss: (() -> Void)
+    
     var body: some View {
         VStack(spacing: -32) {
             ZStack {
@@ -42,23 +44,26 @@ struct ChallengeConclusionContainerView<Content: View>: View {
                 .multilineTextAlignment(.leading)
             }
             
-            Button {
+            ZStack {
+                Circle()
+                    .fill(.black)
+                    .frame(width: 64, height: 64)
                 
-            } label: {
-                ZStack {
-                    Circle()
-                        .fill(.black)
-                        .frame(width: 64, height: 64)
-                    
-                    Circle()
-                        .fill(challenge.color)
-                        .frame(width: 48, height: 48)
-                    
-                    Image(systemName: "xmark")
+                Button {
+                    onDismiss()
+                } label: {
+                    ZStack {
+                        Circle()
+                            .fill(challenge.color)
+                            .frame(width: 48, height: 48)
+                        
+                        Image(systemName: "xmark")
+                            .foregroundStyle(.white)
+                    }
                 }
+                .accessibilityLabel("Dismiss")
+                .matchedGeometryEffect(id: challenge.accessibilityFeature, in: namespace)
             }
-            .accessibilityLabel("Dismiss")
-            .matchedGeometryEffect(id: challenge.accessibilityFeature, in: namespace)
         }
         .padding()
     }

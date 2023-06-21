@@ -31,8 +31,7 @@ struct HomeViewActionButton<V: View>: View {
     typealias CustomImage = ModifiedContent<ModifiedContent<Image, _AspectRatioLayout>, _FrameLayout>
     
     init(_ name: String, color: Color, action: @escaping () -> Void) where V == CustomImage {
-        self.image =
-        Image(name)
+        self.image = Image(name)
             .resizable()
             .scaledToFit()
             .frame(width: 20) as! CustomImage

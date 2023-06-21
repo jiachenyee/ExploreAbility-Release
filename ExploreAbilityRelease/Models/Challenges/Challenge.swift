@@ -101,7 +101,6 @@ struct DeveloperReference {
         
         case title
         
-        
         var description: String {
             switch self {
             case .hig: "Human Interface Guidelines"

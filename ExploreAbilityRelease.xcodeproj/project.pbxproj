@@ -31,6 +31,10 @@
 		32303CEB2A3181050032BB50 /* ChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CEA2A3181050032BB50 /* ChallengeViewModel.swift */; };
 		323DF2C62A36C27700CF20A5 /* ChallengeMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323DF2C52A36C27700CF20A5 /* ChallengeMenuView.swift */; };
 		3241316B2A3F772500FBA638 /* DynamicTypeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3241316A2A3F772500FBA638 /* DynamicTypeHelper.swift */; };
+		325865522A42A31600630D7E /* DeveloperResourceGitHubButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325865512A42A31600630D7E /* DeveloperResourceGitHubButton.swift */; };
+		325865542A42A4E600630D7E /* DeveloperResourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325865532A42A4E600630D7E /* DeveloperResourceView.swift */; };
+		325865572A42A60800630D7E /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325865562A42A60800630D7E /* Separator.swift */; };
+		3258655A2A42A6AB00630D7E /* ResourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325865592A42A6AB00630D7E /* ResourceView.swift */; };
 		327E69822A37ECE3004E0ED3 /* ChallengeConclusionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E69812A37ECE3004E0ED3 /* ChallengeConclusionView.swift */; };
 		327E69842A384636004E0ED3 /* ReduceMotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E69832A384636004E0ED3 /* ReduceMotionView.swift */; };
 		327E69862A384982004E0ED3 /* RotatingCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E69852A384982004E0ED3 /* RotatingCircleView.swift */; };
@@ -39,8 +43,8 @@
 		329144212A36273400F5263D /* DynamicTypeChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329144202A36273400F5263D /* DynamicTypeChallengeView.swift */; };
 		329144232A364A9400F5263D /* ArcText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329144222A364A9400F5263D /* ArcText.swift */; };
 		329144252A364AF700F5263D /* CircularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329144242A364AF700F5263D /* CircularLabel.swift */; };
-		32A0A6592A42084900E97042 /* ChallengeConclusionResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0A6582A42084900E97042 /* ChallengeConclusionResourcesView.swift */; };
-		32A0A65D2A42090D00E97042 /* ChallengeConclusionDeveloperResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0A65C2A42090D00E97042 /* ChallengeConclusionDeveloperResourcesView.swift */; };
+		32A0A6592A42084900E97042 /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0A6582A42084900E97042 /* ResourcesView.swift */; };
+		32A0A65D2A42090D00E97042 /* DeveloperResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0A65C2A42090D00E97042 /* DeveloperResourcesView.swift */; };
 		32A0A65F2A428B3800E97042 /* DisableInstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0A65E2A428B3800E97042 /* DisableInstructionsView.swift */; };
 		32A0A6622A428FA900E97042 /* ChallengeConclusionContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0A6612A428FA900E97042 /* ChallengeConclusionContainerView.swift */; };
 		32C123FC2A3956FA00501A1E /* PlayingOffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C123FB2A3956FA00501A1E /* PlayingOffView.swift */; };
@@ -75,6 +79,10 @@
 		32303CEA2A3181050032BB50 /* ChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewModel.swift; sourceTree = "<group>"; };
 		323DF2C52A36C27700CF20A5 /* ChallengeMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeMenuView.swift; sourceTree = "<group>"; };
 		3241316A2A3F772500FBA638 /* DynamicTypeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeHelper.swift; sourceTree = "<group>"; };
+		325865512A42A31600630D7E /* DeveloperResourceGitHubButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperResourceGitHubButton.swift; sourceTree = "<group>"; };
+		325865532A42A4E600630D7E /* DeveloperResourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperResourceView.swift; sourceTree = "<group>"; };
+		325865562A42A60800630D7E /* Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Separator.swift; sourceTree = "<group>"; };
+		325865592A42A6AB00630D7E /* ResourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceView.swift; sourceTree = "<group>"; };
 		327E69812A37ECE3004E0ED3 /* ChallengeConclusionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeConclusionView.swift; sourceTree = "<group>"; };
 		327E69832A384636004E0ED3 /* ReduceMotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduceMotionView.swift; sourceTree = "<group>"; };
 		327E69852A384982004E0ED3 /* RotatingCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingCircleView.swift; sourceTree = "<group>"; };
@@ -82,8 +90,8 @@
 		329144202A36273400F5263D /* DynamicTypeChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeChallengeView.swift; sourceTree = "<group>"; };
 		329144222A364A9400F5263D /* ArcText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcText.swift; sourceTree = "<group>"; };
 		329144242A364AF700F5263D /* CircularLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularLabel.swift; sourceTree = "<group>"; };
-		32A0A6582A42084900E97042 /* ChallengeConclusionResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeConclusionResourcesView.swift; sourceTree = "<group>"; };
-		32A0A65C2A42090D00E97042 /* ChallengeConclusionDeveloperResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeConclusionDeveloperResourcesView.swift; sourceTree = "<group>"; };
+		32A0A6582A42084900E97042 /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
+		32A0A65C2A42090D00E97042 /* DeveloperResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperResourcesView.swift; sourceTree = "<group>"; };
 		32A0A65E2A428B3800E97042 /* DisableInstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableInstructionsView.swift; sourceTree = "<group>"; };
 		32A0A6612A428FA900E97042 /* ChallengeConclusionContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeConclusionContainerView.swift; sourceTree = "<group>"; };
 		32C123FB2A3956FA00501A1E /* PlayingOffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingOffView.swift; sourceTree = "<group>"; };
@@ -123,6 +131,7 @@
 				32C1C93A2A2B8E8C00C1854F /* ContentView.swift */,
 				329144272A364B4D00F5263D /* Challenge */,
 				32303CD52A30A9D30032BB50 /* Home */,
+				325865582A42A63F00630D7E /* Helper Views */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,6 +198,42 @@
 			path = "Popup Views";
 			sourceTree = "<group>";
 		};
+		325865552A42A53800630D7E /* Resources Views */ = {
+			isa = PBXGroup;
+			children = (
+				3258655B2A42A6BD00630D7E /* Regular Resources */,
+				3258655C2A42A6DF00630D7E /* Developer Resources */,
+			);
+			path = "Resources Views";
+			sourceTree = "<group>";
+		};
+		325865582A42A63F00630D7E /* Helper Views */ = {
+			isa = PBXGroup;
+			children = (
+				325865562A42A60800630D7E /* Separator.swift */,
+			);
+			path = "Helper Views";
+			sourceTree = "<group>";
+		};
+		3258655B2A42A6BD00630D7E /* Regular Resources */ = {
+			isa = PBXGroup;
+			children = (
+				325865592A42A6AB00630D7E /* ResourceView.swift */,
+				32A0A6582A42084900E97042 /* ResourcesView.swift */,
+			);
+			path = "Regular Resources";
+			sourceTree = "<group>";
+		};
+		3258655C2A42A6DF00630D7E /* Developer Resources */ = {
+			isa = PBXGroup;
+			children = (
+				32A0A65C2A42090D00E97042 /* DeveloperResourcesView.swift */,
+				325865532A42A4E600630D7E /* DeveloperResourceView.swift */,
+				325865512A42A31600630D7E /* DeveloperResourceGitHubButton.swift */,
+			);
+			path = "Developer Resources";
+			sourceTree = "<group>";
+		};
 		329144262A364B0000F5263D /* Dynamic Type */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,8 +263,7 @@
 			children = (
 				327E69812A37ECE3004E0ED3 /* ChallengeConclusionView.swift */,
 				32A0A6612A428FA900E97042 /* ChallengeConclusionContainerView.swift */,
-				32A0A65C2A42090D00E97042 /* ChallengeConclusionDeveloperResourcesView.swift */,
-				32A0A6582A42084900E97042 /* ChallengeConclusionResourcesView.swift */,
+				325865552A42A53800630D7E /* Resources Views */,
 			);
 			path = Conclusion;
 			sourceTree = "<group>";
@@ -299,6 +343,7 @@
 				32C1C9312A2B8E8C00C1854F /* Sources */,
 				32C1C9322A2B8E8C00C1854F /* Frameworks */,
 				32C1C9332A2B8E8C00C1854F /* Resources */,
+				3258655D2A42A83600630D7E /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -360,6 +405,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3258655D2A42A83600630D7E /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		32C1C9312A2B8E8C00C1854F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -370,6 +437,7 @@
 				32303CBC2A3069B40032BB50 /* Challenge+Challenges.swift in Sources */,
 				329144252A364AF700F5263D /* CircularLabel.swift in Sources */,
 				32303CC62A30A7140032BB50 /* HexagonView.swift in Sources */,
+				325865572A42A60800630D7E /* Separator.swift in Sources */,
 				323DF2C62A36C27700CF20A5 /* ChallengeMenuView.swift in Sources */,
 				32303CDE2A30DB980032BB50 /* HomePopupView.swift in Sources */,
 				327E69822A37ECE3004E0ED3 /* ChallengeConclusionView.swift in Sources */,
@@ -390,19 +458,22 @@
 				32303CC22A307F940032BB50 /* CafeView.swift in Sources */,
 				32A0A6622A428FA900E97042 /* ChallengeConclusionContainerView.swift in Sources */,
 				32303CE72A30E2570032BB50 /* ChallengeView.swift in Sources */,
+				325865522A42A31600630D7E /* DeveloperResourceGitHubButton.swift in Sources */,
 				32A0A65F2A428B3800E97042 /* DisableInstructionsView.swift in Sources */,
 				32303C9F2A30414C0032BB50 /* Challenge.swift in Sources */,
 				3241316B2A3F772500FBA638 /* DynamicTypeHelper.swift in Sources */,
-				32A0A65D2A42090D00E97042 /* ChallengeConclusionDeveloperResourcesView.swift in Sources */,
+				32A0A65D2A42090D00E97042 /* DeveloperResourcesView.swift in Sources */,
 				32303CBE2A306A1E0032BB50 /* ChallengeRequirement.swift in Sources */,
 				32303CE02A30DD670032BB50 /* CafeProductView.swift in Sources */,
-				32A0A6592A42084900E97042 /* ChallengeConclusionResourcesView.swift in Sources */,
+				32A0A6592A42084900E97042 /* ResourcesView.swift in Sources */,
 				32C1C93B2A2B8E8C00C1854F /* ContentView.swift in Sources */,
 				3291441F2A36265800F5263D /* ChallengePlayingView.swift in Sources */,
 				32303CDA2A30B9C60032BB50 /* ZoomState.swift in Sources */,
 				32303CCA2A30A7C80032BB50 /* ZoomableScrollView.swift in Sources */,
+				3258655A2A42A6AB00630D7E /* ResourceView.swift in Sources */,
 				329144232A364A9400F5263D /* ArcText.swift in Sources */,
 				32C1C9392A2B8E8C00C1854F /* ExploreAbilityReleaseApp.swift in Sources */,
+				325865542A42A4E600630D7E /* DeveloperResourceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
