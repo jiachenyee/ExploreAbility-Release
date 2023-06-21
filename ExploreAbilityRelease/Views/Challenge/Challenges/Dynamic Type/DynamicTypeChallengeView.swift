@@ -159,29 +159,9 @@ struct DynamicTypeChallengeView: View {
 }
 
 struct DynamicTextChallengeView_Previews: PreviewProvider {
-    
-    static var challengeViewModel: ChallengeViewModel {
-        let viewModel = ChallengeViewModel()
-        
-        viewModel.challenge = .dynamicType
-        viewModel.state = .playingOff
-        
-        return viewModel
-    }
-    
-    static var viewModel: ViewModel {
-        let viewModel = ViewModel()
-        
-        viewModel.sharedNamespace = Namespace().wrappedValue
-        viewModel.gameState = .challenge(.dynamicType)
-        
-        return viewModel
-    }
-    
     static var previews: some View {
-        DynamicTypeChallengeView()
-            .preferredColorScheme(.dark)
-            .environmentObject(viewModel)
-            .environmentObject(challengeViewModel)
+        XCChallengePreview(challenge: .dynamicType) {
+            DynamicTypeChallengeView()
+        }
     }
 }

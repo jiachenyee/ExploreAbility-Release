@@ -70,29 +70,9 @@ struct ReduceMotionView: View {
 }
 
 struct ReduceMotionView_Previews: PreviewProvider {
-    
-    static var challengeViewModel: ChallengeViewModel {
-        let viewModel = ChallengeViewModel()
-        
-        viewModel.challenge = .reduceMotion
-        viewModel.state = .playingOff
-        
-        return viewModel
-    }
-    
-    static var viewModel: ViewModel {
-        let viewModel = ViewModel()
-        
-        viewModel.sharedNamespace = Namespace().wrappedValue
-        viewModel.gameState = .challenge(.reduceMotion)
-        
-        return viewModel
-    }
-    
     static var previews: some View {
-        ReduceMotionView()
-            .preferredColorScheme(.dark)
-            .environmentObject(viewModel)
-            .environmentObject(challengeViewModel)
+        XCChallengePreview(challenge: .reduceMotion) {
+            ReduceMotionView()
+        }
     }
 }
