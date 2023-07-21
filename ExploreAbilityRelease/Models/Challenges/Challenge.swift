@@ -23,7 +23,7 @@ struct Challenge: Equatable {
     
     var requirements: ChallengeRequirement?
     
-    var disableInstructions: LocalizedStringKey?
+    var disableInstructions: Text?
     
     var resources: [ReferenceResource] = []
     

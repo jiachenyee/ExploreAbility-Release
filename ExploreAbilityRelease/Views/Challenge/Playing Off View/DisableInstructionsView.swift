@@ -14,7 +14,7 @@ struct DisableInstructionsView: View {
     
     var body: some View {
         if let disableInstructions = challenge.disableInstructions {
-            Text(disableInstructions)
+            disableInstructions
                 .multilineTextAlignment(.center)
         }
     }

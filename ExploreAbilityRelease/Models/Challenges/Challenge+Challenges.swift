@@ -25,7 +25,7 @@ extension Challenge {
                                      image: Image(systemName: "waveform.and.person.filled"),
                                      color: .teal,
                                      category: .vision,
-                                     disableInstructions: "<#AttributedString#>")
+                                     disableInstructions: Text("<#AttributedString#>"))
     
     static let dynamicType = Challenge(accessibilityFeature: "Dynamic Type",
                                        hint: "<#T##String#>",
@@ -33,7 +33,7 @@ extension Challenge {
                                        image: Image(systemName: "textformat.size"),
                                        color: .teal.opacity(0.9),
                                        category: .vision,
-                                       disableInstructions: "<#AttributedString#>",
+                                       disableInstructions: Text("<#AttributedString#>"),
                                        resources: [
                                         ReferenceResource(title: "Change the font size on your iPhone, iPad, and iPod touch",
                                                           url: #url("https://support.apple.com/HT202828")),
@@ -86,7 +86,7 @@ extension Challenge {
                                         image: Image(systemName: "cursorarrow.motionlines"),
                                         color: .teal.opacity(0.8),
                                         category: .vision,
-                                        disableInstructions: "Go to **Settings \(Image(systemName: "chevron.right")) Accessibility \(Image(systemName: "chevron.right")) Motion \(Image(systemName: "chevron.right")) Reduce Motion** and toggle Reduce Motion.")
+                                        disableInstructions: Text("Go to **Settings \(Image(systemName: "chevron.right")) Accessibility \(Image(systemName: "chevron.right")) Motion \(Image(systemName: "chevron.right")) Reduce Motion** and toggle Reduce Motion."))
     
     static let increaseContrast = Challenge(accessibilityFeature: "Increase Contrast",
                                             hint: "<#T##String#>",
