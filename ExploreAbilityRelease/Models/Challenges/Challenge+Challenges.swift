@@ -100,7 +100,8 @@ extension Challenge {
                                                       postChallengeMessage: "<#T##String#>",
                                                       image: Image(systemName: "circle.bottomrighthalf.checkered"),
                                                       color: .teal.opacity(0.6),
-                                                      category: .vision)
+                                                      category: .vision,
+                                                      disableInstructions: Text("Go to **Settings \(Image(systemName: "chevron.right")) Accessibility \(Image(systemName: "chevron.right")) Display & Text Size \(Image(systemName: "chevron.right")) Differentiate Without Colour** and toggle Differentiate Without Colour."))
     
     static let reduceTransparency = Challenge(accessibilityFeature: "Reduce Transparency",
                                               hint: "<#T##String#>",

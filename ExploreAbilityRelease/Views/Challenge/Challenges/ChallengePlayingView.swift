@@ -18,7 +18,7 @@ struct ChallengePlayingView: View {
         case .dynamicType: DynamicTypeChallengeView()
         case .reduceMotion: ReduceMotionView()
         case .increaseContrast: EmptyView()
-        case .differentiateWithoutColour: EmptyView()
+        case .differentiateWithoutColour: DifferentiateWithoutColorView()
         case .reduceTransparency: EmptyView()
         case .captions: EmptyView()
         case .monoAudio: EmptyView()

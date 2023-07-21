@@ -1,5 +1,5 @@
 //
-//  PlayingOffView.swift
+//  PlayingOnView.swift
 //  ExploreAbilityRelease
 //
 //  Created by Jia Chen Yee on 14/6/23.
@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct PlayingOffView: View {
+struct PlayingOnView: View {
     
     var initialState: Bool
     
@@ -23,14 +23,26 @@ struct PlayingOffView: View {
     var body: some View {
         VStack {
             Spacer()
-            HStack(spacing: 0) {
-                Text("Turn \(challengeViewModel.challenge.accessibilityFeature) back ")
-                Text("\(initialState ? "On" : "Off")")
-                    .fontWeight(.bold)
-                    .foregroundStyle(challengeViewModel.challenge.color)
-            }
+            Text(
+                "Turn "
+                +
+                AttributedString(challengeViewModel.challenge.accessibilityFeature)
+                    .settingAttributes(
+                        AttributeContainer
+                            .font(.title.bold())
+                    )
+                +
+                " back "
+                +
+                AttributedString(initialState ? "On" : "Off")
+                    .settingAttributes(
+                        AttributeContainer
+                            .foregroundColor(challengeViewModel.challenge.color)
+                            .font(.title.bold())
+                    )
+            )
+            .font(.title)
             .multilineTextAlignment(.center)
-            .font(.system(size: 24))
             .foregroundStyle(.white)
             
             ZStack(alignment: alignment) {
