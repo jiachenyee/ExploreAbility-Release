@@ -1,5 +1,5 @@
 //
-//  ReduceMotionUITests.swift
+//  DifferentiateWithoutColorUITests.swift
 //  ExploreAbilityUITests
 //
 //  Created by Jia Chen Yee on 21/7/23.
@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class ReduceMotionUITests: XCTestCase {
+final class DifferentiateWithoutColorUITests: XCTestCase {
     
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -27,7 +27,7 @@ final class ReduceMotionUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         
-        app.buttons["Reduce Motion"].tap()
+        app.buttons["Differentiate Without Colour"].tap()
         
         XCTAssertTrue(app.buttons["Menu"].waitForExistence(timeout: 1))
         app.buttons["Menu"].tap()
@@ -42,14 +42,14 @@ final class ReduceMotionUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         
-        app.buttons["Reduce Motion"].tap()
+        app.buttons["Differentiate Without Colour"].tap()
         
         let settings = openSettings()
         settings.tables.staticTexts["Accessibility"].tap()
         
-        settings.tables.staticTexts["Motion"].tap()
+        settings.tables.staticTexts["Display & Text Size"].tap()
         
-        settings.cells["Reduce Motion"].tap()
+        settings.cells["Differentiate Without Colour"].tap()
         
         app.activate()
         
@@ -57,7 +57,7 @@ final class ReduceMotionUITests: XCTestCase {
         
         settings.activate()
         
-        settings.cells["Reduce Motion"].tap()
+        settings.cells["Differentiate Without Colour"].tap()
         
         app.activate()
         
@@ -73,18 +73,18 @@ final class ReduceMotionUITests: XCTestCase {
         
         settings.tables.staticTexts["Accessibility"].tap()
         
-        settings.tables.staticTexts["Motion"].tap()
+        settings.tables.staticTexts["Display & Text Size"].tap()
         
-        settings.cells["Reduce Motion"].tap()
+        settings.cells["Differentiate Without Colour"].tap()
         
         let app = XCUIApplication()
         app.launch()
         
-        app.buttons["Reduce Motion"].tap()
+        app.buttons["Differentiate Without Colour"].tap()
         
         settings.activate()
         
-        settings.cells["Reduce Motion"].tap()
+        settings.cells["Differentiate Without Colour"].tap()
         
         app.activate()
         
@@ -92,9 +92,7 @@ final class ReduceMotionUITests: XCTestCase {
         
         settings.activate()
         
-        XCTAssertTrue(settings.cells["Reduce Motion"].waitForExistence(timeout: 1))
-        
-        settings.cells["Reduce Motion"].tap()
+        settings.cells["Differentiate Without Colour"].tap()
         
         app.activate()
         
@@ -107,5 +105,25 @@ final class ReduceMotionUITests: XCTestCase {
         settings.activate()
         
         settings.cells["Reduce Motion"].tap()
+    }
+    
+    func testChallengeInteractions() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        app.buttons["Differentiate Without Colour"].tap()
+        
+        app.swipeUp()
+        app.swipeDown()
+        app.swipeLeft()
+        app.swipeRight()
+        
+        XCTAssertTrue(app.buttons["Menu"].waitForExistence(timeout: 1))
+        app.buttons["Menu"].tap()
+        
+        XCTAssertTrue(app.buttons["Home"].waitForExistence(timeout: 1))
+        app.buttons["Home"].tap()
+        
+        XCTAssertTrue(app.buttons["Zoom to Home"].waitForExistence(timeout: 1))
     }
 }
