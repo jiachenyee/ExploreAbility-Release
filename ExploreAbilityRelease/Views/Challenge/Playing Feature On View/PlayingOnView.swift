@@ -44,6 +44,7 @@ struct PlayingOnView: View {
             .font(.title)
             .multilineTextAlignment(.center)
             .foregroundStyle(.white)
+            .accessibilityIdentifier("Reset")
             
             ZStack(alignment: alignment) {
                 Capsule(style: .continuous)

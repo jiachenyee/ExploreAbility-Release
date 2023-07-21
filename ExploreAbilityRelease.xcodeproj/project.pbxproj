@@ -38,6 +38,7 @@
 		3251DF222A6A4F1E0017334A /* ExploreAbilityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251DF212A6A4F1E0017334A /* ExploreAbilityUITests.swift */; };
 		3251DF242A6A4F1E0017334A /* ExploreAbilityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251DF232A6A4F1E0017334A /* ExploreAbilityUITestsLaunchTests.swift */; };
 		3251DF2B2A6A537A0017334A /* DynamicTypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251DF2A2A6A537A0017334A /* DynamicTypeUITests.swift */; };
+		3251DF2D2A6A5B5B0017334A /* XCUITestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251DF2C2A6A5B5B0017334A /* XCUITestUtils.swift */; };
 		325865522A42A31600630D7E /* DeveloperResourceGitHubButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325865512A42A31600630D7E /* DeveloperResourceGitHubButton.swift */; };
 		325865542A42A4E600630D7E /* DeveloperResourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325865532A42A4E600630D7E /* DeveloperResourceView.swift */; };
 		325865572A42A60800630D7E /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325865562A42A60800630D7E /* Separator.swift */; };
@@ -48,6 +49,8 @@
 		3275DF5A2A42BF9C00C361B1 /* MenuDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275DF592A42BF9C00C361B1 /* MenuDismissButton.swift */; };
 		3275DF5C2A42C02E00C361B1 /* MenuHintButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275DF5B2A42C02E00C361B1 /* MenuHintButton.swift */; };
 		3275DF5E2A42C0EF00C361B1 /* MenuHomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275DF5D2A42C0EF00C361B1 /* MenuHomeButton.swift */; };
+		327883AB2A6A6179005765E9 /* ReduceMotionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327883AA2A6A6179005765E9 /* ReduceMotionUITests.swift */; };
+		327883AD2A6A6333005765E9 /* ChallengeHomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327883AC2A6A6333005765E9 /* ChallengeHomeButton.swift */; };
 		327E69822A37ECE3004E0ED3 /* ChallengeConclusionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E69812A37ECE3004E0ED3 /* ChallengeConclusionView.swift */; };
 		327E69842A384636004E0ED3 /* ReduceMotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E69832A384636004E0ED3 /* ReduceMotionView.swift */; };
 		327E69862A384982004E0ED3 /* RotatingCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E69852A384982004E0ED3 /* RotatingCircleView.swift */; };
@@ -110,6 +113,7 @@
 		3251DF212A6A4F1E0017334A /* ExploreAbilityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreAbilityUITests.swift; sourceTree = "<group>"; };
 		3251DF232A6A4F1E0017334A /* ExploreAbilityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreAbilityUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3251DF2A2A6A537A0017334A /* DynamicTypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeUITests.swift; sourceTree = "<group>"; };
+		3251DF2C2A6A5B5B0017334A /* XCUITestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUITestUtils.swift; sourceTree = "<group>"; };
 		325865512A42A31600630D7E /* DeveloperResourceGitHubButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperResourceGitHubButton.swift; sourceTree = "<group>"; };
 		325865532A42A4E600630D7E /* DeveloperResourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperResourceView.swift; sourceTree = "<group>"; };
 		325865562A42A60800630D7E /* Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Separator.swift; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 		3275DF592A42BF9C00C361B1 /* MenuDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDismissButton.swift; sourceTree = "<group>"; };
 		3275DF5B2A42C02E00C361B1 /* MenuHintButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHintButton.swift; sourceTree = "<group>"; };
 		3275DF5D2A42C0EF00C361B1 /* MenuHomeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHomeButton.swift; sourceTree = "<group>"; };
+		327883AA2A6A6179005765E9 /* ReduceMotionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduceMotionUITests.swift; sourceTree = "<group>"; };
+		327883AC2A6A6333005765E9 /* ChallengeHomeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeHomeButton.swift; sourceTree = "<group>"; };
 		327E69812A37ECE3004E0ED3 /* ChallengeConclusionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeConclusionView.swift; sourceTree = "<group>"; };
 		327E69832A384636004E0ED3 /* ReduceMotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduceMotionView.swift; sourceTree = "<group>"; };
 		327E69852A384982004E0ED3 /* RotatingCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingCircleView.swift; sourceTree = "<group>"; };
@@ -258,6 +264,8 @@
 			children = (
 				3251DF212A6A4F1E0017334A /* ExploreAbilityUITests.swift */,
 				3251DF2A2A6A537A0017334A /* DynamicTypeUITests.swift */,
+				327883AA2A6A6179005765E9 /* ReduceMotionUITests.swift */,
+				3251DF2C2A6A5B5B0017334A /* XCUITestUtils.swift */,
 				3251DF232A6A4F1E0017334A /* ExploreAbilityUITestsLaunchTests.swift */,
 			);
 			path = ExploreAbilityUITests;
@@ -347,7 +355,7 @@
 				32A0A65B2A42086600E97042 /* Challenges */,
 				32A0A65A2A42085400E97042 /* Conclusion */,
 				325865602A42AD1F00630D7E /* Challenge Menu */,
-				32A0A6602A428F6000E97042 /* Playing Off View */,
+				32A0A6602A428F6000E97042 /* Playing Feature On View */,
 			);
 			path = Challenge;
 			sourceTree = "<group>";
@@ -366,6 +374,7 @@
 			isa = PBXGroup;
 			children = (
 				3291441E2A36265800F5263D /* ChallengePlayingView.swift */,
+				327883AC2A6A6333005765E9 /* ChallengeHomeButton.swift */,
 				3251DF102A6A177E0017334A /* Differentiate Without Color */,
 				32C123E02A3942C100501A1E /* Reduce Motion */,
 				329144262A364B0000F5263D /* Dynamic Type */,
@@ -374,13 +383,13 @@
 			path = Challenges;
 			sourceTree = "<group>";
 		};
-		32A0A6602A428F6000E97042 /* Playing Off View */ = {
+		32A0A6602A428F6000E97042 /* Playing Feature On View */ = {
 			isa = PBXGroup;
 			children = (
 				32C123FB2A3956FA00501A1E /* PlayingOnView.swift */,
 				32A0A65E2A428B3800E97042 /* DisableInstructionsView.swift */,
 			);
-			path = "Playing Off View";
+			path = "Playing Feature On View";
 			sourceTree = "<group>";
 		};
 		32C123E02A3942C100501A1E /* Reduce Motion */ = {
@@ -560,7 +569,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3251DF2D2A6A5B5B0017334A /* XCUITestUtils.swift in Sources */,
 				3251DF222A6A4F1E0017334A /* ExploreAbilityUITests.swift in Sources */,
+				327883AB2A6A6179005765E9 /* ReduceMotionUITests.swift in Sources */,
 				3251DF2B2A6A537A0017334A /* DynamicTypeUITests.swift in Sources */,
 				3251DF242A6A4F1E0017334A /* ExploreAbilityUITestsLaunchTests.swift in Sources */,
 			);
@@ -617,6 +628,7 @@
 				3258655F2A42AAEA00630D7E /* XCChallengePreview.swift in Sources */,
 				32303CDA2A30B9C60032BB50 /* ZoomState.swift in Sources */,
 				3275DF5A2A42BF9C00C361B1 /* MenuDismissButton.swift in Sources */,
+				327883AD2A6A6333005765E9 /* ChallengeHomeButton.swift in Sources */,
 				32303CCA2A30A7C80032BB50 /* ZoomableScrollView.swift in Sources */,
 				3258655A2A42A6AB00630D7E /* ResourceView.swift in Sources */,
 				329144232A364A9400F5263D /* ArcText.swift in Sources */,

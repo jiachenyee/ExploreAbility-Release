@@ -52,17 +52,7 @@ struct DifferentiateWithoutColorView: View {
                         ColorWellSelectionView(color: .teal, selectedColor: $selectedColor)
                             .grayscale(grayscaleValue)
                         
-                        Button {
-                            withAnimation {
-                                challengeViewModel.state = .menu
-                            }
-                        } label: {
-                            Circle()
-                                .stroke(challengeViewModel.challenge.color, lineWidth: 8)
-                                .matchedGeometryEffect(id: challengeViewModel.challenge.accessibilityFeature, in: viewModel.sharedNamespace)
-                                .padding(8 / 2)
-                        }
-                        .frame(width: 48, height: 48)
+                        ChallengeHomeButton()
                         
                         ColorWellSelectionView(color: .mint, selectedColor: $selectedColor)
                             .grayscale(grayscaleValue)

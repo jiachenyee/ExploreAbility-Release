@@ -22,17 +22,7 @@ struct ReduceMotionView: View {
         switch challengeViewModel.state {
         case .playingOff:
             ZStack {
-                Button {
-                    withAnimation {
-                        challengeViewModel.state = .menu
-                    }
-                } label: {
-                    Circle()
-                        .stroke(challengeViewModel.challenge.color, lineWidth: 8)
-                        .matchedGeometryEffect(id: challengeViewModel.challenge.accessibilityFeature, in: viewModel.sharedNamespace)
-                        .padding(8 / 2)
-                }
-                .frame(width: 48, height: 48)
+                ChallengeHomeButton()
                 
                 Group {
                     RotatingCircleView(id: "1", distance: 56 * 2, rpm: 0.2)

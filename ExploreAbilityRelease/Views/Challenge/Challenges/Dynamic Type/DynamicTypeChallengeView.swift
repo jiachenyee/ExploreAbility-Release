@@ -32,20 +32,8 @@ struct DynamicTypeChallengeView: View {
                     .frame(width: 64 + dynamicTypeSize.offset, height: 64 + dynamicTypeSize.offset)
                     .scaleEffect(scale)
                 
-                Button {
-                    withAnimation {
-                        challengeViewModel.state = .menu
-                    }
-                } label: {
-                    Circle()
-                        .stroke(challengeViewModel.challenge.color, lineWidth: borderWidth)
-                        .matchedGeometryEffect(id: challengeViewModel.challenge.accessibilityFeature, in: viewModel.sharedNamespace)
-                        .padding(borderWidth / 2)
-                }
-                .frame(width: 48, height: 48)
-                .accessibilityLabel("Menu")
-                .animation(.bouncy, value: dynamicTypeSize)
-
+                ChallengeHomeButton(width: borderWidth)
+                    .animation(.bouncy, value: dynamicTypeSize)
             }
             .onAppear {
                 initialSize = dynamicTypeSize
