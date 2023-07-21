@@ -56,6 +56,7 @@
 		327883B62A6A7A6A005765E9 /* ShakeToUndoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327883B52A6A7A6A005765E9 /* ShakeToUndoUITests.swift */; };
 		327883B92A6A7C4A005765E9 /* Buzz in Frameworks */ = {isa = PBXBuildFile; productRef = 327883B82A6A7C4A005765E9 /* Buzz */; };
 		327883BC2A6A7C88005765E9 /* VibrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327883BB2A6A7C88005765E9 /* VibrationView.swift */; };
+		327883BE2A6A8676005765E9 /* VibrationHapticPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327883BD2A6A8676005765E9 /* VibrationHapticPattern.swift */; };
 		327E69822A37ECE3004E0ED3 /* ChallengeConclusionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E69812A37ECE3004E0ED3 /* ChallengeConclusionView.swift */; };
 		327E69842A384636004E0ED3 /* ReduceMotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E69832A384636004E0ED3 /* ReduceMotionView.swift */; };
 		327E69862A384982004E0ED3 /* RotatingCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E69852A384982004E0ED3 /* RotatingCircleView.swift */; };
@@ -135,6 +136,7 @@
 		327883B32A6A74A9005765E9 /* ShakeToUndoScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeToUndoScene.swift; sourceTree = "<group>"; };
 		327883B52A6A7A6A005765E9 /* ShakeToUndoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeToUndoUITests.swift; sourceTree = "<group>"; };
 		327883BB2A6A7C88005765E9 /* VibrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrationView.swift; sourceTree = "<group>"; };
+		327883BD2A6A8676005765E9 /* VibrationHapticPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrationHapticPattern.swift; sourceTree = "<group>"; };
 		327E69812A37ECE3004E0ED3 /* ChallengeConclusionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeConclusionView.swift; sourceTree = "<group>"; };
 		327E69832A384636004E0ED3 /* ReduceMotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduceMotionView.swift; sourceTree = "<group>"; };
 		327E69852A384982004E0ED3 /* RotatingCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingCircleView.swift; sourceTree = "<group>"; };
@@ -360,6 +362,7 @@
 			isa = PBXGroup;
 			children = (
 				327883BB2A6A7C88005765E9 /* VibrationView.swift */,
+				327883BD2A6A8676005765E9 /* VibrationHapticPattern.swift */,
 			);
 			path = Vibration;
 			sourceTree = "<group>";
@@ -653,6 +656,7 @@
 				32A0A65F2A428B3800E97042 /* DisableInstructionsView.swift in Sources */,
 				32303C9F2A30414C0032BB50 /* Challenge.swift in Sources */,
 				327883B42A6A74A9005765E9 /* ShakeToUndoScene.swift in Sources */,
+				327883BE2A6A8676005765E9 /* VibrationHapticPattern.swift in Sources */,
 				3241316B2A3F772500FBA638 /* DynamicTypeHelper.swift in Sources */,
 				32A0A65D2A42090D00E97042 /* DeveloperResourcesView.swift in Sources */,
 				32303CBE2A306A1E0032BB50 /* ChallengeRequirement.swift in Sources */,
