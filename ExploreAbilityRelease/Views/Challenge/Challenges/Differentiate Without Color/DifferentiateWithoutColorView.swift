@@ -107,7 +107,6 @@ struct DifferentiateWithoutColorView: View {
                         didFinishChallenge = true
                     }
                 }
-            EmptyView()
         default: EmptyView()
         }
     }

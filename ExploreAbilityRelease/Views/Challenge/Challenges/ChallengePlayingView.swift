@@ -23,7 +23,7 @@ struct ChallengePlayingView: View {
         case .captions: EmptyView()
         case .monoAudio: EmptyView()
         case .assistiveTouch: EmptyView()
-        case .shakeToUndo: EmptyView()
+        case .shakeToUndo: ShakeToUndoView()
         case .vibrationEnabled: EmptyView()
         case .animatedImages: EmptyView()
         case .guidedAccess: EmptyView()
