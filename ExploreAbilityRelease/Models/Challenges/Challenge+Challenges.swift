@@ -22,7 +22,7 @@ extension Challenge {
     static let voiceOver = Challenge(accessibilityFeature: "VoiceOver",
                                      hint: "<#T##String#>",
                                      postChallengeMessage: "<#T##String#>",
-                                     image: Image(systemName: "waveform.and.person.filled"),
+                                     image: Image(systemName: "rectangle.3.group.bubble.left"),
                                      color: .teal,
                                      category: .vision,
                                      disableInstructions: Text("<#AttributedString#>"))
@@ -98,7 +98,7 @@ extension Challenge {
     static let differentiateWithoutColour = Challenge(accessibilityFeature: "Differentiate Without Colour",
                                                       hint: "<#T##String#>",
                                                       postChallengeMessage: "<#T##String#>",
-                                                      image: Image(systemName: "circle.bottomrighthalf.checkered"),
+                                                      image: Image(systemName: "swatchpalette"),
                                                       color: .teal.opacity(0.6),
                                                       category: .vision,
                                                       disableInstructions: Text("Go to **Settings \(Image(systemName: "chevron.right")) Accessibility \(Image(systemName: "chevron.right")) Display & Text Size \(Image(systemName: "chevron.right")) Differentiate Without Colour** and toggle Differentiate Without Colour."))
@@ -121,7 +121,7 @@ extension Challenge {
     static let monoAudio = Challenge(accessibilityFeature: "Mono Audio",
                                      hint: "<#T##String#>",
                                      postChallengeMessage: "<#T##String#>",
-                                     image: Image(systemName: "ear.badge.waveform"),
+                                     image: Image(systemName: "earbuds"),
                                      color: .indigo.opacity(0.9),
                                      category: .hearing)
     // mobility
@@ -157,14 +157,14 @@ extension Challenge {
     static let guidedAccess = Challenge(accessibilityFeature: "Guided Access",
                                         hint: "<#T##String#>",
                                         postChallengeMessage: "<#T##String#>",
-                                        image: Image(systemName: "lock.app.dashed"),
+                                        image: Image(systemName: "lock.iphone"),
                                         color: .pink.opacity(0.9),
                                         category: .cognitive)
     
     static let dimFlashingLights = Challenge(accessibilityFeature: "Dim Flashing Lights",
                                              hint: "<#T##String#>",
                                              postChallengeMessage: "<#T##String#>",
-                                             image: Image(systemName: "exclamationmark.warninglight"),
+                                             image: Image(systemName: "sun.max.trianglebadge.exclamationmark"),
                                              color: .pink.opacity(0.8),
                                              category: .cognitive,
                                              warning: .flashingLight,

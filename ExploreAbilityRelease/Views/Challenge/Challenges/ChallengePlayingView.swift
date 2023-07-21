@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import UtilMacros
 
 struct ChallengePlayingView: View {
 
@@ -14,20 +15,20 @@ struct ChallengePlayingView: View {
     
     var body: some View {
         switch challengeViewModel.challenge! {
-        case .voiceOver: EmptyView()
+        case .voiceOver: ChallengeHomeButton() // TODO: Add challenge
         case .dynamicType: DynamicTypeChallengeView()
         case .reduceMotion: ReduceMotionView()
-        case .increaseContrast: EmptyView()
+        case .increaseContrast: ChallengeHomeButton() // TODO: Add challenge
         case .differentiateWithoutColour: DifferentiateWithoutColorView()
-        case .reduceTransparency: EmptyView()
-        case .captions: EmptyView()
-        case .monoAudio: EmptyView()
-        case .assistiveTouch: EmptyView()
+        case .reduceTransparency: ChallengeHomeButton() // TODO: Add challenge
+        case .captions: ChallengeHomeButton() // TODO: Add challenge
+        case .monoAudio: ChallengeHomeButton() // TODO: Add challenge
+        case .assistiveTouch: ChallengeHomeButton() // TODO: Add challenge
         case .shakeToUndo: ShakeToUndoView()
-        case .vibrationEnabled: EmptyView()
-        case .animatedImages: EmptyView()
-        case .guidedAccess: EmptyView()
-        case .dimFlashingLights: EmptyView()
+        case .vibrationEnabled: ChallengeHomeButton() // TODO: Add challenge
+        case .animatedImages: ChallengeHomeButton() // TODO: Add challenge
+        case .guidedAccess: ChallengeHomeButton() // TODO: Add challenge
+        case .dimFlashingLights: ChallengeHomeButton() // TODO: Add challenge
         default:
             Text("Something went very wrong.")
         }
