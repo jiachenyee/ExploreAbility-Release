@@ -54,6 +54,8 @@
 		327883B22A6A6990005765E9 /* ShakeToUndoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327883B12A6A6990005765E9 /* ShakeToUndoView.swift */; };
 		327883B42A6A74A9005765E9 /* ShakeToUndoScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327883B32A6A74A9005765E9 /* ShakeToUndoScene.swift */; };
 		327883B62A6A7A6A005765E9 /* ShakeToUndoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327883B52A6A7A6A005765E9 /* ShakeToUndoUITests.swift */; };
+		327883B92A6A7C4A005765E9 /* Buzz in Frameworks */ = {isa = PBXBuildFile; productRef = 327883B82A6A7C4A005765E9 /* Buzz */; };
+		327883BC2A6A7C88005765E9 /* VibrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327883BB2A6A7C88005765E9 /* VibrationView.swift */; };
 		327E69822A37ECE3004E0ED3 /* ChallengeConclusionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E69812A37ECE3004E0ED3 /* ChallengeConclusionView.swift */; };
 		327E69842A384636004E0ED3 /* ReduceMotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E69832A384636004E0ED3 /* ReduceMotionView.swift */; };
 		327E69862A384982004E0ED3 /* RotatingCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E69852A384982004E0ED3 /* RotatingCircleView.swift */; };
@@ -132,6 +134,7 @@
 		327883B12A6A6990005765E9 /* ShakeToUndoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeToUndoView.swift; sourceTree = "<group>"; };
 		327883B32A6A74A9005765E9 /* ShakeToUndoScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeToUndoScene.swift; sourceTree = "<group>"; };
 		327883B52A6A7A6A005765E9 /* ShakeToUndoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeToUndoUITests.swift; sourceTree = "<group>"; };
+		327883BB2A6A7C88005765E9 /* VibrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrationView.swift; sourceTree = "<group>"; };
 		327E69812A37ECE3004E0ED3 /* ChallengeConclusionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeConclusionView.swift; sourceTree = "<group>"; };
 		327E69832A384636004E0ED3 /* ReduceMotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduceMotionView.swift; sourceTree = "<group>"; };
 		327E69852A384982004E0ED3 /* RotatingCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingCircleView.swift; sourceTree = "<group>"; };
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3291441D2A36032F00F5263D /* UtilMacros in Frameworks */,
+				327883B92A6A7C4A005765E9 /* Buzz in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +356,14 @@
 			path = "Shake to Undo";
 			sourceTree = "<group>";
 		};
+		327883BA2A6A7C72005765E9 /* Vibration */ = {
+			isa = PBXGroup;
+			children = (
+				327883BB2A6A7C88005765E9 /* VibrationView.swift */,
+			);
+			path = Vibration;
+			sourceTree = "<group>";
+		};
 		329144262A364B0000F5263D /* Dynamic Type */ = {
 			isa = PBXGroup;
 			children = (
@@ -391,6 +403,7 @@
 			children = (
 				3291441E2A36265800F5263D /* ChallengePlayingView.swift */,
 				327883AC2A6A6333005765E9 /* ChallengeHomeButton.swift */,
+				327883BA2A6A7C72005765E9 /* Vibration */,
 				327883B02A6A6985005765E9 /* Shake to Undo */,
 				3251DF102A6A177E0017334A /* Differentiate Without Color */,
 				32C123E02A3942C100501A1E /* Reduce Motion */,
@@ -494,6 +507,7 @@
 			name = ExploreAbilityRelease;
 			packageProductDependencies = (
 				3291441C2A36032F00F5263D /* UtilMacros */,
+				327883B82A6A7C4A005765E9 /* Buzz */,
 			);
 			productName = ExploreAbilityRelease;
 			productReference = 32C1C9352A2B8E8C00C1854F /* ExploreAbilityRelease.app */;
@@ -529,6 +543,7 @@
 			mainGroup = 32C1C92C2A2B8E8C00C1854F;
 			packageReferences = (
 				3291441B2A36032F00F5263D /* XCRemoteSwiftPackageReference "UtilMacros" */,
+				327883B72A6A7C4A005765E9 /* XCRemoteSwiftPackageReference "buzz" */,
 			);
 			productRefGroup = 32C1C9362A2B8E8C00C1854F /* Products */;
 			projectDirPath = "";
@@ -622,6 +637,7 @@
 				32C123FC2A3956FA00501A1E /* PlayingFeatureOnView.swift in Sources */,
 				32303CC82A30A7740032BB50 /* ViewModel.swift in Sources */,
 				329144212A36273400F5263D /* DynamicTypeChallengeView.swift in Sources */,
+				327883BC2A6A7C88005765E9 /* VibrationView.swift in Sources */,
 				32303CEB2A3181050032BB50 /* ChallengeViewModel.swift in Sources */,
 				3251DF162A6A39940017334A /* ColorWellSelectionView.swift in Sources */,
 				32303C9D2A303F7A0032BB50 /* ChallengeCategory.swift in Sources */,
@@ -932,6 +948,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		327883B72A6A7C4A005765E9 /* XCRemoteSwiftPackageReference "buzz" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jiachenyee/buzz.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		3291441B2A36032F00F5263D /* XCRemoteSwiftPackageReference "UtilMacros" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/jiachenyee/UtilMacros";
@@ -943,6 +967,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		327883B82A6A7C4A005765E9 /* Buzz */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 327883B72A6A7C4A005765E9 /* XCRemoteSwiftPackageReference "buzz" */;
+			productName = Buzz;
+		};
 		3291441C2A36032F00F5263D /* UtilMacros */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3291441B2A36032F00F5263D /* XCRemoteSwiftPackageReference "UtilMacros" */;

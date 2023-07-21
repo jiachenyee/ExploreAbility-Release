@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "buzz",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jiachenyee/buzz.git",
+      "state" : {
+        "revision" : "08c6834c830b1c92a02be228be046912a894195b",
+        "version" : "1.0.0"
+      }
+    },
+    {
       "identity" : "swift-syntax",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-syntax.git",

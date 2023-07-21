@@ -104,7 +104,9 @@ final class DifferentiateWithoutColorUITests: XCTestCase {
         
         settings.activate()
         
-        settings.cells["Reduce Motion"].tap()
+        XCTAssertTrue(app.buttons["Differentiate Without Colour"].waitForExistence(timeout: 1))
+        
+        settings.cells["Differentiate Without Colour"].tap()
     }
     
     func testChallengeInteractions() throws {

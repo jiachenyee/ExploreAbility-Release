@@ -110,6 +110,8 @@ final class ShakeToUndoUITests: XCTestCase {
         
         settings.activate()
         
+        XCTAssertTrue(app.buttons["Shake to Undo"].waitForExistence(timeout: 1))
+        
         settings.cells["Shake to Undo"].tap()
     }
 }
