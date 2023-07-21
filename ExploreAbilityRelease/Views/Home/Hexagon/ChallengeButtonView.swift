@@ -26,6 +26,7 @@ struct ChallengeButtonView: View {
                 }
             }
             .matchedGeometryEffect(id: challenge.accessibilityFeature, in: viewModel.sharedNamespace)
+            .accessibilityIdentifier(challenge.accessibilityFeature)
         } else {
             Circle()
                 .frame(width: 50, height: 50)

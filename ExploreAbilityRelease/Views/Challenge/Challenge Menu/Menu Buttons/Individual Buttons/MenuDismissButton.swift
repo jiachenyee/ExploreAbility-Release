@@ -32,5 +32,6 @@ struct MenuDismissButton: View {
                 }
         }
         .matchedGeometryEffect(id: "close.button", in: viewModel.sharedNamespace)
+        .accessibilityLabel("Dismiss")
     }
 }

@@ -43,6 +43,7 @@ struct DynamicTypeChallengeView: View {
                         .padding(borderWidth / 2)
                 }
                 .frame(width: 48, height: 48)
+                .accessibilityLabel("Menu")
                 .animation(.bouncy, value: dynamicTypeSize)
 
             }
@@ -86,6 +87,7 @@ struct DynamicTypeChallengeView: View {
                         .fontWeight(.bold)
                         .foregroundStyle(challengeViewModel.challenge.color)
                 }
+                .accessibilityIdentifier("Reset")
                 .multilineTextAlignment(.center)
                 .font(.system(size: 24))
                 .foregroundStyle(.white)

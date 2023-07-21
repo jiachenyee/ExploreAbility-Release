@@ -60,5 +60,6 @@ struct MenuHomeButton: View {
                 }
         }
         .matchedGeometryEffect(id: "home.button", in: viewModel.sharedNamespace)
+        .accessibilityLabel("Home")
     }
 }

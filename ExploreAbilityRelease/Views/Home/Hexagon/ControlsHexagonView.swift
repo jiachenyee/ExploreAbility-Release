@@ -53,6 +53,7 @@ struct ControlsHexagonView: View {
                                         .foregroundStyle(.white.opacity(0.5))
                                 }
                         }
+                        .accessibilityLabel("Unfocus Home")
                     } else {
                         Button {
                             withAnimation(.bouncy) {
@@ -68,6 +69,7 @@ struct ControlsHexagonView: View {
                                         .foregroundStyle(.yellow)
                                 }
                         }
+                        .accessibilityLabel("Zoom to Home")
                     }
                     
                     HomeViewActionButton(systemName: "hand.raised.app.fill", color: .yellow.opacity(0.6)) {
