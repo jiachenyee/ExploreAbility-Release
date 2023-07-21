@@ -101,7 +101,7 @@ struct DifferentiateWithoutColorView: View {
             }
             
         case .playingOn:
-            PlayingOnView(initialState: originalDifferentiateWithoutColorState, didSucceed: $didFinishChallenge)
+            PlayingFeatureOnView(initialState: originalDifferentiateWithoutColorState, didSucceed: $didFinishChallenge)
                 .onChange(of: differentiateWithoutColorEnabled) { newValue in
                     if originalDifferentiateWithoutColorState == newValue {
                         didFinishChallenge = true

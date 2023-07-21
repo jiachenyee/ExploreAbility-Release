@@ -1,5 +1,5 @@
 //
-//  PlayingOnView.swift
+//  PlayingFeatureOnView.swift
 //  ExploreAbilityRelease
 //
 //  Created by Jia Chen Yee on 14/6/23.
@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct PlayingOnView: View {
+struct PlayingFeatureOnView: View {
     
     var initialState: Bool
     

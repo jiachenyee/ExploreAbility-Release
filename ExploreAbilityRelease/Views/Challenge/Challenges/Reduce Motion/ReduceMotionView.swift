@@ -48,7 +48,7 @@ struct ReduceMotionView: View {
                 }
             }
         case .playingOn:
-            PlayingOnView(initialState: initialReduceMotionEnabled, didSucceed: $didFinishChallenge)
+            PlayingFeatureOnView(initialState: initialReduceMotionEnabled, didSucceed: $didFinishChallenge)
                 .onChange(of: reduceMotionEnabled) { newValue in
                     if initialReduceMotionEnabled == newValue {
                         didFinishChallenge = true
