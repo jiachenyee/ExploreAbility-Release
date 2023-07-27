@@ -14,7 +14,7 @@ class ChallengeViewModel: ObservableObject {
             if let warning = challenge.warning {
                 state = .warning(warning)
             } else {
-                state = .playingOff
+                state = .playing
             }
         }
     }

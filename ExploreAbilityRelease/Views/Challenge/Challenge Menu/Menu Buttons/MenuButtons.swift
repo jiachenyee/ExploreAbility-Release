@@ -45,7 +45,7 @@ struct MenuButtons: View {
                               color: color) {
                 withAnimation {
                     isFannedOut = false
-                    challengeViewModel.state = .playingOff
+                    challengeViewModel.state = .playing
                 }
             }
         }

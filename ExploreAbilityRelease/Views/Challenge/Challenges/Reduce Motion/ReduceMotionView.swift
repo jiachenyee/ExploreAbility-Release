@@ -20,7 +20,7 @@ struct ReduceMotionView: View {
     
     var body: some View {
         switch challengeViewModel.state {
-        case .playingOff:
+        case .playing:
             ZStack {
                 ChallengeHomeButton()
                 
@@ -44,10 +44,10 @@ struct ReduceMotionView: View {
                 guard initialReduceMotionEnabled != newValue else { return }
                 
                 withAnimation {
-                    challengeViewModel.state = .playingOn
+                    challengeViewModel.state = .playingFeatureToggled
                 }
             }
-        case .playingOn:
+        case .playingFeatureToggled:
             PlayingFeatureOnView(initialState: initialReduceMotionEnabled, didSucceed: $didFinishChallenge)
                 .onChange(of: reduceMotionEnabled) { newValue in
                     if initialReduceMotionEnabled == newValue {

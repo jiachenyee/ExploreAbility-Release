@@ -24,7 +24,7 @@ struct ShakeToUndoView: View {
     var body: some View {
         Group {
             switch challengeViewModel.state {
-            case .playingOff:
+            case .playing:
                 ZStack {
                     GeometryReader { context in
                         SpriteView(scene: ShakeToUndoScene(size: context.size))
@@ -35,11 +35,11 @@ struct ShakeToUndoView: View {
                 .onChange(of: isShakeToUndoEnabled) { newValue in
                     if newValue != initialIsShakeToUndoEnabledState {
                         withAnimation {
-                            challengeViewModel.state = .playingOn
+                            challengeViewModel.state = .playingFeatureToggled
                         }
                     }
                 }
-            case .playingOn:
+            case .playingFeatureToggled:
                 PlayingFeatureOnView(initialState: initialIsShakeToUndoEnabledState, didSucceed: $didFinishChallenge)
                     .onChange(of: isShakeToUndoEnabled) { newValue in
                         if initialIsShakeToUndoEnabledState == newValue {

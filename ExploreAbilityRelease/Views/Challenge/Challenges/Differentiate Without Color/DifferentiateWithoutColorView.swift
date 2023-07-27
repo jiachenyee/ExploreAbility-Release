@@ -33,7 +33,7 @@ struct DifferentiateWithoutColorView: View {
     
     var body: some View {
         switch challengeViewModel.state {
-        case .playingOff:
+        case .playing:
             ZStack {
                 DWCCanvas(pathPoints: $pathPoints,
                           drawingPreviewShowsStrokes: $drawingPreviewShowsStrokes,
@@ -83,7 +83,7 @@ struct DifferentiateWithoutColorView: View {
                 
                 if pathPoints.isEmpty {
                     withAnimation {
-                        challengeViewModel.state = .playingOn
+                        challengeViewModel.state = .playingFeatureToggled
                     }
                 } else {
                     withAnimation {
@@ -94,13 +94,13 @@ struct DifferentiateWithoutColorView: View {
                     
                     Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { _ in
                         withAnimation {
-                            challengeViewModel.state = .playingOn
+                            challengeViewModel.state = .playingFeatureToggled
                         }
                     }
                 }
             }
             
-        case .playingOn:
+        case .playingFeatureToggled:
             PlayingFeatureOnView(initialState: originalDifferentiateWithoutColorState, didSucceed: $didFinishChallenge)
                 .onChange(of: differentiateWithoutColorEnabled) { newValue in
                     if originalDifferentiateWithoutColorState == newValue {

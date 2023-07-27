@@ -43,6 +43,7 @@
 		325865572A42A60800630D7E /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325865562A42A60800630D7E /* Separator.swift */; };
 		3258655A2A42A6AB00630D7E /* ResourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325865592A42A6AB00630D7E /* ResourceView.swift */; };
 		3258655F2A42AAEA00630D7E /* XCChallengePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3258655E2A42AAEA00630D7E /* XCChallengePreview.swift */; };
+		326B88F12A6FC1A10029915B /* GuidedAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326B88F02A6FC1A10029915B /* GuidedAccessView.swift */; };
 		3275DF562A42BE4B00C361B1 /* MenuClosed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275DF552A42BE4B00C361B1 /* MenuClosed.swift */; };
 		3275DF582A42BEFF00C361B1 /* MenuButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275DF572A42BEFF00C361B1 /* MenuButtons.swift */; };
 		3275DF5A2A42BF9C00C361B1 /* MenuDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275DF592A42BF9C00C361B1 /* MenuDismissButton.swift */; };
@@ -124,6 +125,7 @@
 		325865562A42A60800630D7E /* Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Separator.swift; sourceTree = "<group>"; };
 		325865592A42A6AB00630D7E /* ResourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceView.swift; sourceTree = "<group>"; };
 		3258655E2A42AAEA00630D7E /* XCChallengePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCChallengePreview.swift; sourceTree = "<group>"; };
+		326B88F02A6FC1A10029915B /* GuidedAccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidedAccessView.swift; sourceTree = "<group>"; };
 		3275DF552A42BE4B00C361B1 /* MenuClosed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuClosed.swift; sourceTree = "<group>"; };
 		3275DF572A42BEFF00C361B1 /* MenuButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtons.swift; sourceTree = "<group>"; };
 		3275DF592A42BF9C00C361B1 /* MenuDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDismissButton.swift; sourceTree = "<group>"; };
@@ -330,6 +332,14 @@
 			path = "Challenge Menu";
 			sourceTree = "<group>";
 		};
+		326B88EF2A6FC1930029915B /* Guided Access */ = {
+			isa = PBXGroup;
+			children = (
+				326B88F02A6FC1A10029915B /* GuidedAccessView.swift */,
+			);
+			path = "Guided Access";
+			sourceTree = "<group>";
+		};
 		3275DF5F2A42C11A00C361B1 /* Menu Buttons */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,6 +416,7 @@
 			children = (
 				3291441E2A36265800F5263D /* ChallengePlayingView.swift */,
 				327883AC2A6A6333005765E9 /* ChallengeHomeButton.swift */,
+				326B88EF2A6FC1930029915B /* Guided Access */,
 				327883BA2A6A7C72005765E9 /* Vibration */,
 				327883B02A6A6985005765E9 /* Shake to Undo */,
 				3251DF102A6A177E0017334A /* Differentiate Without Color */,
@@ -651,6 +662,7 @@
 				327883B22A6A6990005765E9 /* ShakeToUndoView.swift in Sources */,
 				32303CC22A307F940032BB50 /* CafeView.swift in Sources */,
 				32A0A6622A428FA900E97042 /* ChallengeConclusionContainerView.swift in Sources */,
+				326B88F12A6FC1A10029915B /* GuidedAccessView.swift in Sources */,
 				32303CE72A30E2570032BB50 /* ChallengeView.swift in Sources */,
 				325865522A42A31600630D7E /* DeveloperResourceGitHubButton.swift in Sources */,
 				32A0A65F2A428B3800E97042 /* DisableInstructionsView.swift in Sources */,

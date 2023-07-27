@@ -25,7 +25,7 @@ struct DynamicTypeChallengeView: View {
     
     var body: some View {
         switch challengeViewModel.state {
-        case .playingOff:
+        case .playing:
             ZStack {
                 let borderWidth = dynamicTypeSize.getCircleBorderWidth(initialSize: initialSize)
                 ArcText(text: dynamicTypeSize.getMessage(initialSize: initialSize), fontSize: dynamicTypeSize.fontSize)
@@ -59,14 +59,14 @@ struct DynamicTypeChallengeView: View {
                         
                         Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { _ in
                             withAnimation(.spring(dampingFraction: 0.5)) {
-                                challengeViewModel.state = .playingOn
+                                challengeViewModel.state = .playingFeatureToggled
                             }
                             UIImpactFeedbackGenerator(style: .medium).impactOccurred()
                         }
                     }
                 }
             }
-        case .playingOn:
+        case .playingFeatureToggled:
             VStack {
                 Spacer()
                 HStack(spacing: 0) {

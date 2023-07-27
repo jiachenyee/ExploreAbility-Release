@@ -20,7 +20,7 @@ struct XCChallengePreview<Content: View>: View {
         self.content = content()
         
         challengeViewModel.challenge = challenge
-        challengeViewModel.state = .playingOff
+        challengeViewModel.state = .playing
         
         viewModel.sharedNamespace = Namespace().wrappedValue
         viewModel.gameState = .challenge(challenge)

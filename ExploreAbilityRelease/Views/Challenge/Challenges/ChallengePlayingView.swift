@@ -27,7 +27,7 @@ struct ChallengePlayingView: View {
         case .shakeToUndo: ShakeToUndoView()
         case .vibrationEnabled: VibrationView()
         case .animatedImages: ChallengeHomeButton() // TODO: Add challenge
-        case .guidedAccess: ChallengeHomeButton() // TODO: Add challenge
+        case .guidedAccess: GuidedAccessView()
         case .dimFlashingLights: ChallengeHomeButton() // TODO: Add challenge
         default:
             Text("Something went very wrong.")

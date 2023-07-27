@@ -10,8 +10,8 @@ import Foundation
 enum ChallengeState {
     case unknown
     case warning(PreChallengeWarning)
-    case playingOff
-    case playingOn
+    case playing
+    case playingFeatureToggled
     case success
     case menu
     case conclusion
