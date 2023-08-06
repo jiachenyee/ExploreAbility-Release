@@ -25,7 +25,6 @@ struct ChallengePlayingView: View {
         case .monoAudio: ChallengeHomeButton() // TODO: Add challenge
         case .assistiveTouch: ChallengeHomeButton() // TODO: Add challenge
         case .shakeToUndo: ShakeToUndoView()
-        case .vibrationEnabled: VibrationView()
         case .animatedImages: ChallengeHomeButton() // TODO: Add challenge
         case .guidedAccess: GuidedAccessView()
         case .dimFlashingLights: ChallengeHomeButton() // TODO: Add challenge

@@ -14,7 +14,7 @@ extension Challenge {
     
     static let hearing = [captions, monoAudio]
     
-    static let mobility = [assistiveTouch, shakeToUndo, vibrationEnabled]
+    static let mobility = [assistiveTouch, shakeToUndo]
     
     static let cognitive = [animatedImages, guidedAccess, dimFlashingLights]
     
@@ -138,13 +138,6 @@ extension Challenge {
                                        image: Image(systemName: "iphone.gen3.radiowaves.left.and.right"),
                                        color: .cyan.opacity(0.9),
                                        category: .mobility)
-    
-    static let vibrationEnabled = Challenge(accessibilityFeature: "Vibration",
-                                            hint: "<#T##String#>",
-                                            postChallengeMessage: "<#T##String#>",
-                                            image: Image(systemName: "waveform"),
-                                            color: .cyan.opacity(0.8),
-                                            category: .mobility)
     
     // cognitive
     static let animatedImages = Challenge(accessibilityFeature: "Animated Images",
