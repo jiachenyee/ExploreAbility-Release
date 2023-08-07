@@ -10,6 +10,8 @@ import SwiftUI
 
 struct ChallengeHomeButton: View {
     
+    static let width: Double = 48
+    
     @EnvironmentObject var challengeViewModel: ChallengeViewModel
     @EnvironmentObject var viewModel: ViewModel
     
@@ -27,7 +29,7 @@ struct ChallengeHomeButton: View {
                 .padding(8 / 2)
                 .padding(width / 2)
         }
-        .frame(width: 48, height: 48)
+        .frame(width: Self.width, height: Self.width)
         .accessibilityLabel("Menu")
     }
 }
