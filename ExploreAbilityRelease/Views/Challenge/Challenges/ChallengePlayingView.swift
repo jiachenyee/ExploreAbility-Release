@@ -24,7 +24,7 @@ struct ChallengePlayingView: View {
         case .differentiateWithoutColour: DifferentiateWithoutColorView(isFeatureToggled: isFeatureToggled)
         case .reduceTransparency: ChallengeHomeButton() // TODO: Add challenge
         case .captions: ChallengeHomeButton() // TODO: Add challenge
-        case .monoAudio: ChallengeHomeButton() // TODO: Add challenge
+        case .monoAudio: MonoAudioChallengeView(isFeatureToggled: isFeatureToggled)
         case .assistiveTouch: ChallengeHomeButton() // TODO: Add challenge
         case .shakeToUndo: ShakeToUndoView(isFeatureToggled: isFeatureToggled)
         case .animatedImages: if #available(iOS 17.0, *) { AnimatedImagesChallengeView(isFeatureToggled: isFeatureToggled) }
