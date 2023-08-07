@@ -19,5 +19,7 @@ class ChallengeViewModel: ObservableObject {
         }
     }
     
+    var accomodations: Set<ChallengeAccomodation> = []
+    
     @Published var state: ChallengeState = .unknown
 }

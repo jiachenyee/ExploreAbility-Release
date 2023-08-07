@@ -76,6 +76,7 @@
 		329144212A36273400F5263D /* DynamicTypeChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329144202A36273400F5263D /* DynamicTypeChallengeView.swift */; };
 		329144232A364A9400F5263D /* ArcText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329144222A364A9400F5263D /* ArcText.swift */; };
 		329144252A364AF700F5263D /* CircularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329144242A364AF700F5263D /* CircularLabel.swift */; };
+		329CB3982A813DA200ADA128 /* DimFlashingLightsChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329CB3972A813DA200ADA128 /* DimFlashingLightsChallengeView.swift */; };
 		32A0A6592A42084900E97042 /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0A6582A42084900E97042 /* ResourcesView.swift */; };
 		32A0A65D2A42090D00E97042 /* DeveloperResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0A65C2A42090D00E97042 /* DeveloperResourcesView.swift */; };
 		32A0A65F2A428B3800E97042 /* DisableInstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0A65E2A428B3800E97042 /* DisableInstructionsView.swift */; };
@@ -169,6 +170,7 @@
 		329144202A36273400F5263D /* DynamicTypeChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeChallengeView.swift; sourceTree = "<group>"; };
 		329144222A364A9400F5263D /* ArcText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcText.swift; sourceTree = "<group>"; };
 		329144242A364AF700F5263D /* CircularLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularLabel.swift; sourceTree = "<group>"; };
+		329CB3972A813DA200ADA128 /* DimFlashingLightsChallengeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimFlashingLightsChallengeView.swift; sourceTree = "<group>"; };
 		32A0A6582A42084900E97042 /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
 		32A0A65C2A42090D00E97042 /* DeveloperResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperResourcesView.swift; sourceTree = "<group>"; };
 		32A0A65E2A428B3800E97042 /* DisableInstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableInstructionsView.swift; sourceTree = "<group>"; };
@@ -423,6 +425,14 @@
 			path = "Shake to Undo";
 			sourceTree = "<group>";
 		};
+		328DF9A92A813D7900FFC128 /* Dim Flashing Lights */ = {
+			isa = PBXGroup;
+			children = (
+				329CB3972A813DA200ADA128 /* DimFlashingLightsChallengeView.swift */,
+			);
+			path = "Dim Flashing Lights";
+			sourceTree = "<group>";
+		};
 		329144262A364B0000F5263D /* Dynamic Type */ = {
 			isa = PBXGroup;
 			children = (
@@ -462,6 +472,7 @@
 			children = (
 				3291441E2A36265800F5263D /* ChallengePlayingView.swift */,
 				327883AC2A6A6333005765E9 /* ChallengeHomeButton.swift */,
+				328DF9A92A813D7900FFC128 /* Dim Flashing Lights */,
 				32589BD62A8110920089529B /* Animated Images */,
 				3258E9682A80DF7E009149CF /* VoiceOver */,
 				326B88EF2A6FC1930029915B /* Guided Access */,
@@ -711,6 +722,7 @@
 				32303CDC2A30D6D30032BB50 /* ChallengeButtonView.swift in Sources */,
 				32303CC02A306C400032BB50 /* PreChallengeWarningView.swift in Sources */,
 				32303CCE2A30A8910032BB50 /* GameState.swift in Sources */,
+				329CB3982A813DA200ADA128 /* DimFlashingLightsChallengeView.swift in Sources */,
 				3275DF5E2A42C0EF00C361B1 /* MenuHomeButton.swift in Sources */,
 				327883B22A6A6990005765E9 /* ShakeToUndoView.swift in Sources */,
 				32303CC22A307F940032BB50 /* CafeView.swift in Sources */,

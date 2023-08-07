@@ -29,7 +29,7 @@ struct ChallengePlayingView: View {
         case .shakeToUndo: ShakeToUndoView(isFeatureToggled: isFeatureToggled)
         case .animatedImages: if #available(iOS 17.0, *) { AnimatedImagesChallengeView(isFeatureToggled: isFeatureToggled) }
         case .guidedAccess: GuidedAccessView(isFeatureToggled: isFeatureToggled)
-        case .dimFlashingLights: ChallengeHomeButton() // TODO: Add challenge
+        case .dimFlashingLights: if #available(iOS 17.0, *) { DimFlashingLightsChallengeView(isFeatureToggled: isFeatureToggled) }
         default:
             Text("Something went very wrong.")
         }

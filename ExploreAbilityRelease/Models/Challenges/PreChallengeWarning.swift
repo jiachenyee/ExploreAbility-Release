@@ -12,13 +12,20 @@ struct PreChallengeWarning {
     var title: String
     var icon: Image
     var description: String
-    var modifications: [String]
+    var modifications: [ChallengeAccomodation]
     
     static let flashingLight = PreChallengeWarning(title: "Flashing Lights",
                                                    icon: Image(systemName: "light.max"),
                                                    description: "The next challenge may involve bright, flashing lights. If you are sensitive to flashing lights, consider playing the challenge with the following accomodations enabled.",
                                                    modifications: [
-                                                    "Dim user interface",
-                                                    "Reduce number of flashes"
+                                                    .dimUserInterface,
+                                                    .reduceNumberOfFlashes,
+                                                    .useDescriptions
                                                    ])
+}
+
+enum ChallengeAccomodation: String {
+    case dimUserInterface = "Dim user interface"
+    case reduceNumberOfFlashes = "Reduce number of flashes"
+    case useDescriptions = "Use text descriptions instead"
 }

@@ -34,7 +34,17 @@ struct PreChallengeWarningView: View {
             Form {
                 Section("Accomodations") {
                     ForEach(warning.modifications, id: \.self) { modification in
-                        Toggle(modification, isOn: .constant(false))
+                        let accomodationBinding = Binding {
+                            challengeViewModel.accomodations.contains(modification)
+                        } set: { newValue in
+                            if newValue {
+                                challengeViewModel.accomodations.insert(modification)
+                            } else {
+                                challengeViewModel.accomodations.remove(modification)
+                            }
+                        }
+
+                        Toggle(modification.rawValue, isOn: accomodationBinding)
                             .toggleStyle(.switch)
                     }
                 }
