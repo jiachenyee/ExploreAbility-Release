@@ -13,7 +13,9 @@ struct DimFlashingLightsChallengeView: View {
     
     var isFeatureToggled: Bool
     
-    @Environment(\.accessibilityDimFlashingLights) var playAnimatedImages
+    @Environment(\.accessibilityDimFlashingLights) var dimFlashingLights
+    
+    @State private var initialDimFlashingLights = false
     
     @EnvironmentObject var challengeViewModel: ChallengeViewModel
     @EnvironmentObject var viewModel: ViewModel
@@ -24,71 +26,93 @@ struct DimFlashingLightsChallengeView: View {
     
     @State private var videoPlayerProgress = 0.0
     
+    @State private var didFinishChallenge = false
+    
     let timer = Timer.publish(every: 0.25, on: .main, in: .common).autoconnect()
     
     var body: some View {
-        ZStack {
-            VStack(spacing: 0) {
-                if challengeViewModel.accomodations.contains(.useDescriptions) {
-                    ZStack {
+        if !isFeatureToggled {
+            ZStack {
+                VStack(spacing: 0) {
+                    if challengeViewModel.accomodations.contains(.useDescriptions) {
+                        ZStack {
+                            Rectangle()
+                                .fill(.white.opacity(0.1))
+                                .aspectRatio(16/9, contentMode: .fit)
+                            Text("Description: This is a flashing video player.")
+                        }
+                    } else {
                         Rectangle()
-                            .fill(.white.opacity(0.1))
+                            .fill(.white.opacity(challengeViewModel.accomodations.contains(.dimUserInterface) ? 0.1 : 1))
                             .aspectRatio(16/9, contentMode: .fit)
-                        Text("Description: This is a flashing video player.")
-                    }
-                } else {
-                    Rectangle()
-                        .fill(.white.opacity(challengeViewModel.accomodations.contains(.dimUserInterface) ? 0.1 : 1))
-                        .aspectRatio(16/9, contentMode: .fit)
-                        .opacity(showVideoPlayer ? 0 : 1)
-                        .onReceive(timer) { _ in
-                            cycleCount += 1
-                            
-                            if challengeViewModel.accomodations.contains(.reduceNumberOfFlashes) {
-                                if cycleCount % 5 == 0 {
+                            .opacity(showVideoPlayer ? 0 : 1)
+                            .onReceive(timer) { _ in
+                                cycleCount += 1
+                                
+                                if challengeViewModel.accomodations.contains(.reduceNumberOfFlashes) {
+                                    if cycleCount % 5 == 0 {
+                                        showVideoPlayer.toggle()
+                                    }
+                                } else {
                                     showVideoPlayer.toggle()
                                 }
-                            } else {
-                                showVideoPlayer.toggle()
                             }
-                        }
-                }
-                
-                GeometryReader { proxy in
-                    VStack(alignment: .leading) {
-                        Rectangle()
-                            .fill(challengeViewModel.challenge.color)
-                            .frame(width: proxy.size.width * videoPlayerProgress)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            .background(.white.opacity(0.3))
-                            .frame(height: 8)
-                        
+                    }
+                    
+                    GeometryReader { proxy in
                         VStack(alignment: .leading) {
-                            RoundedRectangle(cornerRadius: 4)
-                                .frame(width: proxy.size.width * 0.8)
-                                .frame(height: 21)
-                            RoundedRectangle(cornerRadius: 4)
-                                .frame(width: proxy.size.width * 0.2)
-                                .frame(height: 21)
-                            RoundedRectangle(cornerRadius: 4)
-                                .frame(width: proxy.size.width * 0.3)
-                                .frame(height: 16)
-                                .opacity(0.5)
+                            Rectangle()
+                                .fill(challengeViewModel.challenge.color)
+                                .frame(width: proxy.size.width * videoPlayerProgress)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .background(.white.opacity(0.3))
+                                .frame(height: 8)
+                            
+                            VStack(alignment: .leading) {
+                                RoundedRectangle(cornerRadius: 4)
+                                    .frame(width: proxy.size.width * 0.8)
+                                    .frame(height: 21)
+                                RoundedRectangle(cornerRadius: 4)
+                                    .frame(width: proxy.size.width * 0.2)
+                                    .frame(height: 21)
+                                RoundedRectangle(cornerRadius: 4)
+                                    .frame(width: proxy.size.width * 0.3)
+                                    .frame(height: 16)
+                                    .opacity(0.5)
+                            }
+                            .padding()
                         }
-                        .padding()
+                        .frame(maxWidth: .infinity, alignment: .leading)
                     }
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                }
-                .onAppear {
-                    withAnimation(.linear(duration: 10).repeatForever(autoreverses: false)) {
-                        videoPlayerProgress = 1
+                    .onAppear {
+                        withAnimation(.linear(duration: 10).repeatForever(autoreverses: false)) {
+                            videoPlayerProgress = 1
+                        }
                     }
+                    
+                    Spacer()
                 }
                 
-                Spacer()
+                ChallengeHomeButton()
             }
-            
-            ChallengeHomeButton()
+            .onAppear {
+                initialDimFlashingLights = dimFlashingLights
+            }
+            .onChange(of: dimFlashingLights) { newValue in
+                guard newValue != initialDimFlashingLights else { return }
+                
+                withAnimation {
+                    challengeViewModel.state = .playing(true)
+                }
+            }
+        } else {
+            PlayingFeatureOnView(initialState: initialDimFlashingLights,
+                                 didSucceed: $didFinishChallenge)
+            .onChange(of: dimFlashingLights) { newValue in
+                if initialDimFlashingLights == newValue {
+                    didFinishChallenge = true
+                }
+            }
         }
     }
 }
