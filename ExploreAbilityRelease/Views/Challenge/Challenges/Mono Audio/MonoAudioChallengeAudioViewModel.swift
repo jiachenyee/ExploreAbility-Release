@@ -102,13 +102,10 @@ class MonoAudioChallengeAudioViewModel: ObservableObject {
     }
     
     func stopAudio() {
-        for (_, player) in audioPlayers {
-            if player.isPlaying {
-                player.stop()
-            }
+        for (_, player) in audioPlayers where player.isPlaying {
+            player.stop()
         }
         
         isPlaying = false
     }
 }
-
