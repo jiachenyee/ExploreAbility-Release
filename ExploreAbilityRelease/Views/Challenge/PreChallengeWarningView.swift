@@ -11,6 +11,9 @@ struct PreChallengeWarningView: View {
     
     let warning: PreChallengeWarning
     
+    @EnvironmentObject var viewModel: ViewModel
+    @EnvironmentObject var challengeViewModel: ChallengeViewModel
+    
     var body: some View {
         VStack {
             HStack {
@@ -42,7 +45,9 @@ struct PreChallengeWarningView: View {
             Spacer()
             
             Button {
-                
+                withAnimation {
+                    challengeViewModel.state = .playing(false)
+                }
             } label: {
                 Text("Start Challenge")
                     .padding(8)
@@ -51,7 +56,9 @@ struct PreChallengeWarningView: View {
             .buttonStyle(.borderedProminent)
             
             Button {
-                
+                withAnimation {
+                    viewModel.gameState = .home
+                }
             } label: {
                 Text("Exit")
                     .padding(8)
