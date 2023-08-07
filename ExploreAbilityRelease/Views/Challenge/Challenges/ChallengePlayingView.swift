@@ -13,20 +13,22 @@ struct ChallengePlayingView: View {
 
     @EnvironmentObject var challengeViewModel: ChallengeViewModel
     
+    var isFeatureToggled: Bool
+    
     var body: some View {
         switch challengeViewModel.challenge! {
-        case .voiceOver: ChallengeHomeButton() // TODO: Add challenge
-        case .dynamicType: DynamicTypeChallengeView()
-        case .reduceMotion: ReduceMotionView()
+        case .voiceOver: VoiceOverView(isFeatureToggled: isFeatureToggled)
+        case .dynamicType: DynamicTypeChallengeView(isFeatureToggled: isFeatureToggled)
+        case .reduceMotion: ReduceMotionView(isFeatureToggled: isFeatureToggled)
         case .increaseContrast: ChallengeHomeButton() // TODO: Add challenge
-        case .differentiateWithoutColour: DifferentiateWithoutColorView()
+        case .differentiateWithoutColour: DifferentiateWithoutColorView(isFeatureToggled: isFeatureToggled)
         case .reduceTransparency: ChallengeHomeButton() // TODO: Add challenge
         case .captions: ChallengeHomeButton() // TODO: Add challenge
         case .monoAudio: ChallengeHomeButton() // TODO: Add challenge
         case .assistiveTouch: ChallengeHomeButton() // TODO: Add challenge
-        case .shakeToUndo: ShakeToUndoView()
+        case .shakeToUndo: ShakeToUndoView(isFeatureToggled: isFeatureToggled)
         case .animatedImages: ChallengeHomeButton() // TODO: Add challenge
-        case .guidedAccess: GuidedAccessView()
+        case .guidedAccess: GuidedAccessView(isFeatureToggled: isFeatureToggled)
         case .dimFlashingLights: ChallengeHomeButton() // TODO: Add challenge
         default:
             Text("Something went very wrong.")

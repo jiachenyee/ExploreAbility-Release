@@ -10,8 +10,9 @@ import Foundation
 enum ChallengeState {
     case unknown
     case warning(PreChallengeWarning)
-    case playing
-    case playingFeatureToggled
+    
+    // Bool value refers to whether a feature is currently toggled
+    case playing(Bool)
     case success
     case menu
     case conclusion

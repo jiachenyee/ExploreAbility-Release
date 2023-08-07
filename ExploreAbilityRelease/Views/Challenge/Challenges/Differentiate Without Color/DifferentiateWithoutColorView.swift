@@ -10,6 +10,8 @@ import SwiftUI
 
 struct DifferentiateWithoutColorView: View {
     
+    var isFeatureToggled: Bool
+    
     @EnvironmentObject var viewModel: ViewModel
     @EnvironmentObject var challengeViewModel: ChallengeViewModel
     
@@ -32,8 +34,7 @@ struct DifferentiateWithoutColorView: View {
     @State private var message = "Draw something!"
     
     var body: some View {
-        switch challengeViewModel.state {
-        case .playing:
+        if !isFeatureToggled {
             ZStack {
                 DWCCanvas(pathPoints: $pathPoints,
                           drawingPreviewShowsStrokes: $drawingPreviewShowsStrokes,
@@ -83,7 +84,7 @@ struct DifferentiateWithoutColorView: View {
                 
                 if pathPoints.isEmpty {
                     withAnimation {
-                        challengeViewModel.state = .playingFeatureToggled
+                        challengeViewModel.state = .playing(true)
                     }
                 } else {
                     withAnimation {
@@ -94,20 +95,18 @@ struct DifferentiateWithoutColorView: View {
                     
                     Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { _ in
                         withAnimation {
-                            challengeViewModel.state = .playingFeatureToggled
+                            challengeViewModel.state = .playing(true)
                         }
                     }
                 }
             }
-            
-        case .playingFeatureToggled:
+        } else {
             PlayingFeatureOnView(initialState: originalDifferentiateWithoutColorState, didSucceed: $didFinishChallenge)
                 .onChange(of: differentiateWithoutColorEnabled) { newValue in
                     if originalDifferentiateWithoutColorState == newValue {
                         didFinishChallenge = true
                     }
                 }
-        default: EmptyView()
         }
     }
 }
@@ -115,7 +114,7 @@ struct DifferentiateWithoutColorView: View {
 struct DifferentiateWithoutColorView_Previews: PreviewProvider {
     static var previews: some View {
         XCChallengePreview(challenge: .reduceMotion) {
-            DifferentiateWithoutColorView()
+            DifferentiateWithoutColorView(isFeatureToggled: false)
         }
     }
 }

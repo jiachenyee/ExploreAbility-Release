@@ -10,6 +10,8 @@ import SwiftUI
 
 struct DynamicTypeChallengeView: View {
     
+    var isFeatureToggled: Bool
+    
     @EnvironmentObject var viewModel: ViewModel
     @EnvironmentObject var challengeViewModel: ChallengeViewModel
     
@@ -24,8 +26,7 @@ struct DynamicTypeChallengeView: View {
     @State private var alignment = Alignment.trailing
     
     var body: some View {
-        switch challengeViewModel.state {
-        case .playing:
+        if !isFeatureToggled {
             ZStack {
                 let borderWidth = dynamicTypeSize.getCircleBorderWidth(initialSize: initialSize)
                 ArcText(text: dynamicTypeSize.getMessage(initialSize: initialSize), fontSize: dynamicTypeSize.fontSize)
@@ -59,14 +60,14 @@ struct DynamicTypeChallengeView: View {
                         
                         Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { _ in
                             withAnimation(.spring(dampingFraction: 0.5)) {
-                                challengeViewModel.state = .playingFeatureToggled
+                                challengeViewModel.state = .playing(true)
                             }
                             UIImpactFeedbackGenerator(style: .medium).impactOccurred()
                         }
                     }
                 }
             }
-        case .playingFeatureToggled:
+        } else {
             VStack {
                 Spacer()
                 HStack(spacing: 0) {
@@ -143,7 +144,6 @@ struct DynamicTypeChallengeView: View {
                     }
                 }
             }
-        default: EmptyView()
         }
     }
 }
@@ -151,7 +151,7 @@ struct DynamicTypeChallengeView: View {
 struct DynamicTextChallengeView_Previews: PreviewProvider {
     static var previews: some View {
         XCChallengePreview(challenge: .dynamicType) {
-            DynamicTypeChallengeView()
+            DynamicTypeChallengeView(isFeatureToggled: false)
         }
     }
 }

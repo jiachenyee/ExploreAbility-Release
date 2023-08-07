@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ReduceMotionView: View {
     
+    var isFeatureToggled: Bool
+    
     @EnvironmentObject var viewModel: ViewModel
     @EnvironmentObject var challengeViewModel: ChallengeViewModel
     
@@ -19,8 +21,7 @@ struct ReduceMotionView: View {
     @State private var didFinishChallenge = false
     
     var body: some View {
-        switch challengeViewModel.state {
-        case .playing:
+        if !isFeatureToggled {
             ZStack {
                 ChallengeHomeButton()
                 
@@ -44,17 +45,16 @@ struct ReduceMotionView: View {
                 guard initialReduceMotionEnabled != newValue else { return }
                 
                 withAnimation {
-                    challengeViewModel.state = .playingFeatureToggled
+                    challengeViewModel.state = .playing(true)
                 }
             }
-        case .playingFeatureToggled:
+        } else {
             PlayingFeatureOnView(initialState: initialReduceMotionEnabled, didSucceed: $didFinishChallenge)
                 .onChange(of: reduceMotionEnabled) { newValue in
                     if initialReduceMotionEnabled == newValue {
                         didFinishChallenge = true
                     }
                 }
-        default: EmptyView()
         }
     }
 }
@@ -62,7 +62,7 @@ struct ReduceMotionView: View {
 struct ReduceMotionView_Previews: PreviewProvider {
     static var previews: some View {
         XCChallengePreview(challenge: .reduceMotion) {
-            ReduceMotionView()
+            ReduceMotionView(isFeatureToggled: false)
         }
     }
 }

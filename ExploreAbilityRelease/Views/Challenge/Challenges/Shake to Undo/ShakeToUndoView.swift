@@ -11,20 +11,21 @@ import SpriteKit
 
 struct ShakeToUndoView: View {
     
+    var isFeatureToggled: Bool
+    
     @State private var isShakeToUndoEnabled = false
     @State private var initialIsShakeToUndoEnabledState = false
+    
+    @State private var didFinishChallenge = false
     
     @EnvironmentObject var challengeViewModel: ChallengeViewModel
     @EnvironmentObject var viewModel: ViewModel
     
-    @State private var didFinishChallenge = false
-    
-    let publisher = NotificationCenter.default.publisher(for: UIAccessibility.shakeToUndoDidChangeNotification)
+    private let publisher = NotificationCenter.default.publisher(for: UIAccessibility.shakeToUndoDidChangeNotification)
     
     var body: some View {
         Group {
-            switch challengeViewModel.state {
-            case .playing:
+            if !isFeatureToggled {
                 ZStack {
                     GeometryReader { context in
                         SpriteView(scene: ShakeToUndoScene(size: context.size))
@@ -35,19 +36,17 @@ struct ShakeToUndoView: View {
                 .onChange(of: isShakeToUndoEnabled) { newValue in
                     if newValue != initialIsShakeToUndoEnabledState {
                         withAnimation {
-                            challengeViewModel.state = .playingFeatureToggled
+                            challengeViewModel.state = .playing(true)
                         }
                     }
                 }
-            case .playingFeatureToggled:
+            } else {
                 PlayingFeatureOnView(initialState: initialIsShakeToUndoEnabledState, didSucceed: $didFinishChallenge)
                     .onChange(of: isShakeToUndoEnabled) { newValue in
                         if initialIsShakeToUndoEnabledState == newValue {
                             didFinishChallenge = true
                         }
                     }
-            default:
-                EmptyView()
             }
         }
         .onReceive(publisher) { _ in

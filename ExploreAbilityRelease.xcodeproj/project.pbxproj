@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		321F5DF22A80EE59006B2416 /* VoiceOverChallengeStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321F5DF12A80EE59006B2416 /* VoiceOverChallengeStepper.swift */; };
 		32303C9D2A303F7A0032BB50 /* ChallengeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303C9C2A303F7A0032BB50 /* ChallengeCategory.swift */; };
 		32303C9F2A30414C0032BB50 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303C9E2A30414C0032BB50 /* Challenge.swift */; };
 		32303CBC2A3069B40032BB50 /* Challenge+Challenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CBB2A3069B40032BB50 /* Challenge+Challenges.swift */; };
@@ -29,7 +30,9 @@
 		32303CE72A30E2570032BB50 /* ChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CE62A30E2570032BB50 /* ChallengeView.swift */; };
 		32303CE92A317F120032BB50 /* ChallengeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CE82A317F120032BB50 /* ChallengeState.swift */; };
 		32303CEB2A3181050032BB50 /* ChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CEA2A3181050032BB50 /* ChallengeViewModel.swift */; };
+		3238D0F42A80EB4A006D2889 /* VoiceOverChallengeDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3238D0F32A80EB4A006D2889 /* VoiceOverChallengeDatePicker.swift */; };
 		323DF2C62A36C27700CF20A5 /* ChallengeMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323DF2C52A36C27700CF20A5 /* ChallengeMenuView.swift */; };
+		3240D8552A80E7CF00D48F42 /* VoiceOverChallengeControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3240D8542A80E7CF00D48F42 /* VoiceOverChallengeControls.swift */; };
 		3241316B2A3F772500FBA638 /* DynamicTypeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3241316A2A3F772500FBA638 /* DynamicTypeHelper.swift */; };
 		3251DF122A6A17CD0017334A /* DifferentiateWithoutColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251DF112A6A17CD0017334A /* DifferentiateWithoutColorView.swift */; };
 		3251DF142A6A1F6F0017334A /* TaggedPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251DF132A6A1F6F0017334A /* TaggedPath.swift */; };
@@ -44,6 +47,7 @@
 		3258655A2A42A6AB00630D7E /* ResourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325865592A42A6AB00630D7E /* ResourceView.swift */; };
 		3258655F2A42AAEA00630D7E /* XCChallengePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3258655E2A42AAEA00630D7E /* XCChallengePreview.swift */; };
 		326B88F12A6FC1A10029915B /* GuidedAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326B88F02A6FC1A10029915B /* GuidedAccessView.swift */; };
+		327418912A80DFDC009721B9 /* VoiceOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327418902A80DFDC009721B9 /* VoiceOverView.swift */; };
 		3275DF562A42BE4B00C361B1 /* MenuClosed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275DF552A42BE4B00C361B1 /* MenuClosed.swift */; };
 		3275DF582A42BEFF00C361B1 /* MenuButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275DF572A42BEFF00C361B1 /* MenuButtons.swift */; };
 		3275DF5A2A42BF9C00C361B1 /* MenuDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275DF592A42BF9C00C361B1 /* MenuDismissButton.swift */; };
@@ -59,6 +63,8 @@
 		327E69822A37ECE3004E0ED3 /* ChallengeConclusionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E69812A37ECE3004E0ED3 /* ChallengeConclusionView.swift */; };
 		327E69842A384636004E0ED3 /* ReduceMotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E69832A384636004E0ED3 /* ReduceMotionView.swift */; };
 		327E69862A384982004E0ED3 /* RotatingCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E69852A384982004E0ED3 /* RotatingCircleView.swift */; };
+		328B9A9B2A80E8350004072A /* VoiceOverChallengeToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328B9A9A2A80E8350004072A /* VoiceOverChallengeToggle.swift */; };
+		328B9A9D2A80E8BF0004072A /* VoiceOverChallengePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328B9A9C2A80E8BF0004072A /* VoiceOverChallengePicker.swift */; };
 		3291441D2A36032F00F5263D /* UtilMacros in Frameworks */ = {isa = PBXBuildFile; productRef = 3291441C2A36032F00F5263D /* UtilMacros */; };
 		3291441F2A36265800F5263D /* ChallengePlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291441E2A36265800F5263D /* ChallengePlayingView.swift */; };
 		329144212A36273400F5263D /* DynamicTypeChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329144202A36273400F5263D /* DynamicTypeChallengeView.swift */; };
@@ -68,6 +74,7 @@
 		32A0A65D2A42090D00E97042 /* DeveloperResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0A65C2A42090D00E97042 /* DeveloperResourcesView.swift */; };
 		32A0A65F2A428B3800E97042 /* DisableInstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0A65E2A428B3800E97042 /* DisableInstructionsView.swift */; };
 		32A0A6622A428FA900E97042 /* ChallengeConclusionContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0A6612A428FA900E97042 /* ChallengeConclusionContainerView.swift */; };
+		32B635402A80EDB900A04DA5 /* VoiceOverChallengeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B6353F2A80EDB900A04DA5 /* VoiceOverChallengeSlider.swift */; };
 		32C123FC2A3956FA00501A1E /* PlayingFeatureOnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C123FB2A3956FA00501A1E /* PlayingFeatureOnView.swift */; };
 		32C1C9392A2B8E8C00C1854F /* ExploreAbilityReleaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1C9382A2B8E8C00C1854F /* ExploreAbilityReleaseApp.swift */; };
 		32C1C93B2A2B8E8C00C1854F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1C93A2A2B8E8C00C1854F /* ContentView.swift */; };
@@ -86,6 +93,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		321F5DF12A80EE59006B2416 /* VoiceOverChallengeStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceOverChallengeStepper.swift; sourceTree = "<group>"; };
 		32303C9C2A303F7A0032BB50 /* ChallengeCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeCategory.swift; sourceTree = "<group>"; };
 		32303C9E2A30414C0032BB50 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		32303CBB2A3069B40032BB50 /* Challenge+Challenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+Challenges.swift"; sourceTree = "<group>"; };
@@ -108,7 +116,9 @@
 		32303CE62A30E2570032BB50 /* ChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeView.swift; sourceTree = "<group>"; };
 		32303CE82A317F120032BB50 /* ChallengeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeState.swift; sourceTree = "<group>"; };
 		32303CEA2A3181050032BB50 /* ChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewModel.swift; sourceTree = "<group>"; };
+		3238D0F32A80EB4A006D2889 /* VoiceOverChallengeDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceOverChallengeDatePicker.swift; sourceTree = "<group>"; };
 		323DF2C52A36C27700CF20A5 /* ChallengeMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeMenuView.swift; sourceTree = "<group>"; };
+		3240D8542A80E7CF00D48F42 /* VoiceOverChallengeControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceOverChallengeControls.swift; sourceTree = "<group>"; };
 		3241316A2A3F772500FBA638 /* DynamicTypeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeHelper.swift; sourceTree = "<group>"; };
 		3251DF112A6A17CD0017334A /* DifferentiateWithoutColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentiateWithoutColorView.swift; sourceTree = "<group>"; };
 		3251DF132A6A1F6F0017334A /* TaggedPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaggedPath.swift; sourceTree = "<group>"; };
@@ -124,6 +134,7 @@
 		325865592A42A6AB00630D7E /* ResourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceView.swift; sourceTree = "<group>"; };
 		3258655E2A42AAEA00630D7E /* XCChallengePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCChallengePreview.swift; sourceTree = "<group>"; };
 		326B88F02A6FC1A10029915B /* GuidedAccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidedAccessView.swift; sourceTree = "<group>"; };
+		327418902A80DFDC009721B9 /* VoiceOverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceOverView.swift; sourceTree = "<group>"; };
 		3275DF552A42BE4B00C361B1 /* MenuClosed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuClosed.swift; sourceTree = "<group>"; };
 		3275DF572A42BEFF00C361B1 /* MenuButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtons.swift; sourceTree = "<group>"; };
 		3275DF592A42BF9C00C361B1 /* MenuDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDismissButton.swift; sourceTree = "<group>"; };
@@ -138,6 +149,8 @@
 		327E69812A37ECE3004E0ED3 /* ChallengeConclusionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeConclusionView.swift; sourceTree = "<group>"; };
 		327E69832A384636004E0ED3 /* ReduceMotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduceMotionView.swift; sourceTree = "<group>"; };
 		327E69852A384982004E0ED3 /* RotatingCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingCircleView.swift; sourceTree = "<group>"; };
+		328B9A9A2A80E8350004072A /* VoiceOverChallengeToggle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceOverChallengeToggle.swift; sourceTree = "<group>"; };
+		328B9A9C2A80E8BF0004072A /* VoiceOverChallengePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceOverChallengePicker.swift; sourceTree = "<group>"; };
 		3291441E2A36265800F5263D /* ChallengePlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengePlayingView.swift; sourceTree = "<group>"; };
 		329144202A36273400F5263D /* DynamicTypeChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeChallengeView.swift; sourceTree = "<group>"; };
 		329144222A364A9400F5263D /* ArcText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcText.swift; sourceTree = "<group>"; };
@@ -146,6 +159,7 @@
 		32A0A65C2A42090D00E97042 /* DeveloperResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperResourcesView.swift; sourceTree = "<group>"; };
 		32A0A65E2A428B3800E97042 /* DisableInstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableInstructionsView.swift; sourceTree = "<group>"; };
 		32A0A6612A428FA900E97042 /* ChallengeConclusionContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeConclusionContainerView.swift; sourceTree = "<group>"; };
+		32B6353F2A80EDB900A04DA5 /* VoiceOverChallengeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceOverChallengeSlider.swift; sourceTree = "<group>"; };
 		32C123FB2A3956FA00501A1E /* PlayingFeatureOnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingFeatureOnView.swift; sourceTree = "<group>"; };
 		32C1C9352A2B8E8C00C1854F /* ExploreAbilityRelease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExploreAbilityRelease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C1C9382A2B8E8C00C1854F /* ExploreAbilityReleaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreAbilityReleaseApp.swift; sourceTree = "<group>"; };
@@ -328,6 +342,20 @@
 			path = "Challenge Menu";
 			sourceTree = "<group>";
 		};
+		3258E9682A80DF7E009149CF /* VoiceOver */ = {
+			isa = PBXGroup;
+			children = (
+				327418902A80DFDC009721B9 /* VoiceOverView.swift */,
+				321F5DF12A80EE59006B2416 /* VoiceOverChallengeStepper.swift */,
+				328B9A9A2A80E8350004072A /* VoiceOverChallengeToggle.swift */,
+				328B9A9C2A80E8BF0004072A /* VoiceOverChallengePicker.swift */,
+				3240D8542A80E7CF00D48F42 /* VoiceOverChallengeControls.swift */,
+				32B6353F2A80EDB900A04DA5 /* VoiceOverChallengeSlider.swift */,
+				3238D0F32A80EB4A006D2889 /* VoiceOverChallengeDatePicker.swift */,
+			);
+			path = VoiceOver;
+			sourceTree = "<group>";
+		};
 		326B88EF2A6FC1930029915B /* Guided Access */ = {
 			isa = PBXGroup;
 			children = (
@@ -403,6 +431,7 @@
 			children = (
 				3291441E2A36265800F5263D /* ChallengePlayingView.swift */,
 				327883AC2A6A6333005765E9 /* ChallengeHomeButton.swift */,
+				3258E9682A80DF7E009149CF /* VoiceOver */,
 				326B88EF2A6FC1930029915B /* Guided Access */,
 				327883B02A6A6985005765E9 /* Shake to Undo */,
 				3251DF102A6A177E0017334A /* Differentiate Without Color */,
@@ -618,10 +647,12 @@
 				32303CD42A30A9860032BB50 /* PreChallengeWarning.swift in Sources */,
 				3275DF562A42BE4B00C361B1 /* MenuClosed.swift in Sources */,
 				32303CBC2A3069B40032BB50 /* Challenge+Challenges.swift in Sources */,
+				328B9A9D2A80E8BF0004072A /* VoiceOverChallengePicker.swift in Sources */,
 				3275DF5C2A42C02E00C361B1 /* MenuHintButton.swift in Sources */,
 				329144252A364AF700F5263D /* CircularLabel.swift in Sources */,
 				32303CC62A30A7140032BB50 /* HexagonView.swift in Sources */,
 				325865572A42A60800630D7E /* Separator.swift in Sources */,
+				3238D0F42A80EB4A006D2889 /* VoiceOverChallengeDatePicker.swift in Sources */,
 				3251DF1A2A6A4D470017334A /* DWCCanvas.swift in Sources */,
 				3251DF122A6A17CD0017334A /* DifferentiateWithoutColorView.swift in Sources */,
 				323DF2C62A36C27700CF20A5 /* ChallengeMenuView.swift in Sources */,
@@ -636,6 +667,7 @@
 				32303CE92A317F120032BB50 /* ChallengeState.swift in Sources */,
 				32C123FC2A3956FA00501A1E /* PlayingFeatureOnView.swift in Sources */,
 				32303CC82A30A7740032BB50 /* ViewModel.swift in Sources */,
+				328B9A9B2A80E8350004072A /* VoiceOverChallengeToggle.swift in Sources */,
 				329144212A36273400F5263D /* DynamicTypeChallengeView.swift in Sources */,
 				32303CEB2A3181050032BB50 /* ChallengeViewModel.swift in Sources */,
 				3251DF162A6A39940017334A /* ColorWellSelectionView.swift in Sources */,
@@ -652,13 +684,16 @@
 				325865522A42A31600630D7E /* DeveloperResourceGitHubButton.swift in Sources */,
 				32A0A65F2A428B3800E97042 /* DisableInstructionsView.swift in Sources */,
 				32303C9F2A30414C0032BB50 /* Challenge.swift in Sources */,
+				32B635402A80EDB900A04DA5 /* VoiceOverChallengeSlider.swift in Sources */,
 				327883B42A6A74A9005765E9 /* ShakeToUndoScene.swift in Sources */,
 				3241316B2A3F772500FBA638 /* DynamicTypeHelper.swift in Sources */,
 				32A0A65D2A42090D00E97042 /* DeveloperResourcesView.swift in Sources */,
 				32303CBE2A306A1E0032BB50 /* ChallengeRequirement.swift in Sources */,
 				32303CE02A30DD670032BB50 /* CafeProductView.swift in Sources */,
 				32A0A6592A42084900E97042 /* ResourcesView.swift in Sources */,
+				327418912A80DFDC009721B9 /* VoiceOverView.swift in Sources */,
 				32C1C93B2A2B8E8C00C1854F /* ContentView.swift in Sources */,
+				3240D8552A80E7CF00D48F42 /* VoiceOverChallengeControls.swift in Sources */,
 				3275DF582A42BEFF00C361B1 /* MenuButtons.swift in Sources */,
 				3291441F2A36265800F5263D /* ChallengePlayingView.swift in Sources */,
 				3258655F2A42AAEA00630D7E /* XCChallengePreview.swift in Sources */,
@@ -667,6 +702,7 @@
 				327883AD2A6A6333005765E9 /* ChallengeHomeButton.swift in Sources */,
 				32303CCA2A30A7C80032BB50 /* ZoomableScrollView.swift in Sources */,
 				3258655A2A42A6AB00630D7E /* ResourceView.swift in Sources */,
+				321F5DF22A80EE59006B2416 /* VoiceOverChallengeStepper.swift in Sources */,
 				329144232A364A9400F5263D /* ArcText.swift in Sources */,
 				32C1C9392A2B8E8C00C1854F /* ExploreAbilityReleaseApp.swift in Sources */,
 				325865542A42A4E600630D7E /* DeveloperResourceView.swift in Sources */,

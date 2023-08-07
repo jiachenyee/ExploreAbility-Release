@@ -9,6 +9,8 @@ import SwiftUI
 
 struct GuidedAccessView: View {
     
+    var isFeatureToggled: Bool
+    
     @EnvironmentObject var challengeViewModel: ChallengeViewModel
     @EnvironmentObject var viewModel: ViewModel
     
@@ -21,8 +23,7 @@ struct GuidedAccessView: View {
     
     var body: some View {
         Group {
-            switch challengeViewModel.state {
-            case .playing: EmptyView()
+            if !isFeatureToggled {
                 ZStack {
                     VStack {
                         Spacer()
@@ -45,11 +46,11 @@ struct GuidedAccessView: View {
                     
                     Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { _ in
                         withAnimation {
-                            challengeViewModel.state = .playingFeatureToggled
+                            challengeViewModel.state = .playing(true)
                         }
                     }
                 }
-            case .playingFeatureToggled:
+            } else {
                 PlayingFeatureOnView(initialState: false, didSucceed: $didSucceed)
                     .onChange(of: isGuidedAccessEnabled) { newValue in
                         guard !newValue else { return }
@@ -58,11 +59,9 @@ struct GuidedAccessView: View {
                             didSucceed = true
                         }
                     }
-            default:
-                EmptyView()
             }
         }
-        .onReceive(publisher) { value in
+        .onReceive(publisher) { _ in
             isGuidedAccessEnabled = UIAccessibility.isGuidedAccessEnabled
         }
         .onAppear {
