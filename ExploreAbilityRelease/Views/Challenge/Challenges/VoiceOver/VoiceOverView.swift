@@ -71,8 +71,9 @@ struct VoiceOverView: View {
                     .blur(radius: blurIntensity)
                 }
                 
-                ChallengeHomeButton()
+                ChallengeHomeButton(width: 8 + Double((16 / VoiceOverChallengeControls.allCases.count) * solvedChallengeControls.count))
                     .accessibilitySortPriority(0)
+                    .animation(.bouncy, value: solvedChallengeControls)
             }
             .onAppear {
                 initialVoiceOverEnabled = voiceOverEnabled

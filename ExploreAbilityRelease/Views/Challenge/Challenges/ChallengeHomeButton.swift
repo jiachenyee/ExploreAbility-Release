@@ -25,6 +25,7 @@ struct ChallengeHomeButton: View {
                 .stroke(challengeViewModel.challenge.color, lineWidth: width)
                 .matchedGeometryEffect(id: challengeViewModel.challenge.accessibilityFeature, in: viewModel.sharedNamespace)
                 .padding(8 / 2)
+                .padding(width / 2)
         }
         .frame(width: 48, height: 48)
         .accessibilityLabel("Menu")
