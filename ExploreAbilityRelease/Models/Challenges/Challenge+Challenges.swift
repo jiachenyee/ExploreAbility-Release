@@ -21,11 +21,39 @@ extension Challenge {
     // vision
     static let voiceOver = Challenge(accessibilityFeature: "VoiceOver",
                                      hint: "<#T##String#>",
-                                     postChallengeMessage: "<#T##String#>",
+                                     postChallengeMessage: "VoiceOver is an industry‑leading screen reader that describes exactly what’s happening on your device. Auditory descriptions of onscreen elements help you easily navigate your screen through a Bluetooth keyboard or simple gestures on a touchscreen. And with unique rotor gestures that function like a dial, you can make content such as websites a breeze to browse.\n\nWith on‑device intelligence in iOS, VoiceOver can describe images in full sentences and read aloud text in an image. You can use the Camera and Photos apps with VoiceOver, even if you can’t see the screen. VoiceOver can provide image descriptions, and you can even add your own descriptions using Markup.",
                                      image: Image(systemName: "rectangle.3.group.bubble.left"),
                                      color: .teal,
                                      category: .vision,
-                                     disableInstructions: Text("<#AttributedString#>"))
+                                     disableInstructions: Text("<#AttributedString#>"),
+                                     resources: [
+                                        ReferenceResource(title: "Turn on and practice VoiceOver on iPhone",
+                                                          url: #url("https://support.apple.com/guide/iphone/iph3e2e415f/ios")),
+                                        ReferenceResource(title: "Turn on and practice VoiceOver on iPad",
+                                                          url: #url("https://support.apple.com/guide/ipad/ipad9a246898/ipados")),
+                                        ReferenceResource(title: "About the VoiceOver rotor on iPhone, iPad, and iPod touch",
+                                                          url: #url("https://support.apple.com/HT204783")),
+                                        ReferenceResource(title: "Use VoiceOver for images and videos on iPhone",
+                                                          url: #url("https://support.apple.com/guide/iphone/iph37e6b3844/ios")),
+                                        ReferenceResource(title: "How to navigate with VoiceOver",
+                                                          url: #url("https://youtu.be/qDm7GiKra28"),
+                                                          type: .video),
+                                        ReferenceResource(title: "How to use Screen Curtain with VoiceOver",
+                                                          url: #url("https://youtu.be/lCHdVdocouw"),
+                                                          type: .video),
+                                        ReferenceResource(title: "How to drag a slider with VoiceOver",
+                                                          url: #url("https://youtu.be/OvmkFfEbewg"),
+                                                          type: .video),
+                                        ReferenceResource(title: "How to organize apps with the VoiceOver rotor",
+                                                          url: #url("https://youtu.be/w2Ds-I2L6PI"),
+                                                          type: .video),
+                                        ReferenceResource(title: "How to choose a new voice for VoiceOver on iPhone and iPad",
+                                                          url: #url("https://youtu.be/T6ols9d9urQ"),
+                                                          type: .video),
+                                        ReferenceResource(title: "How to hear image descriptions in the Camera app on iPhone, iPad, and iPod touch",
+                                                          url: #url("https://youtu.be/UnoeaUpHKxY"),
+                                                          type: .video)
+                                     ])
     
     static let dynamicType = Challenge(accessibilityFeature: "Dynamic Type",
                                        hint: "<#T##String#>",
@@ -82,55 +110,111 @@ extension Challenge {
     
     static let reduceMotion = Challenge(accessibilityFeature: "Reduce Motion",
                                         hint: "<#T##String#>",
-                                        postChallengeMessage: "<#T##String#>",
+                                        postChallengeMessage: "When you turn on Reduce Motion, you can decrease the movement of onscreen elements. Some screen actions, such as moving between apps or launching apps, become visually simpler for motion sensitivity or to lessen strain on the eyes.",
                                         image: Image(systemName: "cursorarrow.motionlines"),
                                         color: .teal.opacity(0.8),
                                         category: .vision,
-                                        disableInstructions: Text("Go to **Settings \(Image(systemName: "chevron.right")) Accessibility \(Image(systemName: "chevron.right")) Motion \(Image(systemName: "chevron.right")) Reduce Motion** and toggle Reduce Motion."))
+                                        disableInstructions: Text("Go to **Settings \(Image(systemName: "chevron.right")) Accessibility \(Image(systemName: "chevron.right")) Motion \(Image(systemName: "chevron.right")) Reduce Motion** and toggle Reduce Motion."),
+                                        resources: [
+                                            .web("Stop or reduce motion on iPhone",
+                                                 url: #url("https://support.apple.com/guide/iphone/iph0b691d3ed/ios")),
+                                            .web("Stop or reduce motion on iPad",
+                                                 url: #url("https://support.apple.com/guide/ipad/ipadc509a80c/ipados")),
+                                            .video("How to reduce screen motion on iPhone, iPad, and iPod touch",
+                                                   url: #url("https://youtu.be/8Ddva5UUX2U"))
+                                        ])
     
     static let increaseContrast = Challenge(accessibilityFeature: "Increase Contrast",
                                             hint: "<#T##String#>",
                                             postChallengeMessage: "Improves colour contrast between app foreground and background colors.",
                                             image: Image(systemName: "circle.righthalf.filled"),
                                             color: .teal.opacity(0.7),
-                                            category: .vision)
+                                            category: .vision,
+                                            resources: [
+                                                .web("Use display and text size preferences on your iPhone, iPad, and iPod touch",
+                                                     url: #url("https://support.apple.com/HT207025")),
+                                                .web("Adjust the display and text size on iPhone",
+                                                     url: #url("https://support.apple.com/guide/iphone/iph3e2e1fb0/")),
+                                                .web("Adjust the display and text size on iPad",
+                                                     url: #url("https://support.apple.com/guide/ipad/ipad9a246013/"))
+                                            ])
     
     static let differentiateWithoutColour = Challenge(accessibilityFeature: "Differentiate Without Colour",
                                                       hint: "<#T##String#>",
-                                                      postChallengeMessage: "<#T##String#>",
+                                                      postChallengeMessage: "This setting replaces user interface items that rely on color to convey information with alternatives. For example: Status icons with a green circle and a red circle would appear as a green circle 🟢  and red square 🟥 with Differentiate with Color enabled.",
                                                       image: Image(systemName: "swatchpalette"),
                                                       color: .teal.opacity(0.6),
                                                       category: .vision,
-                                                      disableInstructions: Text("Go to **Settings \(Image(systemName: "chevron.right")) Accessibility \(Image(systemName: "chevron.right")) Display & Text Size \(Image(systemName: "chevron.right")) Differentiate Without Colour** and toggle Differentiate Without Colour."))
+                                                      disableInstructions: Text("Go to **Settings \(Image(systemName: "chevron.right")) Accessibility \(Image(systemName: "chevron.right")) Display & Text Size \(Image(systemName: "chevron.right")) Differentiate Without Colour** and toggle Differentiate Without Colour."),
+                                                      resources: [
+                                                        .web("Use display and text size preferences on your iPhone, iPad, and iPod touch",
+                                                             url: #url("https://support.apple.com/HT207025"))
+                                                      ])
     
     static let reduceTransparency = Challenge(accessibilityFeature: "Reduce Transparency",
                                               hint: "<#T##String#>",
                                               postChallengeMessage: "Improves contrast by reducing transparency and blurs on some backgrounds.",
                                               image: Image(systemName: "square.on.square.intersection.dashed"),
                                               color: .teal.opacity(0.5),
-                                              category: .vision)
+                                              category: .vision,
+                                              resources: [
+                                                .web("Use display and text size preferences on your iPhone, iPad, and iPod touch",
+                                                     url: #url("https://support.apple.com/HT207025")),
+                                                .web("Adjust the display and text size on iPhone",
+                                                     url: #url("https://support.apple.com/guide/iphone/iph3e2e1fb0/")),
+                                                .web("Adjust the display and text size on iPad",
+                                                     url: #url("https://support.apple.com/guide/ipad/ipad9a246013/"))
+                                              ])
     
     // hearing
     static let captions = Challenge(accessibilityFeature: "Closed Captions + SDH",
                                     hint: "<#T##String#>",
-                                    postChallengeMessage: "<#T##String#>",
+                                    postChallengeMessage: "Closed captions are a text transcription of a video’s dialogue, as well as nonverbal communication. Supported in apps like the Apple TV app, closed captions are available in over 40 languages for movies, TV shows, videos, and podcasts — just look for the CC icon. You can even customize captions with different styles and fonts, including styles that are larger and outlined for better legibility.",
                                     image: Image(systemName: "captions.bubble"),
                                     color: .indigo,
-                                    category: .hearing)
+                                    category: .hearing,
+                                    resources: [
+                                        .web("Display subtitles and captions for videos and HomePod announcements on iPhone",
+                                             url: #url("https://support.apple.com/guide/iphone/iph3e2e23d1/")),
+                                        .web("Display subtitles and captions for videos and HomePod announcements on iPad",
+                                             url: #url("https://support.apple.com/guide/ipad/ipad9a246b38/")),
+                                        .web("Change the closed captions or language for movies and TV shows in the Apple TV app",
+                                             url: #url("https://support.apple.com/HT202641"))
+                                    ])
     
     static let monoAudio = Challenge(accessibilityFeature: "Mono Audio",
                                      hint: "<#T##String#>",
-                                     postChallengeMessage: "<#T##String#>",
+                                     postChallengeMessage: "Stereo recordings usually have distinct left- and right-channel audio tracks. Mono Audio can help streamline the differences by playing both audio channels in both ears. You can adjust the balance for greater volume in either ear, so you won’t miss a single note of a concerto or word of an audiobook.\n\nYou can also turn on noise cancellation even when you’re using only one of your AirPods.",
                                      image: Image(systemName: "earbuds"),
                                      color: .indigo.opacity(0.9),
-                                     category: .hearing)
+                                     category: .hearing,
+                                     resources: [
+                                        .web("Adjust the mono audio, balance, and phone noise cancellation settings on iPhone",
+                                             url: #url("https://support.apple.com/guide/iphone/iph3e2e2cdc/")),
+                                        .web("Adjust the mono audio and balance settings on iPad",
+                                             url: #url("https://support.apple.com/guide/ipad/ipad9a246ed2/")),
+                                        .web("Play the same sound in both of your AirPods",
+                                             url: #url("https://support.apple.com/guide/airpods/dev2b840e13e/web"))
+                                     ])
     // mobility
-    static let assistiveTouch = Challenge(accessibilityFeature: "Assistive Touch",
+    static let assistiveTouch = Challenge(accessibilityFeature: "AssistiveTouch",
                                           hint: "<#T##String#>",
-                                          postChallengeMessage: "<#T##String#>",
+                                          postChallengeMessage: "Adapt your touchscreen to ﬁt your physical needs. If certain gestures, like pinch or tap, don’t work for you, swap them with a gesture that does or create a touch that’s all your own. You can customize the layout of the AssistiveTouch menu too, or create an alternative to pressing the Home button — a simple onscreen tap. And you can connect a Bluetooth mouse or joystick to control an onscreen pointer for navigation.\n\niPhone and iPad performs a selected action when you hold the cursor still on a screen element or an area of the screen, this is called Dwell Control and can be set up under AssistiveTouch.",
                                           image: Image(systemName: "dot.circle.and.hand.point.up.left.fill"),
                                           color: .cyan,
-                                          category: .mobility)
+                                          category: .mobility,
+                                          resources: [
+                                            .web("Use AssistiveTouch on your iPhone, iPad, or iPod touch",
+                                                 url: #url("https://support.apple.com/HT202658")),
+                                            .web("Use AssistiveTouch on iPad",
+                                                 url: #url("https://support.apple.com/guide/ipad/ipad9a2466d3/")),
+                                            .web("Connect a Bluetooth mouse or trackpad to your iPad",
+                                                 url: #url("https://support.apple.com/HT211009")),
+                                            .video("How to use AssistiveTouch on your iPhone",
+                                                   url: #url("https://youtu.be/_j4-NTg3QsE")),
+                                            .video("How to customize AssistiveTouch",
+                                                   url: #url("https://youtu.be/3id4BJ4eSQg"))
+                                          ])
     
     static let shakeToUndo = Challenge(accessibilityFeature: "Shake to Undo",
                                        hint: "<#T##String#>",
@@ -142,7 +226,7 @@ extension Challenge {
     // cognitive
     static let animatedImages = Challenge(accessibilityFeature: "Animated Images",
                                           hint: "<#T##String#>",
-                                          postChallengeMessage: "<#T##String#>",
+                                          postChallengeMessage: "The Animated Images setting allows you to control whether to play animated images like GIFs on the web and in apps. By default, the setting is on, which allows animated images to play automatically. Turn off the setting to indicate that you want to pause animated images on your device.",
                                           image: Image(systemName: "photo.on.rectangle.angled"),
                                           color: .pink,
                                           category: .cognitive,
@@ -150,14 +234,19 @@ extension Challenge {
     
     static let guidedAccess = Challenge(accessibilityFeature: "Guided Access",
                                         hint: "<#T##String#>",
-                                        postChallengeMessage: "<#T##String#>",
+                                        postChallengeMessage: "Guided Access helps you stay focused on the task (or app) at hand. You can limit a device to stay on one app at a time by disabling the Home button. You can even restrict access to the keyboard or touch input on certain areas of the screen so wandering taps and gestures won’t distract. Whether you’re a parent, a teacher, or just trying to help yourself focus, you have all the options you need to customize your experience on Apple products.",
                                         image: Image(systemName: "lock.iphone"),
                                         color: .pink.opacity(0.9),
-                                        category: .cognitive)
+                                        category: .cognitive,
+                                        resources: [
+                                            .web("Use Guided Access with iPhone, iPad, and iPod touch", url: #url("https://support.apple.com/HT202612")),
+                                            .video("How to use Guided Access on iPad",
+                                                   url: #url("https://youtu.be/JkDtljBD1Fw"))
+                                        ])
     
     static let dimFlashingLights = Challenge(accessibilityFeature: "Dim Flashing Lights",
                                              hint: "<#T##String#>",
-                                             postChallengeMessage: "<#T##String#>",
+                                             postChallengeMessage: "Dim Flashing Lights setting allows you to avoid bright, frequent flashes of light in the media. The Dim Flashing Lights setting allows the system to calculate, mitigate, and inform you about flashing lights in a piece of media.",
                                              image: Image(systemName: "sun.max.trianglebadge.exclamationmark"),
                                              color: .pink.opacity(0.8),
                                              category: .cognitive,

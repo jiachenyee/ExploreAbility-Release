@@ -48,10 +48,18 @@ struct ReferenceResource {
         
         var description: String {
             switch self {
-            case .web: "Apple Support website"
+            case .web: "Apple Support article"
             case .video: "Apple Support on YouTube"
             }
         }
+    }
+    
+    static func web(_ title: String, url: URL) -> ReferenceResource {
+        ReferenceResource(title: title, url: url, type: .web)
+    }
+    
+    static func video(_ title: String, url: URL) -> ReferenceResource {
+        ReferenceResource(title: title, url: url, type: .video)
     }
 }
 
