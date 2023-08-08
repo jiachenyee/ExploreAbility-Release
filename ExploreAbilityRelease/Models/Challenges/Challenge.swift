@@ -29,12 +29,12 @@ struct Challenge: Equatable {
 }
 
 extension Challenge {
-    var hint: String? {
+    var hint: Hint? {
         let hint = components.first { component in
             component is Hint
         }
         
-        return (hint as? Hint)?.text
+        return hint as? Hint
     }
     
     var postChallengeMessage: String? {

@@ -8,9 +8,13 @@
 import Foundation
 
 struct Hint: ChallengeComponent {
-    var text: String
+    var hint1: String
+    var hint2: String
+    var hint3: String
     
-    init(_ text: String) {
-        self.text = text
+    init(one: String, two: String, three: String) {
+        self.hint1 = one
+        self.hint2 = two
+        self.hint3 = three
     }
 }

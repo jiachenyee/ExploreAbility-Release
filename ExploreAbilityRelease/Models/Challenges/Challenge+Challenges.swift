@@ -25,6 +25,10 @@ extension Challenge {
         Metadata(image: Image(systemName: "rectangle.3.group.bubble.left"),
                  color: .teal)
         
+        Hint(one: "Tap, Swipe, Swipe, Double-Tap.",
+             two: "Listen carefully.",
+             three: "A helpful voice.")
+        
         ReferenceResources([
             .web("Turn on and practice VoiceOver on iPhone",
                  url: #url("https://support.apple.com/guide/iphone/iph3e2e415f/ios")),
@@ -62,6 +66,10 @@ extension Challenge {
         Conclusion("Increase text legibility and visibility with simple font adjustments. Larger Text allows you to adjust the size using an accessibility slider. Or you can turn on Bold Text to give words weight on your screen. Whatever settings you choose are instantly applied to apps that support Larger Dynamic Type.\n\nAdd Text Size in Control Center for quick access to change font size.")
         
         Metadata(image: Image(systemName: "textformat.size"), color: .teal.opacity(0.9))
+        
+        Hint(one: "Didn't bring your glasses?",
+             two: "Can't read clearly?",
+             three: "Make text bigger.")
         
         ReferenceResources([
             .web("Change the font size on your iPhone, iPad, and iPod touch",
@@ -106,6 +114,10 @@ extension Challenge {
                                         category: .vision) {
         Conclusion("When you turn on Reduce Motion, you can decrease the movement of onscreen elements. Some screen actions, such as moving between apps or launching apps, become visually simpler for motion sensitivity or to lessen strain on the eyes.")
         
+        Hint(one: "There's a lot going on.",
+             two: "Dizzying animations.",
+             three: "There's a lot of movement, or… motion.")
+        
         Metadata(image: Image(systemName: "cursorarrow.motionlines"),
                  color: .teal.opacity(0.8))
         
@@ -125,6 +137,10 @@ extension Challenge {
                                             category: .vision) {
         Conclusion("Improves colour contrast between app foreground and background colors.")
         
+        Hint(one: "What does the text say?",
+             two: "Some backgrounds are challenging.",
+             three: "Can we fix the colours?")
+        
         Metadata(image: Image(systemName: "circle.righthalf.filled"),
                  color: .teal.opacity(0.7))
         
@@ -140,7 +156,11 @@ extension Challenge {
     
     static let differentiateWithoutColour = Challenge(feature: "Differentiate Without Colour",
                                                       category: .vision) {
-        Conclusion("This setting replaces user interface items that rely on color to convey information with alternatives. For example: Status icons with a green circle and a red circle would appear as a green circle 🟢  and red square 🟥 with Differentiate with Color enabled.")
+        Conclusion("This setting replaces user interface items that rely on color to convey information with alternatives. For example: Status icons with a green circle and a red circle would appear as a green circle 🟢  and red square 🟥 with Differentiate Without Colour enabled.")
+        
+        Hint(one: "Every colour looks the same.",
+             two: "Not everyone can see colour.",
+             three: "Shapes.")
         
         Metadata(image: Image(systemName: "swatchpalette"),
                  color: .teal.opacity(0.6))
@@ -156,6 +176,10 @@ extension Challenge {
     static let reduceTransparency = Challenge(feature: "Reduce Transparency",
                                               category: .vision) {
         Conclusion("Improves contrast by reducing transparency and blurs on some backgrounds.")
+        
+        Hint(one: "That's really distracting.",
+             two: "I can't see clearly with that background.",
+             three: "I hate blurs and transparencies.")
         
         Metadata(image: Image(systemName: "square.on.square.intersection.dashed"),
                  color: .teal.opacity(0.5))
@@ -175,6 +199,10 @@ extension Challenge {
                                     category: .hearing) {
         Conclusion("Closed captions are a text transcription of a video’s dialogue, as well as nonverbal communication. Supported in apps like the Apple TV app, closed captions are available in over 40 languages for movies, TV shows, videos, and podcasts — just look for the CC icon. You can even customize captions with different styles and fonts, including styles that are larger and outlined for better legibility.")
         
+        Hint(one: "Silent voices.",
+             two: "Voices but I can't hear them.",
+             three: "Could I read them?")
+        
         Metadata(image: Image(systemName: "captions.bubble"),
                  color: .indigo)
         
@@ -190,7 +218,11 @@ extension Challenge {
     
     static let monoAudio = Challenge(feature: "Mono Audio",
                                      category: .hearing) {
-        Conclusion("Stereo recordings usually have distinct left- and right-channel audio tracks. Mono Audio can help streamline the differences by playing both audio channels in both ears. You can adjust the balance for greater volume in either ear, so you won’t miss a single note of a concerto or word of an audiobook.\n\nYou can also turn on noise cancellation even when you’re using only one of your AirPods.")
+        Conclusion("Stereo recordings usually have distinct left- and right-channel audio tracks. Mono Audio can help streamline the differences by playing both audio channels in both ears. You can adjust the balance for greater volume in either ear, so you won’t miss a single note of a concert or word of an audiobook.\n\nYou can also turn on noise cancellation even when you’re using only one of your AirPods.")
+        
+        Hint(one: "Left, Right.",
+             two: "One.",
+             three: "Never miss a beat.")
         
         Metadata(image: Image(systemName: "earbuds"),
                  color: .indigo.opacity(0.9))
@@ -209,6 +241,10 @@ extension Challenge {
     static let assistiveTouch = Challenge(feature: "AssistiveTouch",
                                           category: .mobility) {
         Conclusion("Adapt your touchscreen to ﬁt your physical needs. If certain gestures, like pinch or tap, don’t work for you, swap them with a gesture that does or create a touch that’s all your own. You can customize the layout of the AssistiveTouch menu too, or create an alternative to pressing the Home button — a simple onscreen tap. And you can connect a Bluetooth mouse or joystick to control an onscreen pointer for navigation.\n\niPhone and iPad performs a selected action when you hold the cursor still on a screen element or an area of the screen, this is called Dwell Control and can be set up under AssistiveTouch.")
+        
+        Hint(one: "Gestures are a challenge.",
+             two: "Buttons can be challenging too.",
+             three: "Touch is hard.")
         
         Metadata(image: Image(systemName: "dot.circle.and.hand.point.up.left.fill"),
                  color: .cyan)
@@ -231,6 +267,10 @@ extension Challenge {
                                        category: .mobility) {
         Conclusion("If you have difficulties with hand tremors, dexterity, or fine motor control, you can turn off Shake to Undo if you unintentionally shake it.")
         
+        Hint(one: "Shake.",
+             two: "Undo Typing",
+             three: "Unintentional shakes.")
+        
         Metadata(image: Image(systemName: "iphone.gen3.radiowaves.left.and.right"),
                  color: .cyan.opacity(0.9))
     }
@@ -239,6 +279,10 @@ extension Challenge {
     static let guidedAccess = Challenge(feature: "Guided Access",
                                         category: .cognitive) {
         Conclusion("Guided Access helps you stay focused on the task (or app) at hand. You can limit a device to stay on one app at a time by disabling the Home button. You can even restrict access to the keyboard or touch input on certain areas of the screen so wandering taps and gestures won’t distract. Whether you’re a parent, a teacher, or just trying to help yourself focus, you have all the options you need to customize your experience on Apple products.")
+        
+        Hint(one: "Don't leave me.",
+             two: "You're trapped here!",
+             three: "Until you enter a password.")
         
         Metadata(image: Image(systemName: "lock.iphone"),
                  color: .pink)
@@ -254,6 +298,10 @@ extension Challenge {
                                           category: .cognitive) {
         Conclusion("The Animated Images setting allows you to control whether to play animated images like GIFs on the web and in apps. By default, the setting is on, which allows animated images to play automatically. Turn off the setting to indicate that you want to pause animated images on your device.")
         
+        Hint(one: "There's a lot going on.",
+             two: "Can we stop some of this animation?",
+             three: "It's pronounced GIF not GIF.")
+        
         Metadata(image: Image(systemName: "photo.on.rectangle.angled"),
                  color: .pink.opacity(0.9))
         
@@ -263,6 +311,10 @@ extension Challenge {
     static let dimFlashingLights = Challenge(feature: "Dim Flashing Lights",
                                              category: .cognitive) {
         Conclusion("Dim Flashing Lights setting allows you to avoid bright, frequent flashes of light in the media. The Dim Flashing Lights setting allows the system to calculate, mitigate, and inform you about flashing lights in a piece of media.")
+        
+        Hint(one: "Flickers.",
+             two: "Flashing Lights.",
+             three: "Videos.")
         
         Metadata(image: Image(systemName: "sun.max.trianglebadge.exclamationmark"),
                  color: .pink.opacity(0.8))
