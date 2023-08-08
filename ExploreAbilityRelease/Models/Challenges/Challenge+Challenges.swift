@@ -239,6 +239,8 @@ extension Challenge {
             .web("Change the closed captions or language for movies and TV shows in the Apple TV app",
                  url: #url("https://support.apple.com/HT202641"))
         ])
+        
+        GitHub(#url("https://github.com/jiachenyee/ExploreAbility-Release/tree/main/ExploreAbilityRelease/Views/Challenge/Challenges/Closed%20Captions"))
     }
     
     static let monoAudio = Challenge(feature: "Mono Audio",
