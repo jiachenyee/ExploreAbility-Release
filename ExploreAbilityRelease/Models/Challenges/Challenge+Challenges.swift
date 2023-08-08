@@ -32,33 +32,24 @@ extension Challenge {
         ReferenceResources([
             .web("Turn on and practice VoiceOver on iPhone",
                  url: #url("https://support.apple.com/guide/iphone/iph3e2e415f/ios")),
-            
-                .web("Turn on and practice VoiceOver on iPad",
-                     url: #url("https://support.apple.com/guide/ipad/ipad9a246898/ipados")),
-            
-                .web("About the VoiceOver rotor on iPhone, iPad, and iPod touch",
-                     url: #url("https://support.apple.com/HT204783")),
-            
-                .web("Use VoiceOver for images and videos on iPhone",
-                     url: #url("https://support.apple.com/guide/iphone/iph37e6b3844/ios")),
-            
-                .video("How to navigate with VoiceOver",
-                       url: #url("https://youtu.be/qDm7GiKra28")),
-            
-                .video("How to use Screen Curtain with VoiceOver",
-                       url: #url("https://youtu.be/lCHdVdocouw")),
-            
-                .video("How to drag a slider with VoiceOver",
-                       url: #url("https://youtu.be/OvmkFfEbewg")),
-            
-                .video("How to organize apps with the VoiceOver rotor",
-                       url: #url("https://youtu.be/w2Ds-I2L6PI")),
-            
-                .video("How to choose a new voice for VoiceOver on iPhone and iPad",
-                       url: #url("https://youtu.be/T6ols9d9urQ")),
-            
-                .video("How to hear image descriptions in the Camera app on iPhone, iPad, and iPod touch",
-                       url: #url("https://youtu.be/UnoeaUpHKxY"))
+            .web("Turn on and practice VoiceOver on iPad",
+                 url: #url("https://support.apple.com/guide/ipad/ipad9a246898/ipados")),
+            .web("About the VoiceOver rotor on iPhone, iPad, and iPod touch",
+                 url: #url("https://support.apple.com/HT204783")),
+            .web("Use VoiceOver for images and videos on iPhone",
+                 url: #url("https://support.apple.com/guide/iphone/iph37e6b3844/ios")),
+            .video("How to navigate with VoiceOver",
+                   url: #url("https://youtu.be/qDm7GiKra28")),
+            .video("How to use Screen Curtain with VoiceOver",
+                   url: #url("https://youtu.be/lCHdVdocouw")),
+            .video("How to drag a slider with VoiceOver",
+                   url: #url("https://youtu.be/OvmkFfEbewg")),
+            .video("How to organize apps with the VoiceOver rotor",
+                   url: #url("https://youtu.be/w2Ds-I2L6PI")),
+            .video("How to choose a new voice for VoiceOver on iPhone and iPad",
+                   url: #url("https://youtu.be/T6ols9d9urQ")),
+            .video("How to hear image descriptions in the Camera app on iPhone, iPad, and iPod touch",
+                   url: #url("https://youtu.be/UnoeaUpHKxY"))
         ])
         
         GitHub(#url("https://github.com/jiachenyee/ExploreAbility-Release/tree/main/ExploreAbilityRelease/Views/Challenge/Challenges/VoiceOver"))
