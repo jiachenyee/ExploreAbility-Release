@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32194FBA2A827B1D00D993B6 /* ChallengeComponentGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32194FAE2A827B1D00D993B6 /* ChallengeComponentGroup.swift */; };
+		32194FBB2A827B1D00D993B6 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32194FAF2A827B1D00D993B6 /* Metadata.swift */; };
+		32194FBC2A827B1D00D993B6 /* ReferenceResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32194FB02A827B1D00D993B6 /* ReferenceResource.swift */; };
+		32194FBD2A827B1D00D993B6 /* ReferenceResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32194FB12A827B1D00D993B6 /* ReferenceResources.swift */; };
+		32194FBE2A827B1D00D993B6 /* DeveloperResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32194FB22A827B1D00D993B6 /* DeveloperResources.swift */; };
+		32194FBF2A827B1D00D993B6 /* Conclusion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32194FB32A827B1D00D993B6 /* Conclusion.swift */; };
+		32194FC02A827B1D00D993B6 /* DeveloperResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32194FB42A827B1D00D993B6 /* DeveloperResource.swift */; };
+		32194FC12A827B1D00D993B6 /* ChallengeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32194FB52A827B1D00D993B6 /* ChallengeBuilder.swift */; };
+		32194FC22A827B1D00D993B6 /* DisableInstructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32194FB62A827B1D00D993B6 /* DisableInstructions.swift */; };
+		32194FC32A827B1D00D993B6 /* GitHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32194FB72A827B1D00D993B6 /* GitHub.swift */; };
+		32194FC42A827B1D00D993B6 /* Hint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32194FB82A827B1D00D993B6 /* Hint.swift */; };
+		32194FC52A827B1D00D993B6 /* ChallengeComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32194FB92A827B1D00D993B6 /* ChallengeComponent.swift */; };
 		321F5DF22A80EE59006B2416 /* VoiceOverChallengeStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321F5DF12A80EE59006B2416 /* VoiceOverChallengeStepper.swift */; };
 		32303C9D2A303F7A0032BB50 /* ChallengeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303C9C2A303F7A0032BB50 /* ChallengeCategory.swift */; };
 		32303C9F2A30414C0032BB50 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303C9E2A30414C0032BB50 /* Challenge.swift */; };
@@ -20,7 +32,7 @@
 		32303CCA2A30A7C80032BB50 /* ZoomableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CC92A30A7C80032BB50 /* ZoomableScrollView.swift */; };
 		32303CCC2A30A8200032BB50 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CCB2A30A8200032BB50 /* HomeView.swift */; };
 		32303CCE2A30A8910032BB50 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CCD2A30A8910032BB50 /* GameState.swift */; };
-		32303CD42A30A9860032BB50 /* PreChallengeWarning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CD32A30A9860032BB50 /* PreChallengeWarning.swift */; };
+		32303CD42A30A9860032BB50 /* Warning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CD32A30A9860032BB50 /* Warning.swift */; };
 		32303CD82A30B35B0032BB50 /* HomeViewActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CD72A30B35B0032BB50 /* HomeViewActionButton.swift */; };
 		32303CDA2A30B9C60032BB50 /* ZoomState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CD92A30B9C60032BB50 /* ZoomState.swift */; };
 		32303CDC2A30D6D30032BB50 /* ChallengeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CDB2A30D6D30032BB50 /* ChallengeButtonView.swift */; };
@@ -107,6 +119,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32194FAE2A827B1D00D993B6 /* ChallengeComponentGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeComponentGroup.swift; sourceTree = "<group>"; };
+		32194FAF2A827B1D00D993B6 /* Metadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
+		32194FB02A827B1D00D993B6 /* ReferenceResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceResource.swift; sourceTree = "<group>"; };
+		32194FB12A827B1D00D993B6 /* ReferenceResources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceResources.swift; sourceTree = "<group>"; };
+		32194FB22A827B1D00D993B6 /* DeveloperResources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeveloperResources.swift; sourceTree = "<group>"; };
+		32194FB32A827B1D00D993B6 /* Conclusion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conclusion.swift; sourceTree = "<group>"; };
+		32194FB42A827B1D00D993B6 /* DeveloperResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeveloperResource.swift; sourceTree = "<group>"; };
+		32194FB52A827B1D00D993B6 /* ChallengeBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeBuilder.swift; sourceTree = "<group>"; };
+		32194FB62A827B1D00D993B6 /* DisableInstructions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisableInstructions.swift; sourceTree = "<group>"; };
+		32194FB72A827B1D00D993B6 /* GitHub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHub.swift; sourceTree = "<group>"; };
+		32194FB82A827B1D00D993B6 /* Hint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hint.swift; sourceTree = "<group>"; };
+		32194FB92A827B1D00D993B6 /* ChallengeComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeComponent.swift; sourceTree = "<group>"; };
 		321F5DF12A80EE59006B2416 /* VoiceOverChallengeStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceOverChallengeStepper.swift; sourceTree = "<group>"; };
 		32303C9C2A303F7A0032BB50 /* ChallengeCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeCategory.swift; sourceTree = "<group>"; };
 		32303C9E2A30414C0032BB50 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
@@ -120,7 +144,7 @@
 		32303CC92A30A7C80032BB50 /* ZoomableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableScrollView.swift; sourceTree = "<group>"; };
 		32303CCB2A30A8200032BB50 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		32303CCD2A30A8910032BB50 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
-		32303CD32A30A9860032BB50 /* PreChallengeWarning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreChallengeWarning.swift; sourceTree = "<group>"; };
+		32303CD32A30A9860032BB50 /* Warning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warning.swift; sourceTree = "<group>"; };
 		32303CD72A30B35B0032BB50 /* HomeViewActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewActionButton.swift; sourceTree = "<group>"; };
 		32303CD92A30B9C60032BB50 /* ZoomState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomState.swift; sourceTree = "<group>"; };
 		32303CDB2A30D6D30032BB50 /* ChallengeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeButtonView.swift; sourceTree = "<group>"; };
@@ -216,6 +240,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32194FC62A827BD300D993B6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				32194FC82A827BEB00D993B6 /* Reference */,
+				32194FC72A827BE400D993B6 /* Developer */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		32194FC72A827BE400D993B6 /* Developer */ = {
+			isa = PBXGroup;
+			children = (
+				32194FB42A827B1D00D993B6 /* DeveloperResource.swift */,
+				32194FB22A827B1D00D993B6 /* DeveloperResources.swift */,
+			);
+			path = Developer;
+			sourceTree = "<group>";
+		};
+		32194FC82A827BEB00D993B6 /* Reference */ = {
+			isa = PBXGroup;
+			children = (
+				32194FB02A827B1D00D993B6 /* ReferenceResource.swift */,
+				32194FB12A827B1D00D993B6 /* ReferenceResources.swift */,
+			);
+			path = Reference;
+			sourceTree = "<group>";
+		};
+		32194FC92A827C8100D993B6 /* Challenge Builder */ = {
+			isa = PBXGroup;
+			children = (
+				32194FB52A827B1D00D993B6 /* ChallengeBuilder.swift */,
+				32194FB92A827B1D00D993B6 /* ChallengeComponent.swift */,
+				32194FAE2A827B1D00D993B6 /* ChallengeComponentGroup.swift */,
+			);
+			path = "Challenge Builder";
+			sourceTree = "<group>";
+		};
+		32194FCA2A827C9300D993B6 /* Challenge Components */ = {
+			isa = PBXGroup;
+			children = (
+				32194FC62A827BD300D993B6 /* Resources */,
+				32194FB62A827B1D00D993B6 /* DisableInstructions.swift */,
+				32194FB32A827B1D00D993B6 /* Conclusion.swift */,
+				32194FB72A827B1D00D993B6 /* GitHub.swift */,
+				32194FB82A827B1D00D993B6 /* Hint.swift */,
+				32194FAF2A827B1D00D993B6 /* Metadata.swift */,
+				32303CD32A30A9860032BB50 /* Warning.swift */,
+				32303C9C2A303F7A0032BB50 /* ChallengeCategory.swift */,
+				32303CBD2A306A1E0032BB50 /* ChallengeRequirement.swift */,
+			);
+			path = "Challenge Components";
+			sourceTree = "<group>";
+		};
 		32303CCF2A30A8E70032BB50 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,9 +329,8 @@
 			children = (
 				32303C9E2A30414C0032BB50 /* Challenge.swift */,
 				32303CBB2A3069B40032BB50 /* Challenge+Challenges.swift */,
-				32303CD32A30A9860032BB50 /* PreChallengeWarning.swift */,
-				32303C9C2A303F7A0032BB50 /* ChallengeCategory.swift */,
-				32303CBD2A306A1E0032BB50 /* ChallengeRequirement.swift */,
+				32194FC92A827C8100D993B6 /* Challenge Builder */,
+				32194FCA2A827C9300D993B6 /* Challenge Components */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -727,11 +803,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				32303CE52A30DECA0032BB50 /* SettingsView.swift in Sources */,
-				32303CD42A30A9860032BB50 /* PreChallengeWarning.swift in Sources */,
+				32303CD42A30A9860032BB50 /* Warning.swift in Sources */,
 				3275DF562A42BE4B00C361B1 /* MenuClosed.swift in Sources */,
+				32194FC12A827B1D00D993B6 /* ChallengeBuilder.swift in Sources */,
 				32303CBC2A3069B40032BB50 /* Challenge+Challenges.swift in Sources */,
 				328B9A9D2A80E8BF0004072A /* VoiceOverChallengePicker.swift in Sources */,
 				3275DF5C2A42C02E00C361B1 /* MenuHintButton.swift in Sources */,
+				32194FC02A827B1D00D993B6 /* DeveloperResource.swift in Sources */,
 				329144252A364AF700F5263D /* CircularLabel.swift in Sources */,
 				32303CC62A30A7140032BB50 /* HexagonView.swift in Sources */,
 				325865572A42A60800630D7E /* Separator.swift in Sources */,
@@ -747,7 +825,9 @@
 				3251DF142A6A1F6F0017334A /* TaggedPath.swift in Sources */,
 				327E69862A384982004E0ED3 /* RotatingCircleView.swift in Sources */,
 				32303CD82A30B35B0032BB50 /* HomeViewActionButton.swift in Sources */,
+				32194FBE2A827B1D00D993B6 /* DeveloperResources.swift in Sources */,
 				328DF9A62A811E3600FFC128 /* AnimatedImagesChallengeSample1.swift in Sources */,
+				32194FC22A827B1D00D993B6 /* DisableInstructions.swift in Sources */,
 				326036282A8150D200E44212 /* MonoAudioChallengeView.swift in Sources */,
 				327E69842A384636004E0ED3 /* ReduceMotionView.swift in Sources */,
 				32303CCC2A30A8200032BB50 /* HomeView.swift in Sources */,
@@ -770,9 +850,13 @@
 				3275DF5E2A42C0EF00C361B1 /* MenuHomeButton.swift in Sources */,
 				327883B22A6A6990005765E9 /* ShakeToUndoView.swift in Sources */,
 				32303CC22A307F940032BB50 /* CafeView.swift in Sources */,
+				32194FBA2A827B1D00D993B6 /* ChallengeComponentGroup.swift in Sources */,
+				32194FBD2A827B1D00D993B6 /* ReferenceResources.swift in Sources */,
 				328DF9A32A811E3600FFC128 /* AnimatedImagesChallengeSample7.swift in Sources */,
+				32194FBB2A827B1D00D993B6 /* Metadata.swift in Sources */,
 				32A0A6622A428FA900E97042 /* ChallengeConclusionContainerView.swift in Sources */,
 				326B88F12A6FC1A10029915B /* GuidedAccessView.swift in Sources */,
+				32194FC32A827B1D00D993B6 /* GitHub.swift in Sources */,
 				32303CE72A30E2570032BB50 /* ChallengeView.swift in Sources */,
 				325865522A42A31600630D7E /* DeveloperResourceGitHubButton.swift in Sources */,
 				32A0A65F2A428B3800E97042 /* DisableInstructionsView.swift in Sources */,
@@ -790,15 +874,19 @@
 				3275DF582A42BEFF00C361B1 /* MenuButtons.swift in Sources */,
 				3291441F2A36265800F5263D /* ChallengePlayingView.swift in Sources */,
 				3258655F2A42AAEA00630D7E /* XCChallengePreview.swift in Sources */,
+				32194FC42A827B1D00D993B6 /* Hint.swift in Sources */,
+				32194FC52A827B1D00D993B6 /* ChallengeComponent.swift in Sources */,
 				32303CDA2A30B9C60032BB50 /* ZoomState.swift in Sources */,
 				3275DF5A2A42BF9C00C361B1 /* MenuDismissButton.swift in Sources */,
 				327883AD2A6A6333005765E9 /* ChallengeHomeButton.swift in Sources */,
 				32B014C22A8110B6006DB73A /* AnimatedImagesChallengeView.swift in Sources */,
 				32303CCA2A30A7C80032BB50 /* ZoomableScrollView.swift in Sources */,
+				32194FBC2A827B1D00D993B6 /* ReferenceResource.swift in Sources */,
 				3258655A2A42A6AB00630D7E /* ResourceView.swift in Sources */,
 				328DF9A42A811E3600FFC128 /* AnimatedImagesChallengeSample4.swift in Sources */,
 				321F5DF22A80EE59006B2416 /* VoiceOverChallengeStepper.swift in Sources */,
 				329144232A364A9400F5263D /* ArcText.swift in Sources */,
+				32194FBF2A827B1D00D993B6 /* Conclusion.swift in Sources */,
 				328DF9A72A811E3600FFC128 /* AnimatedImagesChallengeSample6.swift in Sources */,
 				32C1C9392A2B8E8C00C1854F /* ExploreAbilityReleaseApp.swift in Sources */,
 				325865542A42A4E600630D7E /* DeveloperResourceView.swift in Sources */,

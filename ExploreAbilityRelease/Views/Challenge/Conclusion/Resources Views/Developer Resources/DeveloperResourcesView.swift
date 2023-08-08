@@ -10,19 +10,19 @@ import SwiftUI
 
 struct DeveloperResourcesView: View {
     
-    var resources: [DeveloperReference]
+    var resources: [DeveloperResource]
     var ghURL: URL?
     
-    @State private var interfaceFramework: DeveloperReference.Framework = .swiftUi
+    @State private var interfaceFramework: DeveloperResource.Framework = .swiftUi
     
     var body: some View {
         DisclosureGroup {
             VStack(spacing: 16) {
                 Picker("Interface Framework", selection: $interfaceFramework) {
                     Text("SwiftUI")
-                        .tag(DeveloperReference.Framework.swiftUi)
+                        .tag(DeveloperResource.Framework.swiftUi)
                     Text("UIKit")
-                        .tag(DeveloperReference.Framework.uiKit)
+                        .tag(DeveloperResource.Framework.uiKit)
                 }
                 .pickerStyle(.segmented)
                 

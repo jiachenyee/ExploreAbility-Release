@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PreChallengeWarningView: View {
     
-    let warning: PreChallengeWarning
+    let warning: Warning
     
     @EnvironmentObject var viewModel: ViewModel
     @EnvironmentObject var challengeViewModel: ChallengeViewModel

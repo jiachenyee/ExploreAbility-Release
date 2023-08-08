@@ -29,35 +29,35 @@ extension Challenge {
             .web("Turn on and practice VoiceOver on iPhone",
                  url: #url("https://support.apple.com/guide/iphone/iph3e2e415f/ios")),
             
-            .web("Turn on and practice VoiceOver on iPad",
-                 url: #url("https://support.apple.com/guide/ipad/ipad9a246898/ipados")),
+                .web("Turn on and practice VoiceOver on iPad",
+                     url: #url("https://support.apple.com/guide/ipad/ipad9a246898/ipados")),
             
-            .web("About the VoiceOver rotor on iPhone, iPad, and iPod touch",
-                 url: #url("https://support.apple.com/HT204783")),
+                .web("About the VoiceOver rotor on iPhone, iPad, and iPod touch",
+                     url: #url("https://support.apple.com/HT204783")),
             
-            .web("Use VoiceOver for images and videos on iPhone",
-                 url: #url("https://support.apple.com/guide/iphone/iph37e6b3844/ios")),
+                .web("Use VoiceOver for images and videos on iPhone",
+                     url: #url("https://support.apple.com/guide/iphone/iph37e6b3844/ios")),
             
-            .video("How to navigate with VoiceOver",
-                   url: #url("https://youtu.be/qDm7GiKra28")),
+                .video("How to navigate with VoiceOver",
+                       url: #url("https://youtu.be/qDm7GiKra28")),
             
-            .video("How to use Screen Curtain with VoiceOver",
-                   url: #url("https://youtu.be/lCHdVdocouw")),
+                .video("How to use Screen Curtain with VoiceOver",
+                       url: #url("https://youtu.be/lCHdVdocouw")),
             
-            .video("How to drag a slider with VoiceOver",
-                   url: #url("https://youtu.be/OvmkFfEbewg")),
+                .video("How to drag a slider with VoiceOver",
+                       url: #url("https://youtu.be/OvmkFfEbewg")),
             
-            .video("How to organize apps with the VoiceOver rotor",
-                   url: #url("https://youtu.be/w2Ds-I2L6PI")),
+                .video("How to organize apps with the VoiceOver rotor",
+                       url: #url("https://youtu.be/w2Ds-I2L6PI")),
             
-            .video("How to choose a new voice for VoiceOver on iPhone and iPad",
-                   url: #url("https://youtu.be/T6ols9d9urQ")),
+                .video("How to choose a new voice for VoiceOver on iPhone and iPad",
+                       url: #url("https://youtu.be/T6ols9d9urQ")),
             
-            .video("How to hear image descriptions in the Camera app on iPhone, iPad, and iPod touch",
-                   url: #url("https://youtu.be/UnoeaUpHKxY"))
+                .video("How to hear image descriptions in the Camera app on iPhone, iPad, and iPod touch",
+                       url: #url("https://youtu.be/UnoeaUpHKxY"))
         ])
     }
-
+    
     static let dynamicType = Challenge(feature: "Dynamic Type", category: .vision) {
         Conclusion("Increase text legibility and visibility with simple font adjustments. Larger Text allows you to adjust the size using an accessibility slider. Or you can turn on Bold Text to give words weight on your screen. Whatever settings you choose are instantly applied to apps that support Larger Dynamic Type.\n\nAdd Text Size in Control Center for quick access to change font size.")
         
@@ -77,34 +77,28 @@ extension Challenge {
         ])
         
         DeveloperResources([
-            DeveloperReference(title: "Using Built-In Text Styles",
-                               body: "Built-in text styles are just like text hierarchies in tools like Keynote or Pages. They allow you to define pieces of texts as a title, headline, subheadline, caption, and more. This ensures your app's typography looks and feels the same as other apps and the operating system.\n\nText styles provide additional context, such as text hierarchy, and support Dynamic Type without additional modifications.",
-                               type: .title),
-            DeveloperReference(title: "Applying Custom Fonts to Text",
-                               url: #url("https://developer.apple.com/documentation/swiftui/applying-custom-fonts-to-text/"),
-                               relatedFrameworks: [.swiftUi],
-                               type: .documentationArticle),
-            DeveloperReference(title: "Retrieving UIFont with a text style",
-                               codeSnippet: "UIFont.preferredFont(forTextStyle: .body)",
-                               url: #url("https://developer.apple.com/documentation/uikit/uifont/1619030-preferredfont"),
-                               relatedFrameworks: [.uiKit]),
-            DeveloperReference(title: "Retrieving Preferred Content Size",
-                               codeSnippet: "UIApplication.shared.preferredContentSizeCategory",
-                               url: #url("https://developer.apple.com/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory"),
-                               relatedFrameworks: [.uiKit],
-                               type: .codeSnippet),
-            DeveloperReference(title: "Listening for Changes in Preferred Content Size",
-                               codeSnippet: "UIApplication.shared.preferredContentSizeCategory",
-                               url: #url("https://developer.apple.com/documentation/uikit/uicontentsizecategory/1622948-didchangenotification"),
-                               relatedFrameworks: [.uiKit],
-                               type: .codeSnippet),
-            DeveloperReference(title: "Scaling Fonts Automatically",
-                               url: #url("https://developer.apple.com/documentation/uikit/uifont/scaling_fonts_automatically"),
-                               relatedFrameworks: [.uiKit],
-                               type: .documentationArticle),
-            DeveloperReference(title: "Typography",
-                               url: #url("https://developer.apple.com/design/human-interface-guidelines/typography"),
-                               type: .hig)
+            .header("Using Built-In Text Styles",
+                    body: "Built-in text styles are just like text hierarchies in tools like Keynote or Pages. They allow you to define pieces of texts as a title, headline, subheadline, caption, and more. This ensures your app's typography looks and feels the same as other apps and the operating system.\n\nText styles provide additional context, such as text hierarchy, and support Dynamic Type without additional modifications."),
+            .article("Applying Custom Fonts to Text",
+                     url: #url("https://developer.apple.com/documentation/swiftui/applying-custom-fonts-to-text/"),
+                     relatedFrameworks: [.swiftUi]),
+            .code("Retrieving UIFont with a text style",
+                  snippet: "UIFont.preferredFont(forTextStyle: .body)",
+                  url: #url("https://developer.apple.com/documentation/uikit/uifont/1619030-preferredfont"),
+                  relatedFrameworks: [.uiKit]),
+            .code("Retrieving Preferred Content Size",
+                  snippet: "UIApplication.shared.preferredContentSizeCategory",
+                  url: #url("https://developer.apple.com/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory"),
+                  relatedFrameworks: [.uiKit]),
+            .code("Listening for Changes in Preferred Content Size",
+                  snippet: "UIApplication.shared.preferredContentSizeCategory",
+                  url: #url("https://developer.apple.com/documentation/uikit/uicontentsizecategory/1622948-didchangenotification"),
+                  relatedFrameworks: [.uiKit]),
+            .article("Scaling Fonts Automatically",
+                     url: #url("https://developer.apple.com/documentation/uikit/uifont/scaling_fonts_automatically"),
+                     relatedFrameworks: [.uiKit]),
+            .hig("Typography",
+                 url: #url("https://developer.apple.com/design/human-interface-guidelines/typography"))
         ])
     }
     
@@ -235,6 +229,8 @@ extension Challenge {
     
     static let shakeToUndo = Challenge(feature: "Shake to Undo",
                                        category: .mobility) {
+        Conclusion("If you have difficulties with hand tremors, dexterity, or fine motor control, you can turn off Shake to Undo if you unintentionally shake it.")
+        
         Metadata(image: Image(systemName: "iphone.gen3.radiowaves.left.and.right"),
                  color: .cyan.opacity(0.9))
     }

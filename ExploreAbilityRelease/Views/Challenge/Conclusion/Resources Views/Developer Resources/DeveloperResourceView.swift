@@ -10,7 +10,7 @@ import SwiftUI
 
 struct DeveloperResourceView: View {
     
-    var resource: DeveloperReference
+    var resource: DeveloperResource
     
     var body: some View {
         VStack(alignment: .leading) {
