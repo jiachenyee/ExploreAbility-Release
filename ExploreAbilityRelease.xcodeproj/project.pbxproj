@@ -86,6 +86,7 @@
 		32AC04FC2A8163590003ADF0 /* MonoAudioChallengeAudioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AC04FB2A8163590003ADF0 /* MonoAudioChallengeAudioViewModel.swift */; };
 		32B014C22A8110B6006DB73A /* AnimatedImagesChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B014C12A8110B6006DB73A /* AnimatedImagesChallengeView.swift */; };
 		32B635402A80EDB900A04DA5 /* VoiceOverChallengeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B6353F2A80EDB900A04DA5 /* VoiceOverChallengeSlider.swift */; };
+		32BC43502A8254A50056308A /* AssistiveTouchChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BC434F2A8254A50056308A /* AssistiveTouchChallengeView.swift */; };
 		32C123FC2A3956FA00501A1E /* PlayingFeatureOnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C123FB2A3956FA00501A1E /* PlayingFeatureOnView.swift */; };
 		32C1C9392A2B8E8C00C1854F /* ExploreAbilityReleaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1C9382A2B8E8C00C1854F /* ExploreAbilityReleaseApp.swift */; };
 		32C1C93B2A2B8E8C00C1854F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1C93A2A2B8E8C00C1854F /* ContentView.swift */; };
@@ -184,6 +185,7 @@
 		32AC04FB2A8163590003ADF0 /* MonoAudioChallengeAudioViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonoAudioChallengeAudioViewModel.swift; sourceTree = "<group>"; };
 		32B014C12A8110B6006DB73A /* AnimatedImagesChallengeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedImagesChallengeView.swift; sourceTree = "<group>"; };
 		32B6353F2A80EDB900A04DA5 /* VoiceOverChallengeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceOverChallengeSlider.swift; sourceTree = "<group>"; };
+		32BC434F2A8254A50056308A /* AssistiveTouchChallengeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssistiveTouchChallengeView.swift; sourceTree = "<group>"; };
 		32C123FB2A3956FA00501A1E /* PlayingFeatureOnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingFeatureOnView.swift; sourceTree = "<group>"; };
 		32C1C9352A2B8E8C00C1854F /* ExploreAbilityRelease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExploreAbilityRelease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C1C9382A2B8E8C00C1854F /* ExploreAbilityReleaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreAbilityReleaseApp.swift; sourceTree = "<group>"; };
@@ -304,6 +306,14 @@
 				324D5FBE2A8200D300D3289D /* ReduceTransparencyChallengeView.swift */,
 			);
 			path = "Reduce Transparency";
+			sourceTree = "<group>";
+		};
+		324D5FC02A82547D00D3289D /* Assistive Touch */ = {
+			isa = PBXGroup;
+			children = (
+				32BC434F2A8254A50056308A /* AssistiveTouchChallengeView.swift */,
+			);
+			path = "Assistive Touch";
 			sourceTree = "<group>";
 		};
 		3251DF102A6A177E0017334A /* Differentiate Without Color */ = {
@@ -444,8 +454,8 @@
 		328C4BEF2A8150A700624A31 /* Mono Audio */ = {
 			isa = PBXGroup;
 			children = (
-				32AC04FB2A8163590003ADF0 /* MonoAudioChallengeAudioViewModel.swift */,
 				326036272A8150D200E44212 /* MonoAudioChallengeView.swift */,
+				32AC04FB2A8163590003ADF0 /* MonoAudioChallengeAudioViewModel.swift */,
 				32E5F7A92A815F4500BD36F2 /* test.mp3 */,
 			);
 			path = "Mono Audio";
@@ -498,6 +508,7 @@
 			children = (
 				3291441E2A36265800F5263D /* ChallengePlayingView.swift */,
 				327883AC2A6A6333005765E9 /* ChallengeHomeButton.swift */,
+				324D5FC02A82547D00D3289D /* Assistive Touch */,
 				32333BA92A8200A600F4C4EF /* Reduce Transparency */,
 				328C4BEF2A8150A700624A31 /* Mono Audio */,
 				328DF9A92A813D7900FFC128 /* Dim Flashing Lights */,
@@ -731,6 +742,7 @@
 				32AC04FC2A8163590003ADF0 /* MonoAudioChallengeAudioViewModel.swift in Sources */,
 				328DF9A82A811E3600FFC128 /* AnimatedImagesChallengeSample2.swift in Sources */,
 				32303CDE2A30DB980032BB50 /* HomePopupView.swift in Sources */,
+				32BC43502A8254A50056308A /* AssistiveTouchChallengeView.swift in Sources */,
 				327E69822A37ECE3004E0ED3 /* ChallengeConclusionView.swift in Sources */,
 				3251DF142A6A1F6F0017334A /* TaggedPath.swift in Sources */,
 				327E69862A384982004E0ED3 /* RotatingCircleView.swift in Sources */,

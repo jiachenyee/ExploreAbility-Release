@@ -25,7 +25,7 @@ struct ChallengePlayingView: View {
         case .reduceTransparency: ReduceTransparencyChallengeView(isFeatureToggled: isFeatureToggled)
         case .captions: ChallengeHomeButton() // TODO: Add challenge
         case .monoAudio: MonoAudioChallengeView(isFeatureToggled: isFeatureToggled)
-        case .assistiveTouch: ChallengeHomeButton() // TODO: Add challenge
+        case .assistiveTouch: AssistiveTouchChallengeView(isFeatureToggled: isFeatureToggled)
         case .shakeToUndo: ShakeToUndoView(isFeatureToggled: isFeatureToggled)
         case .animatedImages: if #available(iOS 17.0, *) { AnimatedImagesChallengeView(isFeatureToggled: isFeatureToggled) }
         case .guidedAccess: GuidedAccessView(isFeatureToggled: isFeatureToggled)
