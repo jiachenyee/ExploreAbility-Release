@@ -90,6 +90,7 @@
 		329144212A36273400F5263D /* DynamicTypeChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329144202A36273400F5263D /* DynamicTypeChallengeView.swift */; };
 		329144232A364A9400F5263D /* ArcText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329144222A364A9400F5263D /* ArcText.swift */; };
 		329144252A364AF700F5263D /* CircularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329144242A364AF700F5263D /* CircularLabel.swift */; };
+		329C259D2A82850600D4ECC5 /* IncreaseContrastChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329C259C2A82850500D4ECC5 /* IncreaseContrastChallengeView.swift */; };
 		329CB3982A813DA200ADA128 /* DimFlashingLightsChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329CB3972A813DA200ADA128 /* DimFlashingLightsChallengeView.swift */; };
 		32A0A6592A42084900E97042 /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0A6582A42084900E97042 /* ResourcesView.swift */; };
 		32A0A65D2A42090D00E97042 /* DeveloperResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0A65C2A42090D00E97042 /* DeveloperResourcesView.swift */; };
@@ -201,6 +202,7 @@
 		329144202A36273400F5263D /* DynamicTypeChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeChallengeView.swift; sourceTree = "<group>"; };
 		329144222A364A9400F5263D /* ArcText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcText.swift; sourceTree = "<group>"; };
 		329144242A364AF700F5263D /* CircularLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularLabel.swift; sourceTree = "<group>"; };
+		329C259C2A82850500D4ECC5 /* IncreaseContrastChallengeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncreaseContrastChallengeView.swift; sourceTree = "<group>"; };
 		329CB3972A813DA200ADA128 /* DimFlashingLightsChallengeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimFlashingLightsChallengeView.swift; sourceTree = "<group>"; };
 		32A0A6582A42084900E97042 /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
 		32A0A65C2A42090D00E97042 /* DeveloperResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperResourcesView.swift; sourceTree = "<group>"; };
@@ -291,6 +293,14 @@
 				32303CBD2A306A1E0032BB50 /* ChallengeRequirement.swift */,
 			);
 			path = "Challenge Components";
+			sourceTree = "<group>";
+		};
+		32194FCB2A8284D300D993B6 /* Increase Contrast */ = {
+			isa = PBXGroup;
+			children = (
+				329C259C2A82850500D4ECC5 /* IncreaseContrastChallengeView.swift */,
+			);
+			path = "Increase Contrast";
 			sourceTree = "<group>";
 		};
 		32303CCF2A30A8E70032BB50 /* Models */ = {
@@ -584,6 +594,7 @@
 			children = (
 				3291441E2A36265800F5263D /* ChallengePlayingView.swift */,
 				327883AC2A6A6333005765E9 /* ChallengeHomeButton.swift */,
+				32194FCB2A8284D300D993B6 /* Increase Contrast */,
 				324D5FC02A82547D00D3289D /* Assistive Touch */,
 				32333BA92A8200A600F4C4EF /* Reduce Transparency */,
 				328C4BEF2A8150A700624A31 /* Mono Audio */,
@@ -881,6 +892,7 @@
 				327883AD2A6A6333005765E9 /* ChallengeHomeButton.swift in Sources */,
 				32B014C22A8110B6006DB73A /* AnimatedImagesChallengeView.swift in Sources */,
 				32303CCA2A30A7C80032BB50 /* ZoomableScrollView.swift in Sources */,
+				329C259D2A82850600D4ECC5 /* IncreaseContrastChallengeView.swift in Sources */,
 				32194FBC2A827B1D00D993B6 /* ReferenceResource.swift in Sources */,
 				3258655A2A42A6AB00630D7E /* ResourceView.swift in Sources */,
 				328DF9A42A811E3600FFC128 /* AnimatedImagesChallengeSample4.swift in Sources */,

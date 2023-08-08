@@ -20,7 +20,7 @@ struct ChallengePlayingView: View {
         case .voiceOver: VoiceOverView(isFeatureToggled: isFeatureToggled)
         case .dynamicType: DynamicTypeChallengeView(isFeatureToggled: isFeatureToggled)
         case .reduceMotion: ReduceMotionView(isFeatureToggled: isFeatureToggled)
-        case .increaseContrast: ChallengeHomeButton() // TODO: Add challenge
+        case .increaseContrast: IncreaseContrastChallengeView(isFeatureToggled: isFeatureToggled)
         case .differentiateWithoutColour: DifferentiateWithoutColorView(isFeatureToggled: isFeatureToggled)
         case .reduceTransparency: ReduceTransparencyChallengeView(isFeatureToggled: isFeatureToggled)
         case .captions: ChallengeHomeButton() // TODO: Add challenge
