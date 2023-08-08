@@ -90,7 +90,7 @@ extension Challenge {
     
     static let increaseContrast = Challenge(accessibilityFeature: "Increase Contrast",
                                             hint: "<#T##String#>",
-                                            postChallengeMessage: "<#T##String#>",
+                                            postChallengeMessage: "Improves colour contrast between app foreground and background colors.",
                                             image: Image(systemName: "circle.righthalf.filled"),
                                             color: .teal.opacity(0.7),
                                             category: .vision)
@@ -105,7 +105,7 @@ extension Challenge {
     
     static let reduceTransparency = Challenge(accessibilityFeature: "Reduce Transparency",
                                               hint: "<#T##String#>",
-                                              postChallengeMessage: "<#T##String#>",
+                                              postChallengeMessage: "Improves contrast by reducing transparency and blurs on some backgrounds.",
                                               image: Image(systemName: "square.on.square.intersection.dashed"),
                                               color: .teal.opacity(0.5),
                                               category: .vision)
@@ -145,7 +145,8 @@ extension Challenge {
                                           postChallengeMessage: "<#T##String#>",
                                           image: Image(systemName: "photo.on.rectangle.angled"),
                                           color: .pink,
-                                          category: .cognitive)
+                                          category: .cognitive,
+                                          requirements: .iOS17)
     
     static let guidedAccess = Challenge(accessibilityFeature: "Guided Access",
                                         hint: "<#T##String#>",

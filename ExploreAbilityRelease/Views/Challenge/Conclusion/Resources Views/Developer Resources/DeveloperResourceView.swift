@@ -41,6 +41,7 @@ struct DeveloperResourceView: View {
             if let codeSnippet = resource.codeSnippet {
                 ScrollView(.horizontal) {
                     Text(codeSnippet)
+                        .font(.system(.body, design: .monospaced, weight: .regular))
                         .textSelection(.enabled)
                         .fontDesign(.monospaced)
                         .multilineTextAlignment(.leading)
