@@ -22,11 +22,11 @@ struct IncreaseContrastChallengeView: View {
     
     @EnvironmentObject var challengeViewModel: ChallengeViewModel
     
+    let constant = 0.01
+    
     var body: some View {
         Group {
             if !isFeatureToggled {
-                let constant = 0.01
-                
                 ZStack {
                     VStack {
                         Rectangle()
