@@ -23,7 +23,7 @@ struct ChallengePlayingView: View {
         case .increaseContrast: IncreaseContrastChallengeView(isFeatureToggled: isFeatureToggled)
         case .differentiateWithoutColour: DifferentiateWithoutColorView(isFeatureToggled: isFeatureToggled)
         case .reduceTransparency: ReduceTransparencyChallengeView(isFeatureToggled: isFeatureToggled)
-        case .captions: ChallengeHomeButton() // TODO: Add challenge
+        case .captions: ClosedCaptionsSDHChallengeView(isFeatureToggled: isFeatureToggled)
         case .monoAudio: MonoAudioChallengeView(isFeatureToggled: isFeatureToggled)
         case .assistiveTouch: AssistiveTouchChallengeView(isFeatureToggled: isFeatureToggled)
         case .shakeToUndo: ShakeToUndoView(isFeatureToggled: isFeatureToggled)

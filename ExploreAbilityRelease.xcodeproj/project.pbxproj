@@ -20,6 +20,7 @@
 		32194FC42A827B1D00D993B6 /* Hint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32194FB82A827B1D00D993B6 /* Hint.swift */; };
 		32194FC52A827B1D00D993B6 /* ChallengeComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32194FB92A827B1D00D993B6 /* ChallengeComponent.swift */; };
 		321F5DF22A80EE59006B2416 /* VoiceOverChallengeStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321F5DF12A80EE59006B2416 /* VoiceOverChallengeStepper.swift */; };
+		322986582A82BDEC009B6275 /* ClosedCaptionsSDHChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322986572A82BDEC009B6275 /* ClosedCaptionsSDHChallengeView.swift */; };
 		32303C9D2A303F7A0032BB50 /* ChallengeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303C9C2A303F7A0032BB50 /* ChallengeCategory.swift */; };
 		32303C9F2A30414C0032BB50 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303C9E2A30414C0032BB50 /* Challenge.swift */; };
 		32303CBC2A3069B40032BB50 /* Challenge+Challenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CBB2A3069B40032BB50 /* Challenge+Challenges.swift */; };
@@ -133,6 +134,7 @@
 		32194FB82A827B1D00D993B6 /* Hint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hint.swift; sourceTree = "<group>"; };
 		32194FB92A827B1D00D993B6 /* ChallengeComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeComponent.swift; sourceTree = "<group>"; };
 		321F5DF12A80EE59006B2416 /* VoiceOverChallengeStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceOverChallengeStepper.swift; sourceTree = "<group>"; };
+		322986572A82BDEC009B6275 /* ClosedCaptionsSDHChallengeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosedCaptionsSDHChallengeView.swift; sourceTree = "<group>"; };
 		32303C9C2A303F7A0032BB50 /* ChallengeCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeCategory.swift; sourceTree = "<group>"; };
 		32303C9E2A30414C0032BB50 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		32303CBB2A3069B40032BB50 /* Challenge+Challenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+Challenges.swift"; sourceTree = "<group>"; };
@@ -579,6 +581,14 @@
 			path = Challenge;
 			sourceTree = "<group>";
 		};
+		329C259E2A82BDC500D4ECC5 /* Closed Captions */ = {
+			isa = PBXGroup;
+			children = (
+				322986572A82BDEC009B6275 /* ClosedCaptionsSDHChallengeView.swift */,
+			);
+			path = "Closed Captions";
+			sourceTree = "<group>";
+		};
 		32A0A65A2A42085400E97042 /* Conclusion */ = {
 			isa = PBXGroup;
 			children = (
@@ -594,6 +604,7 @@
 			children = (
 				3291441E2A36265800F5263D /* ChallengePlayingView.swift */,
 				327883AC2A6A6333005765E9 /* ChallengeHomeButton.swift */,
+				329C259E2A82BDC500D4ECC5 /* Closed Captions */,
 				32194FCB2A8284D300D993B6 /* Increase Contrast */,
 				324D5FC02A82547D00D3289D /* Assistive Touch */,
 				32333BA92A8200A600F4C4EF /* Reduce Transparency */,
@@ -824,6 +835,7 @@
 				329144252A364AF700F5263D /* CircularLabel.swift in Sources */,
 				32303CC62A30A7140032BB50 /* HexagonView.swift in Sources */,
 				325865572A42A60800630D7E /* Separator.swift in Sources */,
+				322986582A82BDEC009B6275 /* ClosedCaptionsSDHChallengeView.swift in Sources */,
 				3238D0F42A80EB4A006D2889 /* VoiceOverChallengeDatePicker.swift in Sources */,
 				3251DF1A2A6A4D470017334A /* DWCCanvas.swift in Sources */,
 				3251DF122A6A17CD0017334A /* DifferentiateWithoutColorView.swift in Sources */,

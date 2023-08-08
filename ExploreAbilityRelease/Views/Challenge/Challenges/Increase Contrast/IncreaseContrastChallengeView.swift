@@ -25,7 +25,7 @@ struct IncreaseContrastChallengeView: View {
     var body: some View {
         Group {
             if !isFeatureToggled {
-                var constant = 0.01
+                let constant = 0.01
                 
                 ZStack {
                     VStack {
