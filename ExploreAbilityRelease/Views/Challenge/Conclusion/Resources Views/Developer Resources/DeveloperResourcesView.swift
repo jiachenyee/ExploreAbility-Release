@@ -13,14 +13,14 @@ struct DeveloperResourcesView: View {
     var resources: [DeveloperResource]
     var ghURL: URL?
     
-    @State private var interfaceFramework: DeveloperResource.Framework = .swiftUi
+    @State private var interfaceFramework: DeveloperResource.Framework = .swiftUI
     
     var body: some View {
         DisclosureGroup {
             VStack(spacing: 16) {
                 Picker("Interface Framework", selection: $interfaceFramework) {
                     Text("SwiftUI")
-                        .tag(DeveloperResource.Framework.swiftUi)
+                        .tag(DeveloperResource.Framework.swiftUI)
                     Text("UIKit")
                         .tag(DeveloperResource.Framework.uiKit)
                 }

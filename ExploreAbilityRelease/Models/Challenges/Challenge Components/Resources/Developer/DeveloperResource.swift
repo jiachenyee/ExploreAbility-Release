@@ -18,7 +18,7 @@ struct DeveloperResource {
     var type: ResourceType
     
     init(title: String,
-         codeSnippet: String? = nil, body: String? = nil, url: URL? = nil, relatedFrameworks: [Framework] = [.swiftUi, .uiKit], type: ResourceType) {
+         codeSnippet: String? = nil, body: String? = nil, url: URL? = nil, relatedFrameworks: [Framework] = [.swiftUI, .uiKit], type: ResourceType) {
         self.title = title
         self.codeSnippet = codeSnippet
         self.body = body
@@ -28,7 +28,7 @@ struct DeveloperResource {
     }
     
     init(title: String,
-         codeSnippet: String, body: String? = nil, url: URL? = nil, relatedFrameworks: [Framework] = [.swiftUi, .uiKit]) {
+         codeSnippet: String, body: String? = nil, url: URL? = nil, relatedFrameworks: [Framework] = [.swiftUI, .uiKit]) {
         self.title = title
         self.codeSnippet = codeSnippet
         self.body = body
@@ -38,7 +38,7 @@ struct DeveloperResource {
     }
     
     init(title: String,
-         body: String? = nil, relatedFrameworks: [Framework] = [.swiftUi, .uiKit]) {
+         body: String? = nil, relatedFrameworks: [Framework] = [.swiftUI, .uiKit]) {
         self.title = title
         self.body = body
         self.relatedFrameworks = relatedFrameworks
@@ -47,14 +47,14 @@ struct DeveloperResource {
     
     static func header(_ title: String,
                        body: String? = nil,
-                       relatedFrameworks: [Framework] = [.swiftUi, .uiKit]) -> DeveloperResource {
+                       relatedFrameworks: [Framework] = [.swiftUI, .uiKit]) -> DeveloperResource {
         DeveloperResource(title: title, codeSnippet: nil, body: body, url: nil, relatedFrameworks: relatedFrameworks, type: .title)
     }
     
     static func article(_ title: String,
                         body: String? = nil,
                         url: URL? = nil,
-                        relatedFrameworks: [Framework] = [.swiftUi, .uiKit]) -> DeveloperResource {
+                        relatedFrameworks: [Framework] = [.swiftUI, .uiKit]) -> DeveloperResource {
         DeveloperResource(title: title, codeSnippet: nil, body: body, url: url, relatedFrameworks: relatedFrameworks, type: .documentationArticle)
     }
     
@@ -62,21 +62,21 @@ struct DeveloperResource {
                      snippet: String,
                      body: String? = nil,
                      url: URL? = nil,
-                     relatedFrameworks: [Framework] = [.swiftUi, .uiKit]) -> DeveloperResource {
+                     relatedFrameworks: [Framework] = [.swiftUI, .uiKit]) -> DeveloperResource {
         DeveloperResource(title: title, codeSnippet: snippet, body: body, url: url, relatedFrameworks: relatedFrameworks, type: .codeSnippet)
     }
     
     static func video(_ title: String,
                       body: String? = nil,
                       url: URL? = nil,
-                      relatedFrameworks: [Framework] = [.swiftUi, .uiKit]) -> DeveloperResource {
+                      relatedFrameworks: [Framework] = [.swiftUI, .uiKit]) -> DeveloperResource {
         DeveloperResource(title: title, codeSnippet: nil, body: body, url: url, relatedFrameworks: relatedFrameworks, type: .video)
     }
     
     static func hig(_ title: String,
                     body: String? = nil,
                     url: URL? = nil,
-                    relatedFrameworks: [Framework] = [.swiftUi, .uiKit]) -> DeveloperResource {
+                    relatedFrameworks: [Framework] = [.swiftUI, .uiKit]) -> DeveloperResource {
         DeveloperResource(title: title, codeSnippet: nil, body: body, url: url, relatedFrameworks: relatedFrameworks, type: .hig)
     }
     
@@ -100,7 +100,7 @@ struct DeveloperResource {
     }
     
     enum Framework: Hashable {
-        case swiftUi
+        case swiftUI
         case uiKit
     }
 }
