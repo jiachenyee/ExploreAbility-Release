@@ -34,6 +34,7 @@
 		323DF2C62A36C27700CF20A5 /* ChallengeMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323DF2C52A36C27700CF20A5 /* ChallengeMenuView.swift */; };
 		3240D8552A80E7CF00D48F42 /* VoiceOverChallengeControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3240D8542A80E7CF00D48F42 /* VoiceOverChallengeControls.swift */; };
 		3241316B2A3F772500FBA638 /* DynamicTypeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3241316A2A3F772500FBA638 /* DynamicTypeHelper.swift */; };
+		324D5FBF2A8200D300D3289D /* ReduceTransparencyChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D5FBE2A8200D300D3289D /* ReduceTransparencyChallengeView.swift */; };
 		3251DF122A6A17CD0017334A /* DifferentiateWithoutColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251DF112A6A17CD0017334A /* DifferentiateWithoutColorView.swift */; };
 		3251DF142A6A1F6F0017334A /* TaggedPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251DF132A6A1F6F0017334A /* TaggedPath.swift */; };
 		3251DF162A6A39940017334A /* ColorWellSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251DF152A6A39940017334A /* ColorWellSelectionView.swift */; };
@@ -132,6 +133,7 @@
 		323DF2C52A36C27700CF20A5 /* ChallengeMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeMenuView.swift; sourceTree = "<group>"; };
 		3240D8542A80E7CF00D48F42 /* VoiceOverChallengeControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceOverChallengeControls.swift; sourceTree = "<group>"; };
 		3241316A2A3F772500FBA638 /* DynamicTypeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeHelper.swift; sourceTree = "<group>"; };
+		324D5FBE2A8200D300D3289D /* ReduceTransparencyChallengeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReduceTransparencyChallengeView.swift; sourceTree = "<group>"; };
 		3251DF112A6A17CD0017334A /* DifferentiateWithoutColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentiateWithoutColorView.swift; sourceTree = "<group>"; };
 		3251DF132A6A1F6F0017334A /* TaggedPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaggedPath.swift; sourceTree = "<group>"; };
 		3251DF152A6A39940017334A /* ColorWellSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWellSelectionView.swift; sourceTree = "<group>"; };
@@ -294,6 +296,14 @@
 				32303CE12A30DD7F0032BB50 /* Cafe */,
 			);
 			path = "Popup Views";
+			sourceTree = "<group>";
+		};
+		32333BA92A8200A600F4C4EF /* Reduce Transparency */ = {
+			isa = PBXGroup;
+			children = (
+				324D5FBE2A8200D300D3289D /* ReduceTransparencyChallengeView.swift */,
+			);
+			path = "Reduce Transparency";
 			sourceTree = "<group>";
 		};
 		3251DF102A6A177E0017334A /* Differentiate Without Color */ = {
@@ -488,6 +498,7 @@
 			children = (
 				3291441E2A36265800F5263D /* ChallengePlayingView.swift */,
 				327883AC2A6A6333005765E9 /* ChallengeHomeButton.swift */,
+				32333BA92A8200A600F4C4EF /* Reduce Transparency */,
 				328C4BEF2A8150A700624A31 /* Mono Audio */,
 				328DF9A92A813D7900FFC128 /* Dim Flashing Lights */,
 				32589BD62A8110920089529B /* Animated Images */,
@@ -733,6 +744,7 @@
 				32C123FC2A3956FA00501A1E /* PlayingFeatureOnView.swift in Sources */,
 				32303CC82A30A7740032BB50 /* ViewModel.swift in Sources */,
 				328B9A9B2A80E8350004072A /* VoiceOverChallengeToggle.swift in Sources */,
+				324D5FBF2A8200D300D3289D /* ReduceTransparencyChallengeView.swift in Sources */,
 				329144212A36273400F5263D /* DynamicTypeChallengeView.swift in Sources */,
 				328DF9A52A811E3600FFC128 /* AnimatedImagesChallengeSample5.swift in Sources */,
 				32303CEB2A3181050032BB50 /* ChallengeViewModel.swift in Sources */,
