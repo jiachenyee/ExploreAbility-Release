@@ -117,11 +117,16 @@ extension Challenge {
                   snippet: "UIApplication.shared.preferredContentSizeCategory",
                   url: #url("https://developer.apple.com/documentation/uikit/uicontentsizecategory/1622948-didchangenotification"),
                   relatedFrameworks: [.uiKit]),
+            .article("WWDC21 Challenge: Large Text",
+                     url: #url("https://developer.apple.com/news/?id=w6r26g7r"),
+                     relatedFrameworks: [.uiKit]),
             .article("Scaling Fonts Automatically",
                      url: #url("https://developer.apple.com/documentation/uikit/uifont/scaling_fonts_automatically"),
                      relatedFrameworks: [.uiKit]),
             .hig("Typography",
-                 url: #url("https://developer.apple.com/design/human-interface-guidelines/typography"))
+                 url: #url("https://developer.apple.com/design/human-interface-guidelines/typography")),
+            .video("WWDC19: Visual Design and Accessibility",
+                   url: #url("https://developer.apple.com/wwdc19/244"))
         ])
         
         GitHub(#url("https://github.com/jiachenyee/ExploreAbility-Release/tree/main/ExploreAbilityRelease/Views/Challenge/Challenges/Dynamic%20Type"))
