@@ -25,7 +25,7 @@ struct ChallengeHomeButton: View {
         } label: {
             Circle()
                 .stroke(challengeViewModel.challenge.color, lineWidth: width)
-                .matchedGeometryEffect(id: challengeViewModel.challenge.accessibilityFeature, in: viewModel.sharedNamespace)
+                .matchedGeometryEffect(id: challengeViewModel.challenge.feature, in: viewModel.sharedNamespace)
                 .padding(8 / 2)
                 .padding(width / 2)
         }

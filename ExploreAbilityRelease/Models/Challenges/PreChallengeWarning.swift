@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct PreChallengeWarning {
+struct PreChallengeWarning: ChallengeComponent {
     var title: String
     var icon: Image
     var description: String

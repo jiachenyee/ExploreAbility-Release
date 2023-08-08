@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct ChallengeRequirement {
+struct ChallengeRequirement: ChallengeComponent {
     var major: Int?
     var minor: Int?
     

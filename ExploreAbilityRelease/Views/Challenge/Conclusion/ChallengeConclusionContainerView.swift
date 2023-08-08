@@ -23,10 +23,10 @@ struct ChallengeConclusionContainerView<Content: View>: View {
             ZStack {
                 RoundedRectangle(cornerRadius: 16)
                     .stroke(challenge.color.opacity(0.5), style: .init(lineWidth: 8))
-                    .matchedGeometryEffect(id: challenge.accessibilityFeature + ".frame", in: namespace)
+                    .matchedGeometryEffect(id: challenge.feature + ".frame", in: namespace)
                 
                 VStack(alignment: .leading) {
-                    Text(challenge.accessibilityFeature)
+                    Text(challenge.feature)
                         .font(.title)
                         .fontWeight(.bold)
                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -62,7 +62,7 @@ struct ChallengeConclusionContainerView<Content: View>: View {
                     }
                 }
                 .accessibilityLabel("Dismiss")
-                .matchedGeometryEffect(id: challenge.accessibilityFeature, in: namespace)
+                .matchedGeometryEffect(id: challenge.feature, in: namespace)
             }
         }
         .padding()

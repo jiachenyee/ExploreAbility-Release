@@ -71,7 +71,7 @@ struct AnimatedImagesChallengeSample4Eye: View {
                 }
             
             Ellipse()
-                .stroke(challengeViewModel.challenge.category!.color, lineWidth: 5)
+                .stroke(challengeViewModel.challenge.category.color, lineWidth: 5)
         }
         .aspectRatio(12/20, contentMode: .fit)
     }

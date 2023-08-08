@@ -20,7 +20,7 @@ struct ChallengeView: View {
             switch challengeViewModel.state {
             case .unknown:
                 ProgressView()
-                    .matchedGeometryEffect(id: challenge.accessibilityFeature, in: viewModel.sharedNamespace)
+                    .matchedGeometryEffect(id: challenge.feature, in: viewModel.sharedNamespace)
                     .onAppear {
                         withAnimation {
                             challengeViewModel.challenge = challenge

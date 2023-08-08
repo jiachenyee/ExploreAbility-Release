@@ -29,6 +29,6 @@ struct MenuClosed: View {
                 .frame(width: 48, height: 48)
                 .matchedGeometryEffect(id: "close.button", in: namespace)
         }
-        .matchedGeometryEffect(id: challenge.accessibilityFeature, in: namespace)
+        .matchedGeometryEffect(id: challenge.feature, in: namespace)
     }
 }

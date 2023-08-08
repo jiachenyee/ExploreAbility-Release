@@ -84,12 +84,12 @@ struct DynamicTypeChallengeView: View {
                 ZStack(alignment: alignment) {
                     Capsule(style: .continuous)
                         .stroke(challengeViewModel.challenge.color.opacity(0.5), style: .init(lineWidth: 8))
-                        .matchedGeometryEffect(id: challengeViewModel.challenge.accessibilityFeature + ".frame", in: viewModel.sharedNamespace)
+                        .matchedGeometryEffect(id: challengeViewModel.challenge.feature + ".frame", in: viewModel.sharedNamespace)
                     
                     Circle()
                         .fill(challengeViewModel.challenge.color)
                         .frame(width: 48, height: 48)
-                        .matchedGeometryEffect(id: challengeViewModel.challenge.accessibilityFeature, in: viewModel.sharedNamespace)
+                        .matchedGeometryEffect(id: challengeViewModel.challenge.feature, in: viewModel.sharedNamespace)
                         .padding(4)
                 }
                 .frame(width: width, height: 48 + 8)

@@ -16,7 +16,7 @@ struct ChallengeConclusionView: View {
     var body: some View {
         ChallengeConclusionContainerView(namespace: viewModel.sharedNamespace,
                                          challenge: challengeViewModel.challenge) {
-            Text(challengeViewModel.challenge.postChallengeMessage)
+            Text(challengeViewModel.challenge.postChallengeMessage ?? "")
             
             Separator()
             

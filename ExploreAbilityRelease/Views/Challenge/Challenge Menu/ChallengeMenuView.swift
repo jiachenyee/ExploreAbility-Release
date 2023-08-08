@@ -22,7 +22,7 @@ struct ChallengeMenuView: View {
                            challenge: challengeViewModel.challenge)
             } else {
                 MenuButtons(isFannedOut: $isFannedOut,
-                            color: challengeViewModel.challenge.category!.color)
+                            color: challengeViewModel.challenge.category.color)
             }
         }
         .onAppear {
