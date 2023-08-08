@@ -60,6 +60,8 @@ extension Challenge {
                 .video("How to hear image descriptions in the Camera app on iPhone, iPad, and iPod touch",
                        url: #url("https://youtu.be/UnoeaUpHKxY"))
         ])
+        
+        GitHub(#url("https://github.com/jiachenyee/ExploreAbility-Release/tree/main/ExploreAbilityRelease/Views/Challenge/Challenges/VoiceOver"))
     }
     
     static let dynamicType = Challenge(feature: "Dynamic Type", category: .vision) {
@@ -121,6 +123,8 @@ extension Challenge {
             .hig("Typography",
                  url: #url("https://developer.apple.com/design/human-interface-guidelines/typography"))
         ])
+        
+        GitHub(#url("https://github.com/jiachenyee/ExploreAbility-Release/tree/main/ExploreAbilityRelease/Views/Challenge/Challenges/Dynamic%20Type"))
     }
     
     static let reduceMotion = Challenge(feature: "Reduce Motion",
@@ -144,6 +148,8 @@ extension Challenge {
             .video("How to reduce screen motion on iPhone, iPad, and iPod touch",
                    url: #url("https://youtu.be/8Ddva5UUX2U"))
         ])
+        
+        GitHub(#url("https://github.com/jiachenyee/ExploreAbility-Release/tree/main/ExploreAbilityRelease/Views/Challenge/Challenges/Reduce%20Motion"))
     }
     
     static let increaseContrast = Challenge(feature: "Increase Contrast",
@@ -165,6 +171,8 @@ extension Challenge {
             .web("Adjust the display and text size on iPad",
                  url: #url("https://support.apple.com/guide/ipad/ipad9a246013/"))
         ])
+        
+        GitHub(#url("https://github.com/jiachenyee/ExploreAbility-Release/tree/main/ExploreAbilityRelease/Views/Challenge/Challenges/Increase%20Contrast"))
     }
     
     static let differentiateWithoutColour = Challenge(feature: "Differentiate Without Colour",
@@ -184,6 +192,8 @@ extension Challenge {
             .web("Use display and text size preferences on your iPhone, iPad, and iPod touch",
                  url: #url("https://support.apple.com/HT207025"))
         ])
+        
+        GitHub(#url("https://github.com/jiachenyee/ExploreAbility-Release/tree/main/ExploreAbilityRelease/Views/Challenge/Challenges/Differentiate%20Without%20Color"))
     }
     
     static let reduceTransparency = Challenge(feature: "Reduce Transparency",
@@ -205,6 +215,8 @@ extension Challenge {
             .web("Adjust the display and text size on iPad",
                  url: #url("https://support.apple.com/guide/ipad/ipad9a246013/"))
         ])
+        
+        GitHub(#url("https://github.com/jiachenyee/ExploreAbility-Release/tree/main/ExploreAbilityRelease/Views/Challenge/Challenges/Reduce%20Transparency"))
     }
     
     // MARK: - 👂 Hearing
@@ -248,6 +260,8 @@ extension Challenge {
             .web("Play the same sound in both of your AirPods",
                  url: #url("https://support.apple.com/guide/airpods/dev2b840e13e/web"))
         ])
+        
+        GitHub(#url("https://github.com/jiachenyee/ExploreAbility-Release/tree/main/ExploreAbilityRelease/Views/Challenge/Challenges/Mono%20Audio"))
     }
     
     // MARK: - 👋 Mobility
@@ -274,6 +288,8 @@ extension Challenge {
             .video("How to customize AssistiveTouch",
                    url: #url("https://youtu.be/3id4BJ4eSQg"))
         ])
+        
+        GitHub(#url("https://github.com/jiachenyee/ExploreAbility-Release/tree/main/ExploreAbilityRelease/Views/Challenge/Challenges/Assistive%20Touch"))
     }
     
     static let shakeToUndo = Challenge(feature: "Shake to Undo",
@@ -286,6 +302,8 @@ extension Challenge {
         
         Metadata(image: Image(systemName: "iphone.gen3.radiowaves.left.and.right"),
                  color: .cyan.opacity(0.9))
+        
+        GitHub(#url("https://github.com/jiachenyee/ExploreAbility-Release/tree/main/ExploreAbilityRelease/Views/Challenge/Challenges/Shake%20to%20Undo"))
     }
     
     // MARK: - 🧠 Cognitive
@@ -305,6 +323,8 @@ extension Challenge {
             .video("How to use Guided Access on iPad",
                    url: #url("https://youtu.be/JkDtljBD1Fw"))
         ])
+        
+        GitHub(#url("https://github.com/jiachenyee/ExploreAbility-Release/tree/main/ExploreAbilityRelease/Views/Challenge/Challenges/Guided%20Access"))
     }
     
     static let animatedImages = Challenge(feature: "Animated Images",
@@ -319,6 +339,8 @@ extension Challenge {
                  color: .pink.opacity(0.9))
         
         ChallengeRequirement.iOS17
+        
+        GitHub(#url("https://github.com/jiachenyee/ExploreAbility-Release/tree/main/ExploreAbilityRelease/Views/Challenge/Challenges/Animated%20Images"))
     }
     
     static let dimFlashingLights = Challenge(feature: "Dim Flashing Lights",
@@ -333,5 +355,7 @@ extension Challenge {
                  color: .pink.opacity(0.8))
         
         ChallengeRequirement.iOS17
+        
+        GitHub(#url("https://github.com/jiachenyee/ExploreAbility-Release/tree/main/ExploreAbilityRelease/Views/Challenge/Challenges/Dim%20Flashing%20Lights"))
     }
 }

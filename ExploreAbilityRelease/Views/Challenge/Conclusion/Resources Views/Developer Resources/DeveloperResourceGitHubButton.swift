@@ -27,7 +27,9 @@ struct DeveloperResourceGitHubButton: View {
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                 }
+                .foregroundStyle(.white)
             }
+            .padding(.bottom, 8)
         }
     }
 }
