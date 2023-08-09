@@ -11,6 +11,7 @@ import SwiftUI
 struct ChallengeButtonView: View {
     
     @EnvironmentObject var viewModel: ViewModel
+    @EnvironmentObject var challengePersistenceViewModel: ChallengePersistenceViewModel
     
     var challenges: [Challenge]
     var challengeIndex: Int
@@ -20,7 +21,8 @@ struct ChallengeButtonView: View {
             let challenge = challenges[challengeIndex]
             
             HomeViewActionButton(image: challenge.image,
-                                 color: challenge.color) {
+                                 color: challenge.color,
+                                 completed: challengePersistenceViewModel.retrieveChallenge(challenge).isSolved) {
                 withAnimation {
                     viewModel.gameState = .challenge(challenge)
                 }

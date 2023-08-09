@@ -10,6 +10,9 @@ import SwiftUI
 import UtilMacros
 
 extension Challenge {
+    
+    static let all = vision + hearing + mobility + cognitive
+    
     static let vision = [voiceOver, dynamicType, reduceMotion, increaseContrast, differentiateWithoutColour, reduceTransparency]
     
     static let hearing = [captions, monoAudio]

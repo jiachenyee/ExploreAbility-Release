@@ -16,10 +16,13 @@ struct HomeViewActionButton<V: View>: View {
     
     var action: (() -> Void)
     
-    init(image: Image, color: Color, action: @escaping () -> Void) where V == Image {
+    var completed = true
+    
+    init(image: Image, color: Color, completed: Bool, action: @escaping () -> Void) where V == Image {
         self.image = image
         self.action = action
         self.color = color
+        self.completed = completed
     }
     
     init(systemName: String, color: Color, action: @escaping () -> Void) where V == Image {
@@ -44,13 +47,21 @@ struct HomeViewActionButton<V: View>: View {
         Button {
             action()
         } label: {
-            Circle()
-                .frame(width: 50, height: 50)
-                .foregroundStyle(color)
-                .overlay {
-                    image
-                        .foregroundStyle(.black)
-                }
+            if completed {
+                Circle()
+                    .frame(width: 50, height: 50)
+                    .foregroundStyle(color)
+                    .overlay {
+                        image
+                            .foregroundStyle(.black)
+                    }
+            } else {
+                Circle()
+                    .stroke(lineWidth: 8)
+                    .padding(4)
+                    .frame(width: 50, height: 50)
+                    .foregroundStyle(color)
+            }
         }
     }
 }

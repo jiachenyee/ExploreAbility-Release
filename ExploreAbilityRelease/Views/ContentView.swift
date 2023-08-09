@@ -15,6 +15,7 @@ struct ContentView: View {
     
     @State private var counter = 0
     @StateObject var viewModel = ViewModel()
+    @StateObject var challengePersistenceViewModel = ChallengePersistenceViewModel()
     
     var body: some View {
         Group {
@@ -30,6 +31,7 @@ struct ContentView: View {
             }
         }
         .environmentObject(viewModel)
+        .environmentObject(challengePersistenceViewModel)
         .onAppear {
             viewModel.sharedNamespace = namespace
         }

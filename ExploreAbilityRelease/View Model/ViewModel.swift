@@ -20,4 +20,7 @@ class ViewModel: ObservableObject {
     
     var sharedNamespace: Namespace.ID!
     
+    init() {
+        
+    }
 }
