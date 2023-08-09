@@ -112,6 +112,19 @@
 		32C1C9402A2B8E8D00C1854F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32C1C93F2A2B8E8D00C1854F /* Preview Assets.xcassets */; };
 		32D354CC2A811C6B0030A949 /* AnimatedImagesChallengeSample3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D354CB2A811C6B0030A949 /* AnimatedImagesChallengeSample3.swift */; };
 		32E5F7AA2A815F4500BD36F2 /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32E5F7A92A815F4500BD36F2 /* test.mp3 */; };
+		32EFE69B2A837443008FB52C /* Challenge+VoiceOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE69A2A837443008FB52C /* Challenge+VoiceOver.swift */; };
+		32EFE69E2A837484008FB52C /* Challenge+DynamicType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE69D2A837484008FB52C /* Challenge+DynamicType.swift */; };
+		32EFE6A02A8374AB008FB52C /* Challenge+ReduceMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE69F2A8374AB008FB52C /* Challenge+ReduceMotion.swift */; };
+		32EFE6A22A8374D4008FB52C /* Challenge+IncreaseContrast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6A12A8374D4008FB52C /* Challenge+IncreaseContrast.swift */; };
+		32EFE6A42A8374F0008FB52C /* Challenge+DifferentiateWithoutColour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6A32A8374F0008FB52C /* Challenge+DifferentiateWithoutColour.swift */; };
+		32EFE6A62A837510008FB52C /* Challenge+ReduceTransparency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6A52A837510008FB52C /* Challenge+ReduceTransparency.swift */; };
+		32EFE6AA2A8375CC008FB52C /* Challenge+Captions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6A92A8375CC008FB52C /* Challenge+Captions.swift */; };
+		32EFE6AC2A837600008FB52C /* Challenge+MonoAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6AB2A837600008FB52C /* Challenge+MonoAudio.swift */; };
+		32EFE6AF2A837664008FB52C /* Challenge+AssistiveTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6AE2A837664008FB52C /* Challenge+AssistiveTouch.swift */; };
+		32EFE6B12A837686008FB52C /* Challenge+ShakeToUndo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6B02A837686008FB52C /* Challenge+ShakeToUndo.swift */; };
+		32EFE6B32A8376A6008FB52C /* Challenge+GuidedAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6B22A8376A6008FB52C /* Challenge+GuidedAccess.swift */; };
+		32EFE6B62A8376C3008FB52C /* Challenge+AnimatedImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6B52A8376C3008FB52C /* Challenge+AnimatedImages.swift */; };
+		32EFE6B82A8376DF008FB52C /* Challenge+DimFlashingLights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6B72A8376DF008FB52C /* Challenge+DimFlashingLights.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -230,6 +243,19 @@
 		32C1C93F2A2B8E8D00C1854F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		32D354CB2A811C6B0030A949 /* AnimatedImagesChallengeSample3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedImagesChallengeSample3.swift; sourceTree = "<group>"; };
 		32E5F7A92A815F4500BD36F2 /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
+		32EFE69A2A837443008FB52C /* Challenge+VoiceOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+VoiceOver.swift"; sourceTree = "<group>"; };
+		32EFE69D2A837484008FB52C /* Challenge+DynamicType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+DynamicType.swift"; sourceTree = "<group>"; };
+		32EFE69F2A8374AB008FB52C /* Challenge+ReduceMotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+ReduceMotion.swift"; sourceTree = "<group>"; };
+		32EFE6A12A8374D4008FB52C /* Challenge+IncreaseContrast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+IncreaseContrast.swift"; sourceTree = "<group>"; };
+		32EFE6A32A8374F0008FB52C /* Challenge+DifferentiateWithoutColour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+DifferentiateWithoutColour.swift"; sourceTree = "<group>"; };
+		32EFE6A52A837510008FB52C /* Challenge+ReduceTransparency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+ReduceTransparency.swift"; sourceTree = "<group>"; };
+		32EFE6A92A8375CC008FB52C /* Challenge+Captions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+Captions.swift"; sourceTree = "<group>"; };
+		32EFE6AB2A837600008FB52C /* Challenge+MonoAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+MonoAudio.swift"; sourceTree = "<group>"; };
+		32EFE6AE2A837664008FB52C /* Challenge+AssistiveTouch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+AssistiveTouch.swift"; sourceTree = "<group>"; };
+		32EFE6B02A837686008FB52C /* Challenge+ShakeToUndo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+ShakeToUndo.swift"; sourceTree = "<group>"; };
+		32EFE6B22A8376A6008FB52C /* Challenge+GuidedAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+GuidedAccess.swift"; sourceTree = "<group>"; };
+		32EFE6B52A8376C3008FB52C /* Challenge+AnimatedImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+AnimatedImages.swift"; sourceTree = "<group>"; };
+		32EFE6B72A8376DF008FB52C /* Challenge+DimFlashingLights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+DimFlashingLights.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -350,7 +376,7 @@
 			isa = PBXGroup;
 			children = (
 				32303C9E2A30414C0032BB50 /* Challenge.swift */,
-				32303CBB2A3069B40032BB50 /* Challenge+Challenges.swift */,
+				32EFE69C2A83745B008FB52C /* Challenge Definition */,
 				32194FC92A827C8100D993B6 /* Challenge Builder */,
 				32194FCA2A827C9300D993B6 /* Challenge Components */,
 			);
@@ -691,6 +717,59 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		32EFE69C2A83745B008FB52C /* Challenge Definition */ = {
+			isa = PBXGroup;
+			children = (
+				32303CBB2A3069B40032BB50 /* Challenge+Challenges.swift */,
+				32EFE6B42A8376B3008FB52C /* Cognitive Challenges */,
+				32EFE6AD2A837655008FB52C /* Mobility Challenges */,
+				32EFE6A72A8375B8008FB52C /* Vision Challenges */,
+				32EFE6A82A8375C4008FB52C /* Hearing Challenges */,
+			);
+			path = "Challenge Definition";
+			sourceTree = "<group>";
+		};
+		32EFE6A72A8375B8008FB52C /* Vision Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				32EFE6A52A837510008FB52C /* Challenge+ReduceTransparency.swift */,
+				32EFE6A32A8374F0008FB52C /* Challenge+DifferentiateWithoutColour.swift */,
+				32EFE6A12A8374D4008FB52C /* Challenge+IncreaseContrast.swift */,
+				32EFE69F2A8374AB008FB52C /* Challenge+ReduceMotion.swift */,
+				32EFE69D2A837484008FB52C /* Challenge+DynamicType.swift */,
+				32EFE69A2A837443008FB52C /* Challenge+VoiceOver.swift */,
+			);
+			path = "Vision Challenges";
+			sourceTree = "<group>";
+		};
+		32EFE6A82A8375C4008FB52C /* Hearing Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				32EFE6A92A8375CC008FB52C /* Challenge+Captions.swift */,
+				32EFE6AB2A837600008FB52C /* Challenge+MonoAudio.swift */,
+			);
+			path = "Hearing Challenges";
+			sourceTree = "<group>";
+		};
+		32EFE6AD2A837655008FB52C /* Mobility Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				32EFE6AE2A837664008FB52C /* Challenge+AssistiveTouch.swift */,
+				32EFE6B02A837686008FB52C /* Challenge+ShakeToUndo.swift */,
+			);
+			path = "Mobility Challenges";
+			sourceTree = "<group>";
+		};
+		32EFE6B42A8376B3008FB52C /* Cognitive Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				32EFE6B22A8376A6008FB52C /* Challenge+GuidedAccess.swift */,
+				32EFE6B52A8376C3008FB52C /* Challenge+AnimatedImages.swift */,
+				32EFE6B72A8376DF008FB52C /* Challenge+DimFlashingLights.swift */,
+			);
+			path = "Cognitive Challenges";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -847,7 +926,10 @@
 				329144252A364AF700F5263D /* CircularLabel.swift in Sources */,
 				32303CC62A30A7140032BB50 /* HexagonView.swift in Sources */,
 				325865572A42A60800630D7E /* Separator.swift in Sources */,
+				32EFE6B32A8376A6008FB52C /* Challenge+GuidedAccess.swift in Sources */,
+				32EFE69E2A837484008FB52C /* Challenge+DynamicType.swift in Sources */,
 				322986582A82BDEC009B6275 /* ClosedCaptionsSDHChallengeView.swift in Sources */,
+				32EFE69B2A837443008FB52C /* Challenge+VoiceOver.swift in Sources */,
 				3238D0F42A80EB4A006D2889 /* VoiceOverChallengeDatePicker.swift in Sources */,
 				3251DF1A2A6A4D470017334A /* DWCCanvas.swift in Sources */,
 				3251DF122A6A17CD0017334A /* DifferentiateWithoutColorView.swift in Sources */,
@@ -863,10 +945,14 @@
 				32194FBE2A827B1D00D993B6 /* DeveloperResources.swift in Sources */,
 				328DF9A62A811E3600FFC128 /* AnimatedImagesChallengeSample1.swift in Sources */,
 				3256D5132A83545200E64E18 /* ChallengePersistenceViewModel.swift in Sources */,
+				32EFE6A62A837510008FB52C /* Challenge+ReduceTransparency.swift in Sources */,
 				326E38152A83529E00803FCC /* ChallengePersistentData.swift in Sources */,
 				32194FC22A827B1D00D993B6 /* DisableInstructions.swift in Sources */,
 				326036282A8150D200E44212 /* MonoAudioChallengeView.swift in Sources */,
+				32EFE6AF2A837664008FB52C /* Challenge+AssistiveTouch.swift in Sources */,
+				32EFE6A02A8374AB008FB52C /* Challenge+ReduceMotion.swift in Sources */,
 				3256D5172A835CAB00E64E18 /* ConfettiView.swift in Sources */,
+				32EFE6A42A8374F0008FB52C /* Challenge+DifferentiateWithoutColour.swift in Sources */,
 				327E69842A384636004E0ED3 /* ReduceMotionView.swift in Sources */,
 				32303CCC2A30A8200032BB50 /* HomeView.swift in Sources */,
 				32303CC42A30A68C0032BB50 /* ControlsHexagonView.swift in Sources */,
@@ -891,6 +977,7 @@
 				32194FBA2A827B1D00D993B6 /* ChallengeComponentGroup.swift in Sources */,
 				32194FBD2A827B1D00D993B6 /* ReferenceResources.swift in Sources */,
 				328DF9A32A811E3600FFC128 /* AnimatedImagesChallengeSample7.swift in Sources */,
+				32EFE6B62A8376C3008FB52C /* Challenge+AnimatedImages.swift in Sources */,
 				32194FBB2A827B1D00D993B6 /* Metadata.swift in Sources */,
 				32A0A6622A428FA900E97042 /* ChallengeConclusionContainerView.swift in Sources */,
 				326B88F12A6FC1A10029915B /* GuidedAccessView.swift in Sources */,
@@ -903,11 +990,14 @@
 				327883B42A6A74A9005765E9 /* ShakeToUndoScene.swift in Sources */,
 				3241316B2A3F772500FBA638 /* DynamicTypeHelper.swift in Sources */,
 				32A0A65D2A42090D00E97042 /* DeveloperResourcesView.swift in Sources */,
+				32EFE6B12A837686008FB52C /* Challenge+ShakeToUndo.swift in Sources */,
+				32EFE6AA2A8375CC008FB52C /* Challenge+Captions.swift in Sources */,
 				32303CBE2A306A1E0032BB50 /* ChallengeRequirement.swift in Sources */,
 				32303CE02A30DD670032BB50 /* CafeProductView.swift in Sources */,
 				32A0A6592A42084900E97042 /* ResourcesView.swift in Sources */,
 				327418912A80DFDC009721B9 /* VoiceOverView.swift in Sources */,
 				32C1C93B2A2B8E8C00C1854F /* ContentView.swift in Sources */,
+				32EFE6B82A8376DF008FB52C /* Challenge+DimFlashingLights.swift in Sources */,
 				3240D8552A80E7CF00D48F42 /* VoiceOverChallengeControls.swift in Sources */,
 				3275DF582A42BEFF00C361B1 /* MenuButtons.swift in Sources */,
 				3291441F2A36265800F5263D /* ChallengePlayingView.swift in Sources */,
@@ -915,6 +1005,7 @@
 				32194FC42A827B1D00D993B6 /* Hint.swift in Sources */,
 				32194FC52A827B1D00D993B6 /* ChallengeComponent.swift in Sources */,
 				32303CDA2A30B9C60032BB50 /* ZoomState.swift in Sources */,
+				32EFE6A22A8374D4008FB52C /* Challenge+IncreaseContrast.swift in Sources */,
 				3275DF5A2A42BF9C00C361B1 /* MenuDismissButton.swift in Sources */,
 				327883AD2A6A6333005765E9 /* ChallengeHomeButton.swift in Sources */,
 				32B014C22A8110B6006DB73A /* AnimatedImagesChallengeView.swift in Sources */,
@@ -930,6 +1021,7 @@
 				328DF9A72A811E3600FFC128 /* AnimatedImagesChallengeSample6.swift in Sources */,
 				32C1C9392A2B8E8C00C1854F /* ExploreAbilityReleaseApp.swift in Sources */,
 				325865542A42A4E600630D7E /* DeveloperResourceView.swift in Sources */,
+				32EFE6AC2A837600008FB52C /* Challenge+MonoAudio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
