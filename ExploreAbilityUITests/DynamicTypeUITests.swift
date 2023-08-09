@@ -25,6 +25,7 @@ final class DynamicTypeUITests: XCTestCase {
     func testOpenAndClose() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
+        app.launchArguments = ["-no-persistence"]
         app.launch()
         
         app.buttons["Dynamic Type"].tap()
@@ -40,6 +41,7 @@ final class DynamicTypeUITests: XCTestCase {
     
     func testChallengeSolve() throws {
         let app = XCUIApplication()
+        app.launchArguments = ["-no-persistence"]
         app.launch()
         
         app.buttons["Dynamic Type"].tap()
