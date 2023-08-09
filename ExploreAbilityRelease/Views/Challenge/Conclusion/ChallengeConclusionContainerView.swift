@@ -10,6 +10,8 @@ import SwiftUI
 
 struct ChallengeConclusionContainerView<Content: View>: View {
     
+    @EnvironmentObject var challengePersistenceViewModel: ChallengePersistenceViewModel
+    
     var namespace: Namespace.ID
     var challenge: Challenge
     
@@ -19,52 +21,88 @@ struct ChallengeConclusionContainerView<Content: View>: View {
     var onDismiss: (() -> Void)
     
     var body: some View {
-        VStack(spacing: -32) {
+        VStack {
             ZStack {
-                RoundedRectangle(cornerRadius: 16)
-                    .stroke(challenge.color.opacity(0.5), style: .init(lineWidth: 8))
-                    .matchedGeometryEffect(id: challenge.feature + ".frame", in: namespace)
-                
-                VStack(alignment: .leading) {
-                    Text(challenge.feature)
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding([.top, .horizontal], 20)
-                    ScrollView {
-                        VStack(alignment: .leading) {
-                            content()
-                        }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding([.horizontal, .bottom], 20)
-                        .padding(.bottom, 32)
-                    }
-                }
-                .padding(4)
-                .multilineTextAlignment(.leading)
-            }
-            
-            ZStack {
-                Circle()
-                    .fill(.black)
-                    .frame(width: 64, height: 64)
-                
-                Button {
-                    onDismiss()
-                } label: {
+                VStack {
                     ZStack {
                         Circle()
                             .fill(challenge.color)
                             .frame(width: 48, height: 48)
+                            .shadow(radius: 8)
+                        challenge.image
+                            .matchedGeometryEffect(id: challenge.feature, in: namespace)
+                    }
+                    
+                    Text(challenge.feature)
+                        .font(.title)
+                        .multilineTextAlignment(.center)
+                        .fontWeight(.bold)
+                        .frame(maxWidth: .infinity, alignment: .center)
+                        .padding([.top, .horizontal], 20)
+                    
+                    Text(challengePersistenceViewModel.retrieveChallenge(challenge).solveDate ?? .now,
+                         style: .date)
+                        .font(.caption)
+                }
+                .padding()
+                .padding(.vertical)
+                .frame(maxWidth: .infinity)
+                .background {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 16)
+                            .fill(challenge.color.opacity(0.5))
+                            .matchedGeometryEffect(id: challenge.feature + ".frame", in: namespace)
+                        GeometryReader { proxy in
+                            ConfettiView(size: proxy.size)
+                        }
+                        .clipShape(RoundedRectangle(cornerRadius: 16))
+                    }
+                    .ignoresSafeArea(.container, edges: .top)
+                }
+                .overlay {
+                    Button {
                         
-                        Image(systemName: "xmark")
+                    } label: {
+                        Image(systemName: "square.and.arrow.up")
+                            .imageScale(.large)
                             .foregroundStyle(.white)
                     }
+                    .padding(.trailing)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+                    
                 }
-                .accessibilityLabel("Dismiss")
-                .matchedGeometryEffect(id: challenge.feature, in: namespace)
             }
+            
+            ScrollView {
+                VStack(alignment: .leading) {
+                    content()
+                }
+                .padding()
+                .frame(maxWidth: .infinity, alignment: .leading)
+            }
+            
+            Button {
+                onDismiss()
+            } label: {
+                Text("Done")
+                    .foregroundStyle(.white)
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(
+                        RoundedRectangle(cornerRadius: 16)
+                            .fill(Color.accentColor)
+                    )
+            }
+            .padding()
         }
-        .padding()
+        .onAppear {
+            var challengeData = challengePersistenceViewModel.retrieveChallenge(challenge)
+            
+            if challengeData.solveDate == nil {
+                challengeData.solveDate = .now
+            }
+            
+            challengePersistenceViewModel.challengeData[challenge.feature] = challengeData
+        }
     }
 }

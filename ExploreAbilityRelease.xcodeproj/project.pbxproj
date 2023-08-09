@@ -56,6 +56,8 @@
 		3251DF2B2A6A537A0017334A /* DynamicTypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251DF2A2A6A537A0017334A /* DynamicTypeUITests.swift */; };
 		3251DF2D2A6A5B5B0017334A /* XCUITestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251DF2C2A6A5B5B0017334A /* XCUITestUtils.swift */; };
 		3256D5132A83545200E64E18 /* ChallengePersistenceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3256D5122A83545200E64E18 /* ChallengePersistenceViewModel.swift */; };
+		3256D5162A835CAB00E64E18 /* ConfettiUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3256D5142A835CAB00E64E18 /* ConfettiUIView.swift */; };
+		3256D5172A835CAB00E64E18 /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3256D5152A835CAB00E64E18 /* ConfettiView.swift */; };
 		325865522A42A31600630D7E /* DeveloperResourceGitHubButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325865512A42A31600630D7E /* DeveloperResourceGitHubButton.swift */; };
 		325865542A42A4E600630D7E /* DeveloperResourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325865532A42A4E600630D7E /* DeveloperResourceView.swift */; };
 		325865572A42A60800630D7E /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325865562A42A60800630D7E /* Separator.swift */; };
@@ -173,6 +175,8 @@
 		3251DF2A2A6A537A0017334A /* DynamicTypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeUITests.swift; sourceTree = "<group>"; };
 		3251DF2C2A6A5B5B0017334A /* XCUITestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUITestUtils.swift; sourceTree = "<group>"; };
 		3256D5122A83545200E64E18 /* ChallengePersistenceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengePersistenceViewModel.swift; sourceTree = "<group>"; };
+		3256D5142A835CAB00E64E18 /* ConfettiUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfettiUIView.swift; sourceTree = "<group>"; };
+		3256D5152A835CAB00E64E18 /* ConfettiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
 		325865512A42A31600630D7E /* DeveloperResourceGitHubButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperResourceGitHubButton.swift; sourceTree = "<group>"; };
 		325865532A42A4E600630D7E /* DeveloperResourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperResourceView.swift; sourceTree = "<group>"; };
 		325865562A42A60800630D7E /* Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Separator.swift; sourceTree = "<group>"; };
@@ -598,6 +602,8 @@
 		32A0A65A2A42085400E97042 /* Conclusion */ = {
 			isa = PBXGroup;
 			children = (
+				3256D5142A835CAB00E64E18 /* ConfettiUIView.swift */,
+				3256D5152A835CAB00E64E18 /* ConfettiView.swift */,
 				327E69812A37ECE3004E0ED3 /* ChallengeConclusionView.swift */,
 				32A0A6612A428FA900E97042 /* ChallengeConclusionContainerView.swift */,
 				325865552A42A53800630D7E /* Resources Views */,
@@ -860,6 +866,7 @@
 				326E38152A83529E00803FCC /* ChallengePersistentData.swift in Sources */,
 				32194FC22A827B1D00D993B6 /* DisableInstructions.swift in Sources */,
 				326036282A8150D200E44212 /* MonoAudioChallengeView.swift in Sources */,
+				3256D5172A835CAB00E64E18 /* ConfettiView.swift in Sources */,
 				327E69842A384636004E0ED3 /* ReduceMotionView.swift in Sources */,
 				32303CCC2A30A8200032BB50 /* HomeView.swift in Sources */,
 				32303CC42A30A68C0032BB50 /* ControlsHexagonView.swift in Sources */,
@@ -919,6 +926,7 @@
 				321F5DF22A80EE59006B2416 /* VoiceOverChallengeStepper.swift in Sources */,
 				329144232A364A9400F5263D /* ArcText.swift in Sources */,
 				32194FBF2A827B1D00D993B6 /* Conclusion.swift in Sources */,
+				3256D5162A835CAB00E64E18 /* ConfettiUIView.swift in Sources */,
 				328DF9A72A811E3600FFC128 /* AnimatedImagesChallengeSample6.swift in Sources */,
 				32C1C9392A2B8E8C00C1854F /* ExploreAbilityReleaseApp.swift in Sources */,
 				325865542A42A4E600630D7E /* DeveloperResourceView.swift in Sources */,

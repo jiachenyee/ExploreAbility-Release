@@ -14,6 +14,10 @@ class ChallengePersistenceViewModel: ObservableObject {
         }
     }
     
+    init() {
+        load()
+    }
+    
     func retrieveChallenge(_ challenge: Challenge) -> ChallengePersistentData {
         challengeData[challenge.feature] ?? ChallengePersistentData(challenge, unlockedHints: 0)
     }
@@ -24,8 +28,13 @@ class ChallengePersistenceViewModel: ObservableObject {
         return URL.documentsDirectory.appendingPathComponent(plistName)
     }
     
+    func nuke() {
+        challengeData = [:]
+    }
+    
     func save() {
         let archiveURL = getArchiveURL()
+        
         let jsonEncoder = JSONEncoder()
         let encodedChallengeData = try? jsonEncoder.encode(challengeData)
         
