@@ -11,9 +11,12 @@ import SwiftUI
 struct ChallengeConclusionContainerView<Content: View>: View {
     
     @EnvironmentObject var challengePersistenceViewModel: ChallengePersistenceViewModel
+    @EnvironmentObject var challengeViewModel: ChallengeViewModel
     
     var namespace: Namespace.ID
     var challenge: Challenge
+    
+    @State private var renderedImage = Image(systemName: "photo")
     
     @ViewBuilder
     var content: (() -> Content)
@@ -60,16 +63,12 @@ struct ChallengeConclusionContainerView<Content: View>: View {
                     .ignoresSafeArea(.container, edges: .top)
                 }
                 .overlay {
-                    Button {
-                        
-                    } label: {
-                        Image(systemName: "square.and.arrow.up")
-                            .imageScale(.large)
-                            .foregroundStyle(.white)
-                    }
+                    ShareLink("", item: renderedImage,
+                              preview: SharePreview(Text("\(challenge.feature) Award"),
+                                                    image: renderedImage))
+                    .imageScale(.large)
                     .padding(.trailing)
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
-                    
                 }
             }
             
@@ -82,18 +81,26 @@ struct ChallengeConclusionContainerView<Content: View>: View {
             }
             
             Button {
+                withAnimation(.bouncy) {
+                    challengeViewModel.state = .playing(false)
+                }
+            } label: {
+                Text("Play Again")
+                    .padding(8)
+                    .frame(maxWidth: .infinity)
+            }
+            .buttonStyle(.borderless)
+            .padding(.horizontal)
+            
+            Button {
                 onDismiss()
             } label: {
                 Text("Done")
-                    .foregroundStyle(.white)
-                    .padding()
+                    .padding(8)
                     .frame(maxWidth: .infinity)
-                    .background(
-                        RoundedRectangle(cornerRadius: 16)
-                            .fill(Color.accentColor)
-                    )
             }
-            .padding()
+            .buttonStyle(.borderedProminent)
+            .padding([.horizontal, .bottom])
         }
         .onAppear {
             var challengeData = challengePersistenceViewModel.retrieveChallenge(challenge)
@@ -103,6 +110,20 @@ struct ChallengeConclusionContainerView<Content: View>: View {
             }
             
             challengePersistenceViewModel.challengeData[challenge.feature] = challengeData
+            
+            render(date: challengeData.solveDate!)
+        }
+    }
+    
+    @MainActor func render(date: Date) {
+        let renderer = ImageRenderer(content: AwardExportView(challenge: challengeViewModel.challenge,
+                                                              date: date))
+        
+        renderer.proposedSize = .init(width: 1200, height: 1200)
+        
+        if let uiImage = renderer.uiImage {
+            
+            renderedImage = Image(uiImage: uiImage)
         }
     }
 }

@@ -70,6 +70,8 @@ extension Challenge {
             .article("Scaling Fonts Automatically",
                      url: #url("https://developer.apple.com/documentation/uikit/uifont/scaling_fonts_automatically"),
                      relatedFrameworks: [.uiKit]),
+            .header("Testing with Environment Overrides",
+                    body: "Xcode's Environment Overrides allow you to enable various accessibility features, including Dynamic Type, on the Simulator. This is useful for quickly testing your app's accessibility features without having a physical device on you."),
             .hig("Typography",
                  url: #url("https://developer.apple.com/design/human-interface-guidelines/typography")),
             .video("WWDC19: Visual Design and Accessibility",

@@ -125,6 +125,7 @@
 		32EFE6B32A8376A6008FB52C /* Challenge+GuidedAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6B22A8376A6008FB52C /* Challenge+GuidedAccess.swift */; };
 		32EFE6B62A8376C3008FB52C /* Challenge+AnimatedImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6B52A8376C3008FB52C /* Challenge+AnimatedImages.swift */; };
 		32EFE6B82A8376DF008FB52C /* Challenge+DimFlashingLights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6B72A8376DF008FB52C /* Challenge+DimFlashingLights.swift */; };
+		32EFE6BA2A83F6C2008FB52C /* AwardExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6B92A83F6C2008FB52C /* AwardExportView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -256,6 +257,7 @@
 		32EFE6B22A8376A6008FB52C /* Challenge+GuidedAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+GuidedAccess.swift"; sourceTree = "<group>"; };
 		32EFE6B52A8376C3008FB52C /* Challenge+AnimatedImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+AnimatedImages.swift"; sourceTree = "<group>"; };
 		32EFE6B72A8376DF008FB52C /* Challenge+DimFlashingLights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+DimFlashingLights.swift"; sourceTree = "<group>"; };
+		32EFE6B92A83F6C2008FB52C /* AwardExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardExportView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -632,6 +634,7 @@
 				3256D5152A835CAB00E64E18 /* ConfettiView.swift */,
 				327E69812A37ECE3004E0ED3 /* ChallengeConclusionView.swift */,
 				32A0A6612A428FA900E97042 /* ChallengeConclusionContainerView.swift */,
+				32EFE6B92A83F6C2008FB52C /* AwardExportView.swift */,
 				325865552A42A53800630D7E /* Resources Views */,
 			);
 			path = Conclusion;
@@ -946,6 +949,7 @@
 				328DF9A62A811E3600FFC128 /* AnimatedImagesChallengeSample1.swift in Sources */,
 				3256D5132A83545200E64E18 /* ChallengePersistenceViewModel.swift in Sources */,
 				32EFE6A62A837510008FB52C /* Challenge+ReduceTransparency.swift in Sources */,
+				32EFE6BA2A83F6C2008FB52C /* AwardExportView.swift in Sources */,
 				326E38152A83529E00803FCC /* ChallengePersistentData.swift in Sources */,
 				32194FC22A827B1D00D993B6 /* DisableInstructions.swift in Sources */,
 				326036282A8150D200E44212 /* MonoAudioChallengeView.swift in Sources */,

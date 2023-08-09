@@ -48,12 +48,6 @@ struct MenuButtons: View {
                     challengeViewModel.state = .playing(false)
                 }
             }
-            
-            Button {
-                challengeViewModel.state = .conclusion
-            } label: {
-                Image(systemName: "flag")
-            }
         }
         .onAppear {
             withAnimation(.spring(dampingFraction: 0.5).delay(0.3)) {
