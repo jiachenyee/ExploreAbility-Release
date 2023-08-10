@@ -13,8 +13,7 @@ struct RewardChallengeView: View {
     @State private var waveOffset = Angle(degrees: 0)
     
     var body: some View {
-        VStack {
-            
+        VStack(spacing: 0) {
             ZStack {
                 Rectangle()
                     .fill(.brown)
