@@ -26,7 +26,6 @@
 		32303CBC2A3069B40032BB50 /* Challenge+Challenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CBB2A3069B40032BB50 /* Challenge+Challenges.swift */; };
 		32303CBE2A306A1E0032BB50 /* ChallengeRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CBD2A306A1E0032BB50 /* ChallengeRequirement.swift */; };
 		32303CC02A306C400032BB50 /* PreChallengeWarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CBF2A306C400032BB50 /* PreChallengeWarningView.swift */; };
-		32303CC22A307F940032BB50 /* CafeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CC12A307F940032BB50 /* CafeView.swift */; };
 		32303CC42A30A68C0032BB50 /* ControlsHexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CC32A30A68C0032BB50 /* ControlsHexagonView.swift */; };
 		32303CC62A30A7140032BB50 /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CC52A30A7140032BB50 /* HexagonView.swift */; };
 		32303CC82A30A7740032BB50 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CC72A30A7740032BB50 /* ViewModel.swift */; };
@@ -37,8 +36,6 @@
 		32303CD82A30B35B0032BB50 /* HomeViewActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CD72A30B35B0032BB50 /* HomeViewActionButton.swift */; };
 		32303CDA2A30B9C60032BB50 /* ZoomState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CD92A30B9C60032BB50 /* ZoomState.swift */; };
 		32303CDC2A30D6D30032BB50 /* ChallengeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CDB2A30D6D30032BB50 /* ChallengeButtonView.swift */; };
-		32303CDE2A30DB980032BB50 /* HomePopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CDD2A30DB980032BB50 /* HomePopupView.swift */; };
-		32303CE02A30DD670032BB50 /* CafeProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CDF2A30DD670032BB50 /* CafeProductView.swift */; };
 		32303CE52A30DECA0032BB50 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CE42A30DECA0032BB50 /* SettingsView.swift */; };
 		32303CE72A30E2570032BB50 /* ChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CE62A30E2570032BB50 /* ChallengeView.swift */; };
 		32303CE92A317F120032BB50 /* ChallengeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32303CE82A317F120032BB50 /* ChallengeState.swift */; };
@@ -128,8 +125,10 @@
 		32EFE6BA2A83F6C2008FB52C /* AwardExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6B92A83F6C2008FB52C /* AwardExportView.swift */; };
 		32EFE6C52A8494EB008FB52C /* GameCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6C42A8494EB008FB52C /* GameCenterView.swift */; };
 		32EFE6C72A84BF10008FB52C /* RewardChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6C62A84BF10008FB52C /* RewardChallenge.swift */; };
-		32EFE6C92A84D6AB008FB52C /* RewardChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6C82A84D6AB008FB52C /* RewardChallengeView.swift */; };
+		32EFE6C92A84D6AB008FB52C /* RewardCafeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6C82A84D6AB008FB52C /* RewardCafeView.swift */; };
 		32EFE6CB2A8509EA008FB52C /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6CA2A8509EA008FB52C /* WaveView.swift */; };
+		32EFE6CD2A8533E5008FB52C /* HotChocolateIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6CC2A8533E5008FB52C /* HotChocolateIndicatorView.swift */; };
+		32EFE6CF2A853471008FB52C /* RewardCafeHotChocolateCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6CE2A853471008FB52C /* RewardCafeHotChocolateCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,7 +161,6 @@
 		32303CBB2A3069B40032BB50 /* Challenge+Challenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+Challenges.swift"; sourceTree = "<group>"; };
 		32303CBD2A306A1E0032BB50 /* ChallengeRequirement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeRequirement.swift; sourceTree = "<group>"; };
 		32303CBF2A306C400032BB50 /* PreChallengeWarningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreChallengeWarningView.swift; sourceTree = "<group>"; };
-		32303CC12A307F940032BB50 /* CafeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeView.swift; sourceTree = "<group>"; };
 		32303CC32A30A68C0032BB50 /* ControlsHexagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsHexagonView.swift; sourceTree = "<group>"; };
 		32303CC52A30A7140032BB50 /* HexagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonView.swift; sourceTree = "<group>"; };
 		32303CC72A30A7740032BB50 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
@@ -173,8 +171,6 @@
 		32303CD72A30B35B0032BB50 /* HomeViewActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewActionButton.swift; sourceTree = "<group>"; };
 		32303CD92A30B9C60032BB50 /* ZoomState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomState.swift; sourceTree = "<group>"; };
 		32303CDB2A30D6D30032BB50 /* ChallengeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeButtonView.swift; sourceTree = "<group>"; };
-		32303CDD2A30DB980032BB50 /* HomePopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePopupView.swift; sourceTree = "<group>"; };
-		32303CDF2A30DD670032BB50 /* CafeProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeProductView.swift; sourceTree = "<group>"; };
 		32303CE42A30DECA0032BB50 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		32303CE62A30E2570032BB50 /* ChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeView.swift; sourceTree = "<group>"; };
 		32303CE82A317F120032BB50 /* ChallengeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeState.swift; sourceTree = "<group>"; };
@@ -265,8 +261,10 @@
 		32EFE6BB2A8489F2008FB52C /* ExploreAbilityRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExploreAbilityRelease.entitlements; sourceTree = "<group>"; };
 		32EFE6C42A8494EB008FB52C /* GameCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterView.swift; sourceTree = "<group>"; };
 		32EFE6C62A84BF10008FB52C /* RewardChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardChallenge.swift; sourceTree = "<group>"; };
-		32EFE6C82A84D6AB008FB52C /* RewardChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardChallengeView.swift; sourceTree = "<group>"; };
+		32EFE6C82A84D6AB008FB52C /* RewardCafeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCafeView.swift; sourceTree = "<group>"; };
 		32EFE6CA2A8509EA008FB52C /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
+		32EFE6CC2A8533E5008FB52C /* HotChocolateIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotChocolateIndicatorView.swift; sourceTree = "<group>"; };
+		32EFE6CE2A853471008FB52C /* RewardCafeHotChocolateCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCafeHotChocolateCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -399,6 +397,7 @@
 			isa = PBXGroup;
 			children = (
 				32303CCB2A30A8200032BB50 /* HomeView.swift */,
+				32EFE6CC2A8533E5008FB52C /* HotChocolateIndicatorView.swift */,
 				32303CC92A30A7C80032BB50 /* ZoomableScrollView.swift */,
 				32EFE6C12A8493EB008FB52C /* Game Center */,
 				32303CD62A30AA140032BB50 /* Hexagon */,
@@ -418,23 +417,12 @@
 			path = Hexagon;
 			sourceTree = "<group>";
 		};
-		32303CE12A30DD7F0032BB50 /* Cafe */ = {
-			isa = PBXGroup;
-			children = (
-				32303CC12A307F940032BB50 /* CafeView.swift */,
-				32303CDF2A30DD670032BB50 /* CafeProductView.swift */,
-			);
-			path = Cafe;
-			sourceTree = "<group>";
-		};
 		32303CE22A30DD8A0032BB50 /* Popup Views */ = {
 			isa = PBXGroup;
 			children = (
-				32303CDD2A30DB980032BB50 /* HomePopupView.swift */,
 				32303CE42A30DECA0032BB50 /* SettingsView.swift */,
-				32EFE6C82A84D6AB008FB52C /* RewardChallengeView.swift */,
+				32EFE6D02A8534A6008FB52C /* Reward Cafe */,
 				32EFE6CA2A8509EA008FB52C /* WaveView.swift */,
-				32303CE12A30DD7F0032BB50 /* Cafe */,
 			);
 			path = "Popup Views";
 			sourceTree = "<group>";
@@ -795,6 +783,15 @@
 			path = "Game Center";
 			sourceTree = "<group>";
 		};
+		32EFE6D02A8534A6008FB52C /* Reward Cafe */ = {
+			isa = PBXGroup;
+			children = (
+				32EFE6C82A84D6AB008FB52C /* RewardCafeView.swift */,
+				32EFE6CE2A853471008FB52C /* RewardCafeHotChocolateCard.swift */,
+			);
+			path = "Reward Cafe";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -961,7 +958,6 @@
 				323DF2C62A36C27700CF20A5 /* ChallengeMenuView.swift in Sources */,
 				32AC04FC2A8163590003ADF0 /* MonoAudioChallengeAudioViewModel.swift in Sources */,
 				328DF9A82A811E3600FFC128 /* AnimatedImagesChallengeSample2.swift in Sources */,
-				32303CDE2A30DB980032BB50 /* HomePopupView.swift in Sources */,
 				32BC43502A8254A50056308A /* AssistiveTouchChallengeView.swift in Sources */,
 				32EFE6CB2A8509EA008FB52C /* WaveView.swift in Sources */,
 				327E69822A37ECE3004E0ED3 /* ChallengeConclusionView.swift in Sources */,
@@ -969,6 +965,7 @@
 				327E69862A384982004E0ED3 /* RotatingCircleView.swift in Sources */,
 				32303CD82A30B35B0032BB50 /* HomeViewActionButton.swift in Sources */,
 				32194FBE2A827B1D00D993B6 /* DeveloperResources.swift in Sources */,
+				32EFE6CD2A8533E5008FB52C /* HotChocolateIndicatorView.swift in Sources */,
 				328DF9A62A811E3600FFC128 /* AnimatedImagesChallengeSample1.swift in Sources */,
 				3256D5132A83545200E64E18 /* ChallengePersistenceViewModel.swift in Sources */,
 				32EFE6A62A837510008FB52C /* Challenge+ReduceTransparency.swift in Sources */,
@@ -984,6 +981,7 @@
 				32303CCC2A30A8200032BB50 /* HomeView.swift in Sources */,
 				32303CC42A30A68C0032BB50 /* ControlsHexagonView.swift in Sources */,
 				32303CE92A317F120032BB50 /* ChallengeState.swift in Sources */,
+				32EFE6CF2A853471008FB52C /* RewardCafeHotChocolateCard.swift in Sources */,
 				32C123FC2A3956FA00501A1E /* PlayingFeatureOnView.swift in Sources */,
 				32303CC82A30A7740032BB50 /* ViewModel.swift in Sources */,
 				328B9A9B2A80E8350004072A /* VoiceOverChallengeToggle.swift in Sources */,
@@ -1001,7 +999,6 @@
 				329CB3982A813DA200ADA128 /* DimFlashingLightsChallengeView.swift in Sources */,
 				3275DF5E2A42C0EF00C361B1 /* MenuHomeButton.swift in Sources */,
 				327883B22A6A6990005765E9 /* ShakeToUndoView.swift in Sources */,
-				32303CC22A307F940032BB50 /* CafeView.swift in Sources */,
 				32194FBA2A827B1D00D993B6 /* ChallengeComponentGroup.swift in Sources */,
 				32194FBD2A827B1D00D993B6 /* ReferenceResources.swift in Sources */,
 				328DF9A32A811E3600FFC128 /* AnimatedImagesChallengeSample7.swift in Sources */,
@@ -1015,7 +1012,7 @@
 				32A0A65F2A428B3800E97042 /* DisableInstructionsView.swift in Sources */,
 				32303C9F2A30414C0032BB50 /* Challenge.swift in Sources */,
 				32B635402A80EDB900A04DA5 /* VoiceOverChallengeSlider.swift in Sources */,
-				32EFE6C92A84D6AB008FB52C /* RewardChallengeView.swift in Sources */,
+				32EFE6C92A84D6AB008FB52C /* RewardCafeView.swift in Sources */,
 				327883B42A6A74A9005765E9 /* ShakeToUndoScene.swift in Sources */,
 				3241316B2A3F772500FBA638 /* DynamicTypeHelper.swift in Sources */,
 				32A0A65D2A42090D00E97042 /* DeveloperResourcesView.swift in Sources */,
@@ -1023,7 +1020,6 @@
 				32EFE6C52A8494EB008FB52C /* GameCenterView.swift in Sources */,
 				32EFE6AA2A8375CC008FB52C /* Challenge+Captions.swift in Sources */,
 				32303CBE2A306A1E0032BB50 /* ChallengeRequirement.swift in Sources */,
-				32303CE02A30DD670032BB50 /* CafeProductView.swift in Sources */,
 				32A0A6592A42084900E97042 /* ResourcesView.swift in Sources */,
 				327418912A80DFDC009721B9 /* VoiceOverView.swift in Sources */,
 				32C1C93B2A2B8E8C00C1854F /* ContentView.swift in Sources */,

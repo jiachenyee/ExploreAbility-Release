@@ -10,8 +10,6 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @State private var mugAnimationAngle = Angle.degrees(0)
-    
     var body: some View {
         ZStack {
             ZoomableScrollView {
@@ -34,26 +32,7 @@ struct HomeView: View {
             }
             .ignoresSafeArea()
             
-            HStack {
-                Text("100")
-                ZStack {
-                    Image(systemName: "mug.fill")
-                    
-                    Image(systemName: "mug.fill")
-                        .foregroundStyle(.brown)
-                        .clipShape(WaveView(offset: mugAnimationAngle, percent: 0.5))
-                        .onAppear {
-                            withAnimation(.linear(duration: 3).repeatForever(autoreverses: false)) {
-                                mugAnimationAngle = .degrees(360)
-                            }
-                        }
-                }
-            }
-            .padding()
-            .background(.ultraThickMaterial)
-            .clipShape(RoundedRectangle(cornerRadius: 8))
-            .padding([.trailing, .top])
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+            HotChocolateIndicatorView()
         }
     }
 }

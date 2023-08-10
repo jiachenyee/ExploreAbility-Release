@@ -45,7 +45,7 @@ struct ControlsHexagonView: View {
                         isCafePresented.toggle()
                     }
                     .sheet(isPresented: $isCafePresented) {
-                        RewardChallengeView()
+                        RewardCafeView()
                             .presentationDetents([.medium, .large])
                     }
                     

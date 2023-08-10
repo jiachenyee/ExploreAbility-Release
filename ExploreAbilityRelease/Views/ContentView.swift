@@ -20,10 +20,6 @@ struct ContentView: View {
     var body: some View {
         Group {
             switch viewModel.gameState {
-            case .store:
-                CafeView()
-            case .settings:
-                SettingsView()
             case .home:
                 HomeView()
             case .challenge(let challenge):
