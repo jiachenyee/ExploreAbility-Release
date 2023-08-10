@@ -127,6 +127,9 @@
 		32EFE6B82A8376DF008FB52C /* Challenge+DimFlashingLights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6B72A8376DF008FB52C /* Challenge+DimFlashingLights.swift */; };
 		32EFE6BA2A83F6C2008FB52C /* AwardExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6B92A83F6C2008FB52C /* AwardExportView.swift */; };
 		32EFE6C52A8494EB008FB52C /* GameCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6C42A8494EB008FB52C /* GameCenterView.swift */; };
+		32EFE6C72A84BF10008FB52C /* RewardChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6C62A84BF10008FB52C /* RewardChallenge.swift */; };
+		32EFE6C92A84D6AB008FB52C /* RewardChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6C82A84D6AB008FB52C /* RewardChallengeView.swift */; };
+		32EFE6CB2A8509EA008FB52C /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6CA2A8509EA008FB52C /* WaveView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -261,6 +264,9 @@
 		32EFE6B92A83F6C2008FB52C /* AwardExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardExportView.swift; sourceTree = "<group>"; };
 		32EFE6BB2A8489F2008FB52C /* ExploreAbilityRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExploreAbilityRelease.entitlements; sourceTree = "<group>"; };
 		32EFE6C42A8494EB008FB52C /* GameCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterView.swift; sourceTree = "<group>"; };
+		32EFE6C62A84BF10008FB52C /* RewardChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardChallenge.swift; sourceTree = "<group>"; };
+		32EFE6C82A84D6AB008FB52C /* RewardChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardChallengeView.swift; sourceTree = "<group>"; };
+		32EFE6CA2A8509EA008FB52C /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,6 +357,7 @@
 				32303CCD2A30A8910032BB50 /* GameState.swift */,
 				32303CD92A30B9C60032BB50 /* ZoomState.swift */,
 				32303CE82A317F120032BB50 /* ChallengeState.swift */,
+				32EFE6C62A84BF10008FB52C /* RewardChallenge.swift */,
 				32303CD22A30A9560032BB50 /* Challenges */,
 			);
 			path = Models;
@@ -425,6 +432,8 @@
 			children = (
 				32303CDD2A30DB980032BB50 /* HomePopupView.swift */,
 				32303CE42A30DECA0032BB50 /* SettingsView.swift */,
+				32EFE6C82A84D6AB008FB52C /* RewardChallengeView.swift */,
+				32EFE6CA2A8509EA008FB52C /* WaveView.swift */,
 				32303CE12A30DD7F0032BB50 /* Cafe */,
 			);
 			path = "Popup Views";
@@ -954,6 +963,7 @@
 				328DF9A82A811E3600FFC128 /* AnimatedImagesChallengeSample2.swift in Sources */,
 				32303CDE2A30DB980032BB50 /* HomePopupView.swift in Sources */,
 				32BC43502A8254A50056308A /* AssistiveTouchChallengeView.swift in Sources */,
+				32EFE6CB2A8509EA008FB52C /* WaveView.swift in Sources */,
 				327E69822A37ECE3004E0ED3 /* ChallengeConclusionView.swift in Sources */,
 				3251DF142A6A1F6F0017334A /* TaggedPath.swift in Sources */,
 				327E69862A384982004E0ED3 /* RotatingCircleView.swift in Sources */,
@@ -987,6 +997,7 @@
 				32303CDC2A30D6D30032BB50 /* ChallengeButtonView.swift in Sources */,
 				32303CC02A306C400032BB50 /* PreChallengeWarningView.swift in Sources */,
 				32303CCE2A30A8910032BB50 /* GameState.swift in Sources */,
+				32EFE6C72A84BF10008FB52C /* RewardChallenge.swift in Sources */,
 				329CB3982A813DA200ADA128 /* DimFlashingLightsChallengeView.swift in Sources */,
 				3275DF5E2A42C0EF00C361B1 /* MenuHomeButton.swift in Sources */,
 				327883B22A6A6990005765E9 /* ShakeToUndoView.swift in Sources */,
@@ -1004,6 +1015,7 @@
 				32A0A65F2A428B3800E97042 /* DisableInstructionsView.swift in Sources */,
 				32303C9F2A30414C0032BB50 /* Challenge.swift in Sources */,
 				32B635402A80EDB900A04DA5 /* VoiceOverChallengeSlider.swift in Sources */,
+				32EFE6C92A84D6AB008FB52C /* RewardChallengeView.swift in Sources */,
 				327883B42A6A74A9005765E9 /* ShakeToUndoScene.swift in Sources */,
 				3241316B2A3F772500FBA638 /* DynamicTypeHelper.swift in Sources */,
 				32A0A65D2A42090D00E97042 /* DeveloperResourcesView.swift in Sources */,

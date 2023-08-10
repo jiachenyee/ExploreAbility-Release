@@ -48,10 +48,11 @@ class ViewModel: ObservableObject {
     }
     
     func updateAchievement(for challengeCategory: ChallengeCategory, percentComplete: Double) {
+        guard isGameCenterEnabled else { return }
         let id = challengeCategory.name.lowercased()
         
         let achievement = GKAchievement(identifier: id)
-        print(achievement.player)
+        
         achievement.percentComplete = percentComplete
         
         GKAchievement.report([achievement]) { error in

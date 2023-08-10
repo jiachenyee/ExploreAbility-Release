@@ -13,6 +13,8 @@ struct ControlsHexagonView: View {
     @EnvironmentObject var viewModel: ViewModel
     
     @State private var isGameCenterPresented = false
+    @State private var isSettingsPresented = false
+    @State private var isCafePresented = false
     
     var body: some View {
         ZStack {
@@ -29,22 +31,23 @@ struct ControlsHexagonView: View {
                     }
                     
                     HomeViewActionButton(systemName: "switch.2", color: .yellow.opacity(0.7)) {
-                        withAnimation(.bouncy) {
-                            viewModel.gameState = .settings
-                        }
                         UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                        isSettingsPresented.toggle()
                     }
-                    .matchedGeometryEffect(id: "settings", in: viewModel.sharedNamespace)
+                    .sheet(isPresented: $isSettingsPresented) {
+                        SettingsView()
+                    }
                 }
                 
                 VStack(spacing: 21) {
                     HomeViewActionButton(systemName: "mug.fill", color: .yellow) {
-                        withAnimation(.bouncy) {
-                            viewModel.gameState = .store
-                        }
                         UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                        isCafePresented.toggle()
                     }
-                    .matchedGeometryEffect(id: "cafe.icon", in: viewModel.sharedNamespace)
+                    .sheet(isPresented: $isCafePresented) {
+                        RewardChallengeView()
+                            .presentationDetents([.medium, .large])
+                    }
                     
                     if viewModel.zoomFocus == .home {
                         Button {

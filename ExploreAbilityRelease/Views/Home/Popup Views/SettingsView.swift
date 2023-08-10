@@ -18,16 +18,31 @@ struct SettingsView: View {
     @EnvironmentObject var challengePersistenceViewModel: ChallengePersistenceViewModel
     
     var body: some View {
-        HomePopupView(id: "settings",
-                      systemImage: "switch.2",
-                      title: "Settings") {
-            ScrollView {
+        NavigationStack {
+            List {
+                
                 Toggle(isOn: $eventMode) {
-                    Text("Event Mode")
+                    Label {
+                        Text("Event Mode")
+                    } icon: {
+                        Image(systemName: "lanyardcard")
+                            .foregroundStyle(.green)
+                    }
+
                 }
                 
-                Button("Reset all data") {
-                    isResetAllDataPresented.toggle()
+                Section {
+                    Button(role: .destructive) {
+                        isResetAllDataPresented.toggle()
+                    } label: {
+                        Label {
+                            Text("Reset All Data")
+                        } icon: {
+                            Image(systemName: "trash")
+                                .foregroundStyle(.red)
+                        }
+
+                    }
                 }
                 .alert("Reset All Data", isPresented: $isResetAllDataPresented) {
                     Button(role: .destructive) {
@@ -42,9 +57,19 @@ struct SettingsView: View {
                         Text("Cancel")
                     }
                 } message: {
-                    Text("You will lose all challenge progress, hints, and any achievements. This is irreversible.")
+                    Text("You will lose all challenge progress, hints, Game Center achievements, and any achievements. This is irreversible.")
                 }
             }
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "xmark")
+                    }
+                }
+            }
+            .navigationTitle("Settings")
         }
     }
 }
