@@ -126,6 +126,7 @@
 		32EFE6B62A8376C3008FB52C /* Challenge+AnimatedImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6B52A8376C3008FB52C /* Challenge+AnimatedImages.swift */; };
 		32EFE6B82A8376DF008FB52C /* Challenge+DimFlashingLights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6B72A8376DF008FB52C /* Challenge+DimFlashingLights.swift */; };
 		32EFE6BA2A83F6C2008FB52C /* AwardExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6B92A83F6C2008FB52C /* AwardExportView.swift */; };
+		32EFE6C52A8494EB008FB52C /* GameCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE6C42A8494EB008FB52C /* GameCenterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -258,6 +259,8 @@
 		32EFE6B52A8376C3008FB52C /* Challenge+AnimatedImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+AnimatedImages.swift"; sourceTree = "<group>"; };
 		32EFE6B72A8376DF008FB52C /* Challenge+DimFlashingLights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+DimFlashingLights.swift"; sourceTree = "<group>"; };
 		32EFE6B92A83F6C2008FB52C /* AwardExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardExportView.swift; sourceTree = "<group>"; };
+		32EFE6BB2A8489F2008FB52C /* ExploreAbilityRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExploreAbilityRelease.entitlements; sourceTree = "<group>"; };
+		32EFE6C42A8494EB008FB52C /* GameCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -390,6 +393,7 @@
 			children = (
 				32303CCB2A30A8200032BB50 /* HomeView.swift */,
 				32303CC92A30A7C80032BB50 /* ZoomableScrollView.swift */,
+				32EFE6C12A8493EB008FB52C /* Game Center */,
 				32303CD62A30AA140032BB50 /* Hexagon */,
 				32303CE22A30DD8A0032BB50 /* Popup Views */,
 			);
@@ -702,6 +706,7 @@
 		32C1C9372A2B8E8C00C1854F /* ExploreAbilityRelease */ = {
 			isa = PBXGroup;
 			children = (
+				32EFE6BB2A8489F2008FB52C /* ExploreAbilityRelease.entitlements */,
 				32C1C9382A2B8E8C00C1854F /* ExploreAbilityReleaseApp.swift */,
 				32303CD02A30A9110032BB50 /* Views */,
 				32303CCF2A30A8E70032BB50 /* Models */,
@@ -773,6 +778,14 @@
 			path = "Cognitive Challenges";
 			sourceTree = "<group>";
 		};
+		32EFE6C12A8493EB008FB52C /* Game Center */ = {
+			isa = PBXGroup;
+			children = (
+				32EFE6C42A8494EB008FB52C /* GameCenterView.swift */,
+			);
+			path = "Game Center";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -824,7 +837,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					3251DF1E2A6A4F1E0017334A = {
 						CreatedOnToolsVersion = 15.0;
@@ -995,6 +1008,7 @@
 				3241316B2A3F772500FBA638 /* DynamicTypeHelper.swift in Sources */,
 				32A0A65D2A42090D00E97042 /* DeveloperResourcesView.swift in Sources */,
 				32EFE6B12A837686008FB52C /* Challenge+ShakeToUndo.swift in Sources */,
+				32EFE6C52A8494EB008FB52C /* GameCenterView.swift in Sources */,
 				32EFE6AA2A8375CC008FB52C /* Challenge+Captions.swift in Sources */,
 				32303CBE2A306A1E0032BB50 /* ChallengeRequirement.swift in Sources */,
 				32303CE02A30DD670032BB50 /* CafeProductView.swift in Sources */,
@@ -1046,6 +1060,7 @@
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 9W63WN9LG4;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -1075,6 +1090,7 @@
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 9W63WN9LG4;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -1216,6 +1232,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ExploreAbilityRelease/ExploreAbilityRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1223,6 +1240,7 @@
 				DEVELOPMENT_TEAM = 9W63WN9LG4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ExploreAbility;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1248,6 +1266,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ExploreAbilityRelease/ExploreAbilityRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1255,6 +1274,7 @@
 				DEVELOPMENT_TEAM = 9W63WN9LG4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ExploreAbility;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

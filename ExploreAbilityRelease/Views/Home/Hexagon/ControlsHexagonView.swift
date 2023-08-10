@@ -12,12 +12,20 @@ struct ControlsHexagonView: View {
     
     @EnvironmentObject var viewModel: ViewModel
     
+    @State private var isGameCenterPresented = false
+    
     var body: some View {
         ZStack {
             HStack(spacing: 16) {
                 VStack(spacing: 21) {
                     HomeViewActionButton("gamecenter", color: .yellow.opacity(0.5)) {
                         UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                        
+                        isGameCenterPresented.toggle()
+                    }
+                    .fullScreenCover(isPresented: $isGameCenterPresented) {
+                        GameCenterView()
+                            .ignoresSafeArea()
                     }
                     
                     HomeViewActionButton(systemName: "switch.2", color: .yellow.opacity(0.7)) {
