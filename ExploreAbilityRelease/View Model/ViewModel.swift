@@ -34,10 +34,16 @@ class ViewModel: ObservableObject {
                 self.isGameCenterEnabled = true
             }
             
-            self.updateAchievement(for: .vision, percentComplete: 100)
-            self.updateAchievement(for: .hearing, percentComplete: 1)
-            self.updateAchievement(for: .cognitive, percentComplete: 1)
-            self.updateAchievement(for: .mobility, percentComplete: 1)
+            GKAchievement.loadAchievements { achievements, _ in
+                print(achievements)
+//                self.updateAchievement(for: .vision, percentComplete: 10)
+                self.updateAchievement(for: .hearing, percentComplete: 10)
+                self.updateAchievement(for: .cognitive, percentComplete: 10)
+                self.updateAchievement(for: .mobility, percentComplete: 10)
+            }
+//
+//            self.updateAchievement(for: .vision, percentComplete: 100)
+            
         }
     }
     
@@ -45,8 +51,11 @@ class ViewModel: ObservableObject {
         let id = challengeCategory.name.lowercased()
         
         let achievement = GKAchievement(identifier: id)
+        print(achievement.player)
         achievement.percentComplete = percentComplete
         
-        GKAchievement.report([achievement])
+        GKAchievement.report([achievement]) { error in
+            print(error)
+        }
     }
 }

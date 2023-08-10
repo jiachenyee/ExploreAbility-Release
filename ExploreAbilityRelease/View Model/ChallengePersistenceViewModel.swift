@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import GameKit
 
 class ChallengePersistenceViewModel: ObservableObject {
     @Published var challengeData: [String: ChallengePersistentData] = [:] {
@@ -30,6 +31,17 @@ class ChallengePersistenceViewModel: ObservableObject {
     
     func nuke() {
         challengeData = [:]
+        
+        GKAchievement.loadAchievements { achievements, error in
+            if let achievements {
+                for achievement in achievements {
+                    achievement.percentComplete = 0
+                }
+                
+                GKAchievement.report(achievements)
+            }
+        }
+        GKAchievement.resetAchievements()
     }
     
     func save() {
