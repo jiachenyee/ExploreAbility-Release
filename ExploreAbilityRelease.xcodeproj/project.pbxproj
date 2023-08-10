@@ -422,7 +422,6 @@
 			children = (
 				32303CE42A30DECA0032BB50 /* SettingsView.swift */,
 				32EFE6D02A8534A6008FB52C /* Reward Cafe */,
-				32EFE6CA2A8509EA008FB52C /* WaveView.swift */,
 			);
 			path = "Popup Views";
 			sourceTree = "<group>";
@@ -788,6 +787,7 @@
 			children = (
 				32EFE6C82A84D6AB008FB52C /* RewardCafeView.swift */,
 				32EFE6CE2A853471008FB52C /* RewardCafeHotChocolateCard.swift */,
+				32EFE6CA2A8509EA008FB52C /* WaveView.swift */,
 			);
 			path = "Reward Cafe";
 			sourceTree = "<group>";
