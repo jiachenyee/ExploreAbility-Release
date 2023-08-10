@@ -38,10 +38,10 @@ struct HomeView: View {
                 Text("100")
                 ZStack {
                     Image(systemName: "mug.fill")
-                        
+                    
                     Image(systemName: "mug.fill")
-                        .clipShape(WaveView(offset: mugAnimationAngle, percent: 0.5))
                         .foregroundStyle(.brown)
+                        .clipShape(WaveView(offset: mugAnimationAngle, percent: 0.5))
                         .onAppear {
                             withAnimation(.linear(duration: 3).repeatForever(autoreverses: false)) {
                                 mugAnimationAngle = .degrees(360)
