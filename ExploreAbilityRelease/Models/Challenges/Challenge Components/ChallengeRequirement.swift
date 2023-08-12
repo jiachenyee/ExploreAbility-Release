@@ -36,4 +36,8 @@ struct ChallengeRequirement: ChallengeComponent {
         
         return deviceMajor > major || (deviceMajor == major && deviceMinor >= (minor ?? 0))
     }
+    
+    func osVersion() -> String {
+        return "iOS \(major ?? 16).\(minor ?? 0)"
+    }
 }

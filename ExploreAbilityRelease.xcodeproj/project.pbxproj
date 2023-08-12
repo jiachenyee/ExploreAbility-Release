@@ -61,6 +61,7 @@
 		3258655A2A42A6AB00630D7E /* ResourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325865592A42A6AB00630D7E /* ResourceView.swift */; };
 		3258655F2A42AAEA00630D7E /* XCChallengePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3258655E2A42AAEA00630D7E /* XCChallengePreview.swift */; };
 		326036282A8150D200E44212 /* MonoAudioChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326036272A8150D200E44212 /* MonoAudioChallengeView.swift */; };
+		32693B642A87FC140060DFC8 /* ChallengeRequirementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32693B632A87FC140060DFC8 /* ChallengeRequirementsView.swift */; };
 		326B88F12A6FC1A10029915B /* GuidedAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326B88F02A6FC1A10029915B /* GuidedAccessView.swift */; };
 		326E38152A83529E00803FCC /* ChallengePersistentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326E38142A83529E00803FCC /* ChallengePersistentData.swift */; };
 		327418912A80DFDC009721B9 /* VoiceOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327418902A80DFDC009721B9 /* VoiceOverView.swift */; };
@@ -198,6 +199,7 @@
 		325865592A42A6AB00630D7E /* ResourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceView.swift; sourceTree = "<group>"; };
 		3258655E2A42AAEA00630D7E /* XCChallengePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCChallengePreview.swift; sourceTree = "<group>"; };
 		326036272A8150D200E44212 /* MonoAudioChallengeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonoAudioChallengeView.swift; sourceTree = "<group>"; };
+		32693B632A87FC140060DFC8 /* ChallengeRequirementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeRequirementsView.swift; sourceTree = "<group>"; };
 		326B88F02A6FC1A10029915B /* GuidedAccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidedAccessView.swift; sourceTree = "<group>"; };
 		326E38142A83529E00803FCC /* ChallengePersistentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengePersistentData.swift; sourceTree = "<group>"; };
 		327418902A80DFDC009721B9 /* VoiceOverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceOverView.swift; sourceTree = "<group>"; };
@@ -613,6 +615,7 @@
 			children = (
 				32303CBF2A306C400032BB50 /* PreChallengeWarningView.swift */,
 				32303CE62A30E2570032BB50 /* ChallengeView.swift */,
+				32693B632A87FC140060DFC8 /* ChallengeRequirementsView.swift */,
 				32A0A65B2A42086600E97042 /* Challenges */,
 				32A0A65A2A42085400E97042 /* Conclusion */,
 				325865602A42AD1F00630D7E /* Challenge Menu */,
@@ -1000,6 +1003,7 @@
 				32303CC02A306C400032BB50 /* PreChallengeWarningView.swift in Sources */,
 				32303CCE2A30A8910032BB50 /* GameState.swift in Sources */,
 				32EFE6C72A84BF10008FB52C /* RewardChallenge.swift in Sources */,
+				32693B642A87FC140060DFC8 /* ChallengeRequirementsView.swift in Sources */,
 				329CB3982A813DA200ADA128 /* DimFlashingLightsChallengeView.swift in Sources */,
 				3275DF5E2A42C0EF00C361B1 /* MenuHomeButton.swift in Sources */,
 				327883B22A6A6990005765E9 /* ShakeToUndoView.swift in Sources */,

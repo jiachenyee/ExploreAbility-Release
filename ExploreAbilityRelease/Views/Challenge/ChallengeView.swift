@@ -30,6 +30,8 @@ struct ChallengeView: View {
                     }
             case .warning(let warning):
                 PreChallengeWarningView(warning: warning)
+            case .requirements:
+                ChallengeRequirementsView()
             case .playing(let isFeatureToggled):
                 ChallengePlayingView(isFeatureToggled: isFeatureToggled)
             case .success:

@@ -11,14 +11,14 @@ import SwiftUI
 class ChallengeViewModel: ObservableObject {
     var challenge: Challenge! {
         didSet {
-            if let warning = challenge.warning {
+            if ChallengePersistenceViewModel().retrieveChallenge(challenge).isSolved {
+                state = .conclusion
+            } else if !(challenge.requirements?.evaluateRequirement() ?? false) {
+                state = .requirements
+            } else if let warning = challenge.warning {
                 state = .warning(warning)
             } else {
-                if ChallengePersistenceViewModel().retrieveChallenge(challenge).isSolved {
-                    state = .conclusion
-                } else {
-                    state = .playing(false)
-                }
+                state = .playing(false)
             }
         }
     }

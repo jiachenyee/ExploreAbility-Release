@@ -29,6 +29,15 @@ struct ChallengeButtonView: View {
             }
             .matchedGeometryEffect(id: challenge.feature, in: viewModel.sharedNamespace)
             .accessibilityIdentifier(challenge.feature)
+            .overlay {
+                if !challenge.meetsRequirements() {
+                    Image(systemName: "exclamationmark.circle.fill")
+                        .font(.system(size: 21))
+                        .symbolRenderingMode(.multicolor)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
+                        .shadow(radius: 8)
+                }
+            }
         } else {
             Circle()
                 .frame(width: 50, height: 50)

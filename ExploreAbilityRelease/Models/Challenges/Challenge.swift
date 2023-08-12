@@ -73,6 +73,10 @@ extension Challenge {
         } as? ChallengeRequirement
     }
     
+    func meetsRequirements() -> Bool {
+        requirements?.evaluateRequirement() ?? true
+    }
+    
     var disableInstructions: Text? {
         let instructions = components.first { component in
             component is DisableInstructions
