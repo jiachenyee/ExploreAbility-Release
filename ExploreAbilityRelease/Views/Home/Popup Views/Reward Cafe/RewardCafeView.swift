@@ -15,23 +15,9 @@ struct RewardCafeView: View {
             
             List {
                 Section("\(Image(systemName: "checkmark")) Ready") {
-                    ForEach(0..<10) { index in
-                        HStack {
-                            Image(systemName: "square")
-                                .imageScale(.large)
-                            VStack(alignment: .leading) {
-                                Text("ChallengeName\(index)")
-                                    .font(.headline)
-                                
-                                HStack(spacing: 0) {
-                                    Image(systemName: "mug.fill")
-                                    Image(systemName: "mug.fill")
-                                }
-                            }
-                            
-                            Spacer()
-                        }
-                    }
+                    RewardChallengeRowView(rewardChallenge: DecodeBrailleRewardChallenge {
+                        print("ASSIGNED")
+                    })
                 }
                 
                 Section("\(Image(systemName: "timer")) Preparing Hot Chocolate…") {

@@ -107,6 +107,7 @@
 		32C1C93B2A2B8E8C00C1854F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1C93A2A2B8E8C00C1854F /* ContentView.swift */; };
 		32C1C93D2A2B8E8D00C1854F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32C1C93C2A2B8E8D00C1854F /* Assets.xcassets */; };
 		32C1C9402A2B8E8D00C1854F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32C1C93F2A2B8E8D00C1854F /* Preview Assets.xcassets */; };
+		32D1A7862A85DFE200160098 /* RewardChallengeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D1A7852A85DFE200160098 /* RewardChallengeRowView.swift */; };
 		32D354CC2A811C6B0030A949 /* AnimatedImagesChallengeSample3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D354CB2A811C6B0030A949 /* AnimatedImagesChallengeSample3.swift */; };
 		32E5F7AA2A815F4500BD36F2 /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32E5F7A92A815F4500BD36F2 /* test.mp3 */; };
 		32EFE69B2A837443008FB52C /* Challenge+VoiceOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE69A2A837443008FB52C /* Challenge+VoiceOver.swift */; };
@@ -242,6 +243,7 @@
 		32C1C93A2A2B8E8C00C1854F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		32C1C93C2A2B8E8D00C1854F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32C1C93F2A2B8E8D00C1854F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		32D1A7852A85DFE200160098 /* RewardChallengeRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardChallengeRowView.swift; sourceTree = "<group>"; };
 		32D354CB2A811C6B0030A949 /* AnimatedImagesChallengeSample3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedImagesChallengeSample3.swift; sourceTree = "<group>"; };
 		32E5F7A92A815F4500BD36F2 /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
 		32EFE69A2A837443008FB52C /* Challenge+VoiceOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+VoiceOver.swift"; sourceTree = "<group>"; };
@@ -786,6 +788,7 @@
 			isa = PBXGroup;
 			children = (
 				32EFE6C82A84D6AB008FB52C /* RewardCafeView.swift */,
+				32D1A7852A85DFE200160098 /* RewardChallengeRowView.swift */,
 				32EFE6CE2A853471008FB52C /* RewardCafeHotChocolateCard.swift */,
 				32EFE6CA2A8509EA008FB52C /* WaveView.swift */,
 			);
@@ -939,6 +942,7 @@
 			files = (
 				32303CE52A30DECA0032BB50 /* SettingsView.swift in Sources */,
 				32303CD42A30A9860032BB50 /* Warning.swift in Sources */,
+				32D1A7862A85DFE200160098 /* RewardChallengeRowView.swift in Sources */,
 				3275DF562A42BE4B00C361B1 /* MenuClosed.swift in Sources */,
 				32194FC12A827B1D00D993B6 /* ChallengeBuilder.swift in Sources */,
 				32303CBC2A3069B40032BB50 /* Challenge+Challenges.swift in Sources */,
