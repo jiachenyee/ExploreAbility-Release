@@ -10,7 +10,7 @@ import SwiftUI
 import GameKit
 
 class ViewModel: ObservableObject {
-    @Published var gameState = GameState.home
+    @Published var gameState = GameState.onboarding
     @Published var zoomFocus: ZoomState? {
         didSet {
             if zoomFocus != nil {

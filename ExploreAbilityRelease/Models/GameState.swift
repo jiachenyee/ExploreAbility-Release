@@ -10,4 +10,5 @@ import Foundation
 enum GameState {
     case home
     case challenge(Challenge)
+    case onboarding
 }

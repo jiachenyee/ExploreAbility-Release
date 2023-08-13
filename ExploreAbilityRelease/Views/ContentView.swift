@@ -24,6 +24,8 @@ struct ContentView: View {
                 HomeView()
             case .challenge(let challenge):
                 ChallengeView(challenge: challenge)
+            case .onboarding:
+                OnboardingView()
             }
         }
         .environmentObject(viewModel)
