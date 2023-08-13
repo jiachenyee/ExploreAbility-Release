@@ -28,7 +28,7 @@ struct ChallengeRequirementsView: View {
             }
             
             if let requirement = challengeViewModel.challenge.requirements {
-                Text("This challenge involves features only available in **\(requirement.osVersion())** or later.\n\nUpdate your device's operating system to the latest version and try again.\n\nHead to Settings \(Image(systemName: "chevron.right")) General \(Image(systemName: "chevron.right")) Software Update, and install the version of iOS.")
+                Text("This challenge involves features only available in **\(requirement.osVersion())** or later.\n\nUpdate your device's operating system to the latest version and try again.\n\nHead to Settings \(Image(systemName: "chevron.right")) General \(Image(systemName: "chevron.right")) Software Update, and install the latest version of iOS.")
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
             
