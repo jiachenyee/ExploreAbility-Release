@@ -26,6 +26,12 @@ class ViewModel: ObservableObject {
     init() {
         setUpGameCenter()
         
+        if UserDefaults.standard.bool(forKey: "shownOnboarding") {
+            gameState = .home
+        } else {
+            gameState = .onboarding
+            UserDefaults.standard.setValue(true, forKey: "shownOnboarding")
+        }
     }
     
     func setUpGameCenter() {
