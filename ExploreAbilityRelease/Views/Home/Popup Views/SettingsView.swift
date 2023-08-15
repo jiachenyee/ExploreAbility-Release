@@ -16,6 +16,7 @@ struct SettingsView: View {
     @State private var isResetAllDataPresented = false
     
     @EnvironmentObject var challengePersistenceViewModel: ChallengePersistenceViewModel
+    @EnvironmentObject var viewModel: ViewModel
     
     var body: some View {
         NavigationStack {
@@ -29,6 +30,20 @@ struct SettingsView: View {
                             .foregroundStyle(.green)
                     }
 
+                }
+                
+                Section {
+                    Button {
+                        viewModel.gameState = .onboarding
+                    } label: {
+                        Label {
+                            Text("Show Onboarding")
+                        } icon: {
+                            Image(systemName: "hand.wave")
+                                .foregroundStyle(.yellow)
+                        }
+                        
+                    }
                 }
                 
                 Section {

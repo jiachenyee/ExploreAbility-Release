@@ -111,6 +111,9 @@
 		32D1A7862A85DFE200160098 /* RewardChallengeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D1A7852A85DFE200160098 /* RewardChallengeRowView.swift */; };
 		32D354CC2A811C6B0030A949 /* AnimatedImagesChallengeSample3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D354CB2A811C6B0030A949 /* AnimatedImagesChallengeSample3.swift */; };
 		32E123402A8927E1005288EB /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E1233F2A8927E1005288EB /* OnboardingView.swift */; };
+		32E123422A893F6E005288EB /* OnboardingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E123412A893F6E005288EB /* OnboardingItemView.swift */; };
+		32E123442A893F83005288EB /* OnboardingTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E123432A893F83005288EB /* OnboardingTab.swift */; };
+		32E123462A894532005288EB /* OnboardingBubblesScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E123452A894532005288EB /* OnboardingBubblesScene.swift */; };
 		32E5F7AA2A815F4500BD36F2 /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32E5F7A92A815F4500BD36F2 /* test.mp3 */; };
 		32EFE69B2A837443008FB52C /* Challenge+VoiceOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE69A2A837443008FB52C /* Challenge+VoiceOver.swift */; };
 		32EFE69E2A837484008FB52C /* Challenge+DynamicType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFE69D2A837484008FB52C /* Challenge+DynamicType.swift */; };
@@ -249,6 +252,9 @@
 		32D1A7852A85DFE200160098 /* RewardChallengeRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardChallengeRowView.swift; sourceTree = "<group>"; };
 		32D354CB2A811C6B0030A949 /* AnimatedImagesChallengeSample3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedImagesChallengeSample3.swift; sourceTree = "<group>"; };
 		32E1233F2A8927E1005288EB /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		32E123412A893F6E005288EB /* OnboardingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItemView.swift; sourceTree = "<group>"; };
+		32E123432A893F83005288EB /* OnboardingTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTab.swift; sourceTree = "<group>"; };
+		32E123452A894532005288EB /* OnboardingBubblesScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingBubblesScene.swift; sourceTree = "<group>"; };
 		32E5F7A92A815F4500BD36F2 /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
 		32EFE69A2A837443008FB52C /* Challenge+VoiceOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+VoiceOver.swift"; sourceTree = "<group>"; };
 		32EFE69D2A837484008FB52C /* Challenge+DynamicType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+DynamicType.swift"; sourceTree = "<group>"; };
@@ -363,6 +369,7 @@
 				32303CE82A317F120032BB50 /* ChallengeState.swift */,
 				32EFE6C62A84BF10008FB52C /* RewardChallenge.swift */,
 				32303CD22A30A9560032BB50 /* Challenges */,
+				32E123432A893F83005288EB /* OnboardingTab.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -733,6 +740,8 @@
 			isa = PBXGroup;
 			children = (
 				32E1233F2A8927E1005288EB /* OnboardingView.swift */,
+				32E123412A893F6E005288EB /* OnboardingItemView.swift */,
+				32E123452A894532005288EB /* OnboardingBubblesScene.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -970,6 +979,7 @@
 				32EFE69E2A837484008FB52C /* Challenge+DynamicType.swift in Sources */,
 				322986582A82BDEC009B6275 /* ClosedCaptionsSDHChallengeView.swift in Sources */,
 				32EFE69B2A837443008FB52C /* Challenge+VoiceOver.swift in Sources */,
+				32E123442A893F83005288EB /* OnboardingTab.swift in Sources */,
 				3238D0F42A80EB4A006D2889 /* VoiceOverChallengeDatePicker.swift in Sources */,
 				3251DF1A2A6A4D470017334A /* DWCCanvas.swift in Sources */,
 				3251DF122A6A17CD0017334A /* DifferentiateWithoutColorView.swift in Sources */,
@@ -1026,6 +1036,7 @@
 				32A0A6622A428FA900E97042 /* ChallengeConclusionContainerView.swift in Sources */,
 				326B88F12A6FC1A10029915B /* GuidedAccessView.swift in Sources */,
 				32194FC32A827B1D00D993B6 /* GitHub.swift in Sources */,
+				32E123422A893F6E005288EB /* OnboardingItemView.swift in Sources */,
 				32303CE72A30E2570032BB50 /* ChallengeView.swift in Sources */,
 				325865522A42A31600630D7E /* DeveloperResourceGitHubButton.swift in Sources */,
 				32A0A65F2A428B3800E97042 /* DisableInstructionsView.swift in Sources */,
@@ -1049,6 +1060,7 @@
 				3291441F2A36265800F5263D /* ChallengePlayingView.swift in Sources */,
 				3258655F2A42AAEA00630D7E /* XCChallengePreview.swift in Sources */,
 				32194FC42A827B1D00D993B6 /* Hint.swift in Sources */,
+				32E123462A894532005288EB /* OnboardingBubblesScene.swift in Sources */,
 				32194FC52A827B1D00D993B6 /* ChallengeComponent.swift in Sources */,
 				32303CDA2A30B9C60032BB50 /* ZoomState.swift in Sources */,
 				32EFE6A22A8374D4008FB52C /* Challenge+IncreaseContrast.swift in Sources */,

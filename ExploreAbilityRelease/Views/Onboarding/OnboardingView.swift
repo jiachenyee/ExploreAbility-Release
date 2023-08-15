@@ -6,47 +6,73 @@
 //
 
 import SwiftUI
+import SpriteKit
 
 struct OnboardingView: View {
     
     @EnvironmentObject var viewModel: ViewModel
     
-    @State private var currentTab = 0
+    @State private var currentTab = OnboardingTab.welcome
     
     @State private var showSkipButton = true
+    
+    @Namespace var namespace
+    
+    let onboardingBubblesScene: OnboardingBubblesScene = {
+        let scene = OnboardingBubblesScene()
+        scene.setUp()
+        
+        return scene
+    }()
     
     var body: some View {
         ZStack {
             GeometryReader { proxy in
-                Rectangle()
-                    .fill(.blue)
-                    .frame(height: proxy.size.height / 2)
+                Group {
+                    switch currentTab {
+                    case .welcome:
+                        Image(systemName: "iphone")
+                            .font(.system(size: 64))
+                            .matchedGeometryEffect(id: "phone", in: namespace)
+                    case .explore:
+                        ZStack {
+                            Image(systemName: "iphone")
+                                .font(.system(size: 64))
+                                .matchedGeometryEffect(id: "phone", in: namespace)
+                            
+                            SpriteView(scene: onboardingBubblesScene)
+                                .onAppear {
+                                    onboardingBubblesScene.size = proxy.size
+                                    onboardingBubblesScene.displayBalls()
+                                }
+                        }
+                    case .challenge:
+                        EmptyView()
+                    case .stuck:
+                        EmptyView()
+                    case .learn:
+                        EmptyView()
+                    }
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                .frame(height: proxy.size.height / 2)
             }
+            
             TabView(selection: $currentTab) {
-                OnboardingItemView(title: "Make your device\nwork for you.",
-                                   description: "Accessibility is about making your device yours.")
-                .tag(0)
+                OnboardingItemView(tab: .welcome)
                 
-                OnboardingItemView(title: "Explore.",
-                                   description: "Your device comes with dozens of accessibility features built in to help everyone use it.\n\nFind out about these features, and maybe discover some that might help you!")
-                .tag(1)
+                OnboardingItemView(tab: .explore)
                 
-                OnboardingItemView(title: "Engage.",
-                                   description: "Try out Accessibility challenges. Each challenge requires toggling a different accessibility setting in the Settings app.")
-                .tag(2)
+                OnboardingItemView(tab: .challenge)
                 
-                OnboardingItemView(title: "Stuck?",
-                                   description: "Select on the circle in the center of the screen to return home, or get a hint.")
-                .tag(3)
+                OnboardingItemView(tab: .stuck)
                 
-                OnboardingItemView(title: "Learn.",
-                                   description: "Each challenge comes with Reference Resources that can help you better understand the various accessibility features and their use-cases.\n\nDeveloping an app? There are developer resources including code snippets, external links, and videos that can help you understand how to incorporate these features into your app.")
-                .tag(4)
+                OnboardingItemView(tab: .learn)
             }
             .tabViewStyle(.page)
             .onChange(of: currentTab) { newValue in
                 withAnimation {
-                    showSkipButton = newValue != 4
+                    showSkipButton = newValue != .learn
                 }
             }
             
@@ -62,20 +88,20 @@ struct OnboardingView: View {
             }
             
             HStack {
-                if currentTab != 0 {
+                if currentTab != .welcome {
                     Button("Previous") {
                         withAnimation {
-                            currentTab -= 1
+                            currentTab.previous()
                         }
                     }
                 }
                 
                 Spacer()
                 
-                if currentTab != 4 {
+                if currentTab != .learn {
                     Button("Next") {
                         withAnimation {
-                            currentTab += 1
+                            currentTab.next()
                         }
                     }
                 } else {
@@ -89,33 +115,6 @@ struct OnboardingView: View {
             .padding()
             .frame(maxHeight: .infinity, alignment: .bottom)
         }
-    }
-}
-
-struct OnboardingItemView: View {
-    
-    var title: String
-    var description: String
-    
-    var body: some View {
-        GeometryReader { proxy in
-            VStack {
-                Spacer()
-                VStack(alignment: .leading) {
-                    Text(title)
-                        .multilineTextAlignment(.leading)
-                        .font(.title)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    
-                    ScrollView {
-                        Text(description)
-                            .font(.body)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                    }
-                }
-                .frame(height: proxy.size.height / 2, alignment: .top)
-            }
-        }
-        .padding()
+        .animation(.easeInOut, value: currentTab)
     }
 }
