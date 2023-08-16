@@ -13,7 +13,7 @@ class ChallengeViewModel: ObservableObject {
         didSet {
             if ChallengePersistenceViewModel().retrieveChallenge(challenge).isSolved {
                 state = .conclusion
-            } else if !(challenge.requirements?.evaluateRequirement() ?? false) {
+            } else if !challenge.meetsRequirements() {
                 state = .requirements
             } else if let warning = challenge.warning {
                 state = .warning(warning)
